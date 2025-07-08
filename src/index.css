@@ -18,7 +18,7 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 3.9%;
 
-    --primary: 142 76% 15%;
+    --primary: 82 100% 33%;
     --primary-foreground: 0 0% 98%;
 
     --secondary: 0 0% 96.1%;
@@ -35,7 +35,7 @@ All colors MUST be HSL.
 
     --border: 0 0% 89.8%;
     --input: 0 0% 89.8%;
-    --ring: 142 76% 15%;
+    --ring: 82 100% 33%;
 
     --radius: 0.75rem;
 
@@ -56,7 +56,7 @@ All colors MUST be HSL.
     --card-foreground: 0 0% 98%;
     --popover: 0 0% 3.9%;
     --popover-foreground: 0 0% 98%;
-    --primary: 142 76% 15%;
+    --primary: 82 100% 33%;
     --primary-foreground: 0 0% 98%;
     --secondary: 0 0% 14.9%;
     --secondary-foreground: 0 0% 98%;
@@ -68,7 +68,7 @@ All colors MUST be HSL.
     --destructive-foreground: 0 0% 98%;
     --border: 0 0% 14.9%;
     --input: 0 0% 14.9%;
-    --ring: 142 76% 15%;
+    --ring: 82 100% 33%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -92,7 +92,11 @@ All colors MUST be HSL.
 
 @layer components {
   .hero-gradient {
-    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(142 45% 25%) 100%);
+    background: linear-gradient(135deg, hsl(82 100% 33%) 0%, hsl(0 0% 100%) 100%);
+  }
+  
+  .hero-gradient-dark {
+    background: linear-gradient(135deg, hsl(82 100% 33%) 0%, hsl(0 0% 0%) 100%);
   }
   
   .crypto-card {
@@ -104,5 +108,17 @@ All colors MUST be HSL.
     border-radius: 2rem;
     padding: 1rem;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  }
+
+  .green-gradient {
+    background: linear-gradient(135deg, hsl(82 100% 33%) 0%, hsl(0 0% 95%) 100%);
+  }
+
+  .green-gradient-reverse {
+    background: linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(82 100% 33%) 100%);
+  }
+
+  .dark-gradient {
+    background: linear-gradient(135deg, hsl(0 0% 5%) 0%, hsl(82 100% 33%) 100%);
   }
 }

@@ -84,21 +84,21 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="hero-gradient text-white py-20">
+      <section className="hero-gradient text-black py-12 md:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6">
               Nigeria's Premier Crypto Exchange & Bill Payment Platform
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl lg:text-2xl mb-6 md:mb-8 text-black/80 max-w-3xl mx-auto">
               Trade cryptocurrency, pay bills, and sell gift cards with the best rates in Nigeria. 
               Join over 50,000 satisfied customers.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="secondary" className="text-lg px-8 py-3">
-                Trade Now <ArrowRight className="ml-2 w-5 h-5" />
+            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
+              <Button size="lg" className="text-base md:text-lg px-6 md:px-8 py-2 md:py-3">
+                Trade Now <ArrowRight className="ml-2 w-4 h-4 md:w-5 md:h-5" />
               </Button>
-              <Button size="lg" variant="outline" className="text-lg px-8 py-3 border-white text-white hover:bg-white hover:text-primary">
+              <Button size="lg" variant="outline" className="text-base md:text-lg px-6 md:px-8 py-2 md:py-3 border-black text-black hover:bg-black hover:text-white">
                 Download App
               </Button>
             </div>
@@ -107,15 +107,15 @@ const Index = () => {
       </section>
 
       {/* Milestones */}
-      <section className="py-16 bg-white">
+      <section className="py-12 md:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
             {milestones.map((milestone, index) => (
               <div key={index} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
+                <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary mb-1 md:mb-2">
                   {milestone.number}
                 </div>
-                <div className="text-gray-600">{milestone.label}</div>
+                <div className="text-sm md:text-base text-gray-600">{milestone.label}</div>
               </div>
             ))}
           </div>
@@ -123,23 +123,23 @@ const Index = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-12 md:py-16 green-gradient">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Why People Choose KudiTime</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
+          <div className="text-center mb-8 md:mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3 md:mb-4">Why People Choose KudiTime</h2>
+            <p className="text-sm md:text-base text-gray-600 max-w-2xl mx-auto">
               We're committed to providing the best crypto trading and bill payment experience in Nigeria
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
             {reasons.map((reason, index) => (
               <Card key={index} className="text-center">
-                <CardContent className="p-6">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-                    <reason.icon className="w-6 h-6 text-primary" />
+                <CardContent className="p-4 md:p-6">
+                  <div className="w-10 h-10 md:w-12 md:h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-3 md:mb-4">
+                    <reason.icon className="w-5 h-5 md:w-6 md:h-6 text-primary" />
                   </div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">{reason.title}</h3>
-                  <p className="text-gray-600 text-sm">{reason.description}</p>
+                  <h3 className="text-base md:text-lg font-semibold text-gray-900 mb-1 md:mb-2">{reason.title}</h3>
+                  <p className="text-sm text-gray-600">{reason.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -154,26 +154,26 @@ const Index = () => {
       <MobileApp />
 
       {/* Testimonials */}
-      <section className="py-16 bg-white">
+      <section className="py-12 md:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">What Our Customers Say</h2>
-            <p className="text-gray-600">Hear from satisfied customers across Nigeria</p>
+          <div className="text-center mb-8 md:mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3 md:mb-4">What Our Customers Say</h2>
+            <p className="text-sm md:text-base text-gray-600">Hear from satisfied customers across Nigeria</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {testimonials.map((testimonial, index) => (
               <Card key={index}>
-                <CardContent className="p-6">
-                  <div className="flex items-center mb-4">
+                <CardContent className="p-4 md:p-6">
+                  <div className="flex items-center mb-3 md:mb-4">
                     {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
+                      <Star key={i} className="w-3 h-3 md:w-4 md:h-4 text-yellow-400 fill-current" />
                     ))}
                   </div>
-                  <p className="text-gray-600 mb-4">"{testimonial.text}"</p>
+                  <p className="text-sm md:text-base text-gray-600 mb-3 md:mb-4">"{testimonial.text}"</p>
                   <div className="flex items-center justify-between">
                     <div>
-                      <p className="font-semibold text-gray-900">{testimonial.name}</p>
-                      <p className="text-sm text-gray-500">{testimonial.location}</p>
+                      <p className="text-sm md:text-base font-semibold text-gray-900">{testimonial.name}</p>
+                      <p className="text-xs md:text-sm text-gray-500">{testimonial.location}</p>
                     </div>
                     <div className="text-xs text-primary font-medium bg-primary/10 px-2 py-1 rounded">
                       {testimonial.product}
@@ -187,79 +187,79 @@ const Index = () => {
       </section>
 
       {/* Features Preview */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-12 md:py-16 dark-gradient text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Everything You Need in One Platform</h2>
-            <p className="text-gray-600">Comprehensive financial services at your fingertips</p>
+          <div className="text-center mb-8 md:mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-3 md:mb-4">Everything You Need in One Platform</h2>
+            <p className="text-sm md:text-base text-white/80">Comprehensive financial services at your fingertips</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
-                  <span className="text-white font-bold">₿</span>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+            <Card className="hover:shadow-lg transition-shadow bg-white/10 border-white/20">
+              <CardContent className="p-4 md:p-6">
+                <div className="w-10 h-10 md:w-12 md:h-12 bg-primary rounded-lg flex items-center justify-center mb-3 md:mb-4">
+                  <span className="text-white font-bold text-lg md:text-xl">₿</span>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Crypto Trading</h3>
-                <p className="text-gray-600 mb-4">Trade Bitcoin, Ethereum, USDT and other major cryptocurrencies with the best rates.</p>
-                <ul className="space-y-2 text-sm text-gray-600">
+                <h3 className="text-lg md:text-xl font-semibold text-white mb-1 md:mb-2">Crypto Trading</h3>
+                <p className="text-sm md:text-base text-white/80 mb-3 md:mb-4">Trade Bitcoin, Ethereum, USDT and other major cryptocurrencies with the best rates.</p>
+                <ul className="space-y-1 md:space-y-2 text-xs md:text-sm text-white/70">
                   <li className="flex items-center">
-                    <Check className="w-4 h-4 text-green-600 mr-2" />
+                    <Check className="w-3 h-3 md:w-4 md:h-4 text-green-400 mr-2" />
                     Instant transactions
                   </li>
                   <li className="flex items-center">
-                    <Check className="w-4 h-4 text-green-600 mr-2" />
+                    <Check className="w-3 h-3 md:w-4 md:h-4 text-green-400 mr-2" />
                     Competitive rates
                   </li>
                   <li className="flex items-center">
-                    <Check className="w-4 h-4 text-green-600 mr-2" />
+                    <Check className="w-3 h-3 md:w-4 md:h-4 text-green-400 mr-2" />
                     Secure wallet
                   </li>
                 </ul>
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
-                  <span className="text-white font-bold">💳</span>
+            <Card className="hover:shadow-lg transition-shadow bg-white/10 border-white/20">
+              <CardContent className="p-4 md:p-6">
+                <div className="w-10 h-10 md:w-12 md:h-12 bg-primary rounded-lg flex items-center justify-center mb-3 md:mb-4">
+                  <span className="text-white font-bold text-lg md:text-xl">💳</span>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Bill Payment</h3>
-                <p className="text-gray-600 mb-4">Pay for airtime, data, electricity, TV subscriptions and more with ease.</p>
-                <ul className="space-y-2 text-sm text-gray-600">
+                <h3 className="text-lg md:text-xl font-semibold text-white mb-1 md:mb-2">Bill Payment</h3>
+                <p className="text-sm md:text-base text-white/80 mb-3 md:mb-4">Pay for airtime, data, electricity, TV subscriptions and more with ease.</p>
+                <ul className="space-y-1 md:space-y-2 text-xs md:text-sm text-white/70">
                   <li className="flex items-center">
-                    <Check className="w-4 h-4 text-green-600 mr-2" />
+                    <Check className="w-3 h-3 md:w-4 md:h-4 text-green-400 mr-2" />
                     All major providers
                   </li>
                   <li className="flex items-center">
-                    <Check className="w-4 h-4 text-green-600 mr-2" />
+                    <Check className="w-3 h-3 md:w-4 md:h-4 text-green-400 mr-2" />
                     Instant processing
                   </li>
                   <li className="flex items-center">
-                    <Check className="w-4 h-4 text-green-600 mr-2" />
+                    <Check className="w-3 h-3 md:w-4 md:h-4 text-green-400 mr-2" />
                     No hidden fees
                   </li>
                 </ul>
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
-                  <span className="text-white font-bold">🎁</span>
+            <Card className="hover:shadow-lg transition-shadow bg-white/10 border-white/20">
+              <CardContent className="p-4 md:p-6">
+                <div className="w-10 h-10 md:w-12 md:h-12 bg-primary rounded-lg flex items-center justify-center mb-3 md:mb-4">
+                  <span className="text-white font-bold text-lg md:text-xl">🎁</span>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Gift Cards</h3>
-                <p className="text-gray-600 mb-4">Sell your gift cards from Amazon, iTunes, Google Play and more for instant cash.</p>
-                <ul className="space-y-2 text-sm text-gray-600">
+                <h3 className="text-lg md:text-xl font-semibold text-white mb-1 md:mb-2">Gift Cards</h3>
+                <p className="text-sm md:text-base text-white/80 mb-3 md:mb-4">Sell your gift cards from Amazon, iTunes, Google Play and more for instant cash.</p>
+                <ul className="space-y-1 md:space-y-2 text-xs md:text-sm text-white/70">
                   <li className="flex items-center">
-                    <Check className="w-4 h-4 text-green-600 mr-2" />
+                    <Check className="w-3 h-3 md:w-4 md:h-4 text-green-400 mr-2" />
                     Multiple brands
                   </li>
                   <li className="flex items-center">
-                    <Check className="w-4 h-4 text-green-600 mr-2" />
+                    <Check className="w-3 h-3 md:w-4 md:h-4 text-green-400 mr-2" />
                     Fast verification
                   </li>
                   <li className="flex items-center">
-                    <Check className="w-4 h-4 text-green-600 mr-2" />
+                    <Check className="w-3 h-3 md:w-4 md:h-4 text-green-400 mr-2" />
                     Best rates
                   </li>
                 </ul>
