@@ -1,4 +1,3 @@
-
 import { Shield, Users, Globe, Award, CheckCircle, TrendingUp } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
@@ -37,7 +36,7 @@ const AboutPage = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="hero-gradient text-black py-12 md:py-20">
+      <section className="hero-gradient text-white py-12 md:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6">
             About KudiTime
@@ -50,10 +49,10 @@ const AboutPage = () => {
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-12 md:py-16">
+      <section className="py-12 md:py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
-            <Card className="border-l-4 border-l-primary">
+            <Card className="border-l-4 border-l-primary bg-white">
               <CardContent className="p-4 md:p-6">
                 <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-3 md:mb-4">Our Mission</h2>
                 <p className="text-sm md:text-base text-gray-600 leading-relaxed">
@@ -63,7 +62,7 @@ const AboutPage = () => {
                 </p>
               </CardContent>
             </Card>
-            <Card className="border-l-4 border-l-primary">
+            <Card className="border-l-4 border-l-primary bg-white">
               <CardContent className="p-4 md:p-6">
                 <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-3 md:mb-4">Our Vision</h2>
                 <p className="text-sm md:text-base text-gray-600 leading-relaxed">
@@ -108,7 +107,7 @@ const AboutPage = () => {
       </section>
 
       {/* Milestones */}
-      <section className="py-12 md:py-16 green-gradient">
+      <section className="py-12 md:py-16 green-gradient text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 md:mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3 md:mb-4">Our Journey</h2>
@@ -130,7 +129,7 @@ const AboutPage = () => {
       </section>
 
       {/* Compliance & Security */}
-      <section className="py-12 md:py-16">
+      <section className="py-12 md:py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 md:mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3 md:mb-4">Compliance & Security</h2>
@@ -140,7 +139,7 @@ const AboutPage = () => {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-            <Card className="text-center">
+            <Card className="text-center bg-white border border-gray-200">
               <CardContent className="p-4 md:p-6">
                 <Shield className="w-10 h-10 md:w-12 md:h-12 text-primary mx-auto mb-3 md:mb-4" />
                 <h3 className="text-base md:text-lg font-semibold text-gray-900 mb-1 md:mb-2">Regulatory Compliance</h3>
@@ -149,7 +148,7 @@ const AboutPage = () => {
                 </p>
               </CardContent>
             </Card>
-            <Card className="text-center">
+            <Card className="text-center bg-white border border-gray-200">
               <CardContent className="p-4 md:p-6">
                 <CheckCircle className="w-10 h-10 md:w-12 md:h-12 text-primary mx-auto mb-3 md:mb-4" />
                 <h3 className="text-base md:text-lg font-semibold text-gray-900 mb-1 md:mb-2">Data Protection</h3>
@@ -158,7 +157,7 @@ const AboutPage = () => {
                 </p>
               </CardContent>
             </Card>
-            <Card className="text-center">
+            <Card className="text-center bg-white border border-gray-200">
               <CardContent className="p-4 md:p-6">
                 <TrendingUp className="w-10 h-10 md:w-12 md:h-12 text-primary mx-auto mb-3 md:mb-4" />
                 <h3 className="text-base md:text-lg font-semibold text-gray-900 mb-1 md:mb-2">Transparency</h3>
@@ -172,7 +171,7 @@ const AboutPage = () => {
       </section>
 
       {/* Global Recognition */}
-      <section className="py-12 md:py-16 bg-primary text-white">
+      <section className="py-12 md:py-16 green-gradient text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6">Globally Recognized Excellence</h2>
           <p className="text-base md:text-xl text-white/90 mb-6 md:mb-8 max-w-2xl mx-auto">

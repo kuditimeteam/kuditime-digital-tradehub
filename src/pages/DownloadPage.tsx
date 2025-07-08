@@ -42,7 +42,7 @@ const screenshots = [
 
 const DownloadPage = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="hero-gradient text-white py-12 md:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -153,20 +153,20 @@ const DownloadPage = () => {
       </section>
 
       {/* App Screenshots */}
-      <section className="py-12 md:py-16 bg-background">
+      <section className="py-12 md:py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 md:mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-3 md:mb-4">App Screenshots</h2>
-            <p className="text-sm md:text-base text-foreground/80">See the beautiful and intuitive interface of our mobile app</p>
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3 md:mb-4">App Screenshots</h2>
+            <p className="text-sm md:text-base text-gray-600">See the beautiful and intuitive interface of our mobile app</p>
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
             {screenshots.map((screenshot, index) => (
               <div key={index} className="text-center">
-                <div className="w-full h-48 md:h-96 bg-muted rounded-lg mb-3 md:mb-4 flex items-center justify-center">
-                  <Smartphone className="w-8 h-8 md:w-16 md:h-16 text-muted-foreground" />
+                <div className="w-full h-48 md:h-96 bg-gray-100 rounded-lg mb-3 md:mb-4 flex items-center justify-center">
+                  <Smartphone className="w-8 h-8 md:w-16 md:h-16 text-gray-400" />
                 </div>
-                <h3 className="text-sm md:text-lg font-semibold text-foreground mb-1">{screenshot.title}</h3>
-                <p className="text-xs md:text-sm text-foreground/70">{screenshot.description}</p>
+                <h3 className="text-sm md:text-lg font-semibold text-gray-900 mb-1">{screenshot.title}</h3>
+                <p className="text-xs md:text-sm text-gray-600">{screenshot.description}</p>
               </div>
             ))}
           </div>
@@ -245,20 +245,20 @@ const DownloadPage = () => {
       </section>
 
       {/* System Requirements */}
-      <section className="py-12 md:py-16 bg-background">
+      <section className="py-12 md:py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 md:mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-3 md:mb-4">System Requirements</h2>
-            <p className="text-sm md:text-base text-foreground/80">Make sure your device is compatible</p>
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3 md:mb-4">System Requirements</h2>
+            <p className="text-sm md:text-base text-gray-600">Make sure your device is compatible</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-            <Card>
+            <Card className="bg-white border border-gray-200">
               <CardContent className="p-4 md:p-6">
-                <h3 className="text-lg md:text-xl font-semibold text-foreground mb-3 md:mb-4 flex items-center">
+                <h3 className="text-lg md:text-xl font-semibold text-gray-900 mb-3 md:mb-4 flex items-center">
                   <span className="text-xl md:text-2xl mr-2">🤖</span>
                   Android Requirements
                 </h3>
-                <ul className="space-y-1 md:space-y-2 text-sm md:text-base text-foreground/80">
+                <ul className="space-y-1 md:space-y-2 text-sm md:text-base text-gray-600">
                   <li>• Android 6.0 (API level 23) or higher</li>
                   <li>• 2GB RAM minimum (4GB recommended)</li>
                   <li>• 100MB free storage space</li>
@@ -267,13 +267,13 @@ const DownloadPage = () => {
               </CardContent>
             </Card>
             
-            <Card>
+            <Card className="bg-white border border-gray-200">
               <CardContent className="p-4 md:p-6">
-                <h3 className="text-lg md:text-xl font-semibold text-foreground mb-3 md:mb-4 flex items-center">
+                <h3 className="text-lg md:text-xl font-semibold text-gray-900 mb-3 md:mb-4 flex items-center">
                   <span className="text-xl md:text-2xl mr-2">🍎</span>
                   iOS Requirements
                 </h3>
-                <ul className="space-y-1 md:space-y-2 text-sm md:text-base text-foreground/80">
+                <ul className="space-y-1 md:space-y-2 text-sm md:text-base text-gray-600">
                   <li>• iOS 12.0 or later</li>
                   <li>• Compatible with iPhone, iPad, iPod touch</li>
                   <li>• 100MB free storage space</li>
