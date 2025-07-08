@@ -1,4 +1,3 @@
-
 import { Cookie, Settings, Info } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -193,10 +192,10 @@ const CookiesPage = () => {
                 <h4>Browser Settings</h4>
                 <p>Most web browsers allow you to control cookies through their settings:</p>
                 <ul>
-                  <li><strong>Chrome:</strong> Settings > Privacy and Security > Cookies and other site data</li>
-                  <li><strong>Firefox:</strong> Options > Privacy & Security > Cookies and Site Data</li>
-                  <li><strong>Safari:</strong> Preferences > Privacy > Cookies and website data</li>
-                  <li><strong>Edge:</strong> Settings > Cookies and site permissions</li>
+                  <li><strong>Chrome:</strong> Settings {' > '} Privacy and Security {' > '} Cookies and other site data</li>
+                  <li><strong>Firefox:</strong> Options {' > '} Privacy & Security {' > '} Cookies and Site Data</li>
+                  <li><strong>Safari:</strong> Preferences {' > '} Privacy {' > '} Cookies and website data</li>
+                  <li><strong>Edge:</strong> Settings {' > '} Cookies and site permissions</li>
                 </ul>
 
                 <h4>Cookie Preference Center</h4>
