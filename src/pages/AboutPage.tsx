@@ -36,12 +36,12 @@ const AboutPage = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="hero-gradient text-white py-12 md:py-20">
+      <section className="bg-primary text-white py-12 md:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6">
             About KudiTime
           </h1>
-          <p className="text-lg md:text-xl text-black/80 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
             We're building the future of digital finance in Nigeria. Licensed, regulated, 
             and trusted by over 50,000 customers nationwide.
           </p>
@@ -107,20 +107,20 @@ const AboutPage = () => {
       </section>
 
       {/* Milestones */}
-      <section className="py-12 md:py-16 green-gradient text-white">
+      <section className="py-12 md:py-16 bg-primary text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 md:mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3 md:mb-4">Our Journey</h2>
-            <p className="text-sm md:text-base text-gray-600">Key milestones in KudiTime's growth and development</p>
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-3 md:mb-4">Our Journey</h2>
+            <p className="text-sm md:text-base text-white/90">Key milestones in KudiTime's growth and development</p>
           </div>
           <div className="space-y-6 md:space-y-8">
             {milestones.map((milestone, index) => (
               <div key={index} className="flex items-start space-x-3 md:space-x-4">
-                <div className="w-12 h-12 md:w-16 md:h-16 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 md:w-16 md:h-16 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0">
                   <span className="text-white font-bold text-sm md:text-base">{milestone.year}</span>
                 </div>
                 <div className="flex-1 pt-2 md:pt-2">
-                  <p className="text-sm md:text-base text-gray-700 leading-relaxed">{milestone.event}</p>
+                  <p className="text-sm md:text-base text-white/90 leading-relaxed">{milestone.event}</p>
                 </div>
               </div>
             ))}
@@ -171,7 +171,7 @@ const AboutPage = () => {
       </section>
 
       {/* Global Recognition */}
-      <section className="py-12 md:py-16 green-gradient text-white">
+      <section className="py-12 md:py-16 bg-primary text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6">Globally Recognized Excellence</h2>
           <p className="text-base md:text-xl text-white/90 mb-6 md:mb-8 max-w-2xl mx-auto">
