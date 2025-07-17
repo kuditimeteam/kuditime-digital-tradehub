@@ -7,7 +7,7 @@ const blockchains = [
   {
     name: 'Bitcoin',
     symbol: 'BTC',
-    icon: '₿',
+    logo: '/placeholder.svg',
     price: '₦45,000,000',
     change: '+2.5%',
     description: 'The original cryptocurrency and digital gold standard',
@@ -16,7 +16,7 @@ const blockchains = [
   {
     name: 'Ethereum',
     symbol: 'ETH',
-    icon: 'Ξ',
+    logo: '/placeholder.svg',
     price: '₦2,800,000',
     change: '+1.8%',
     description: 'Smart contract platform powering DeFi and NFTs',
@@ -25,7 +25,7 @@ const blockchains = [
   {
     name: 'Tether',
     symbol: 'USDT',
-    icon: '₮',
+    logo: '/placeholder.svg',
     price: '₦1,650',
     change: '+0.1%',
     description: 'Stable digital currency pegged to the US Dollar',
@@ -34,7 +34,7 @@ const blockchains = [
   {
     name: 'BNB',
     symbol: 'BNB',
-    icon: 'B',
+    logo: '/placeholder.svg',
     price: '₦420,000',
     change: '-0.5%',
     description: 'Binance ecosystem token with multiple utilities',
@@ -43,8 +43,8 @@ const blockchains = [
   {
     name: 'Solana',
     symbol: 'SOL',
-    icon: 'S',
-    price: '₦180,000',
+    logo: '/placeholder.svg',
+    price: '�N180,000',
     change: '+3.2%',
     description: 'High-performance blockchain for decentralized applications',
     features: ['Fast transactions', 'Low fees', 'Scalable architecture']
@@ -52,7 +52,7 @@ const blockchains = [
   {
     name: 'USDC',
     symbol: 'USDC',
-    icon: '$',
+    logo: '/placeholder.svg',
     price: '₦1,645',
     change: '+0.2%',
     description: 'Regulated stablecoin backed by US Dollar reserves',
@@ -87,12 +87,13 @@ const CryptoPage = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="hero-gradient text-white py-20">
+      <section className="bg-primary text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <div className="flex items-center justify-center mb-6">
-              <Bitcoin className="w-16 h-16 mr-4" />
-              <Coins className="w-12 h-12" />
+            <div className="flex items-center justify-center mb-6 space-x-4">
+              <img src="/placeholder.svg" alt="Bitcoin" className="w-12 h-12 md:w-16 md:h-16" />
+              <img src="/placeholder.svg" alt="Ethereum" className="w-10 h-10 md:w-12 md:h-12" />
+              <img src="/placeholder.svg" alt="USDT" className="w-10 h-10 md:w-12 md:h-12" />
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Trade Crypto with Confidence
@@ -102,10 +103,10 @@ const CryptoPage = () => {
               Start trading with as little as ₦1,000.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="secondary" className="text-lg px-8 py-3">
+              <Button size="lg" className="text-lg px-8 py-3 bg-white text-black hover:bg-gray-100">
                 Start Trading Now
               </Button>
-              <Button size="lg" variant="outline" className="text-lg px-8 py-3 border-white text-white hover:bg-white hover:text-primary">
+              <Button size="lg" variant="outline" className="text-lg px-8 py-3 border-white text-white hover:bg-white hover:text-black">
                 View Live Rates
               </Button>
             </div>
@@ -149,8 +150,8 @@ const CryptoPage = () => {
             {blockchains.map((crypto, index) => (
               <Card key={index} className="hover:shadow-xl transition-all duration-300 hover:scale-105">
                 <CardHeader className="text-center">
-                  <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-2xl font-bold text-white">{crypto.icon}</span>
+                  <div className="w-16 h-16 mx-auto mb-4">
+                    <img src={crypto.logo} alt={crypto.name} className="w-full h-full" />
                   </div>
                   <CardTitle className="text-xl">{crypto.name}</CardTitle>
                   <div className="flex items-center justify-center space-x-2">
@@ -172,7 +173,7 @@ const CryptoPage = () => {
                       </div>
                     ))}
                   </div>
-                  <Button className="w-full mt-4 bg-primary hover:bg-primary/90">
+                  <Button className="w-full mt-4 bg-primary hover:bg-primary/90 text-white">
                     Trade {crypto.symbol}
                   </Button>
                 </CardContent>
@@ -223,10 +224,10 @@ const CryptoPage = () => {
             Join thousands of Nigerians who trust KudiTime for their crypto trading needs
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="secondary" className="text-lg px-8 py-3">
+            <Button size="lg" className="text-lg px-8 py-3 bg-white text-black hover:bg-gray-100">
               Create Free Account
             </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 py-3 border-white text-white hover:bg-white hover:text-primary">
+            <Button size="lg" variant="outline" className="text-lg px-8 py-3 border-white text-white hover:bg-white hover:text-black">
               Download Mobile App
             </Button>
           </div>

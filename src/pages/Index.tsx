@@ -74,9 +74,9 @@ const reasons = [
 ];
 
 const milestones = [
-  { number: "10,000+", label: "App Downloads" },
-  { number: "₦1B+", label: "Crypto Processed" },
-  { number: "50,000+", label: "Happy Customers" },
+  { number: "5,000+", label: "App Downloads" },
+  { number: "₦500M+", label: "Crypto Processed" },
+  { number: "8,000+", label: "Happy Customers" },
   { number: "99.9%", label: "Uptime" }
 ];
 
@@ -84,21 +84,26 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="hero-gradient text-black py-12 md:py-20">
+      <section className="bg-primary text-white py-12 md:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
+            <div className="flex items-center justify-center mb-6 space-x-4">
+              <img src="/placeholder.svg" alt="Bitcoin" className="w-12 h-12 md:w-16 md:h-16" />
+              <img src="/placeholder.svg" alt="Ethereum" className="w-10 h-10 md:w-12 md:h-12" />
+              <img src="/placeholder.svg" alt="USDT" className="w-10 h-10 md:w-12 md:h-12" />
+            </div>
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6">
               Nigeria's Premier Crypto Exchange & Bill Payment Platform
             </h1>
-            <p className="text-lg md:text-xl lg:text-2xl mb-6 md:mb-8 text-black/80 max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl lg:text-2xl mb-6 md:mb-8 text-white/90 max-w-3xl mx-auto">
               Trade cryptocurrency, pay bills, and sell gift cards with the best rates in Nigeria. 
-              Join over 50,000 satisfied customers.
+              Join over 8,000 satisfied customers.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
-              <Button size="lg" className="text-base md:text-lg px-6 md:px-8 py-2 md:py-3">
+              <Button size="lg" className="text-base md:text-lg px-6 md:px-8 py-2 md:py-3 bg-white text-black hover:bg-gray-100">
                 Trade Now <ArrowRight className="ml-2 w-4 h-4 md:w-5 md:h-5" />
               </Button>
-              <Button size="lg" variant="outline" className="text-base md:text-lg px-6 md:px-8 py-2 md:py-3 border-black text-black hover:bg-black hover:text-white">
+              <Button size="lg" variant="outline" className="text-base md:text-lg px-6 md:px-8 py-2 md:py-3 border-white text-white hover:bg-white hover:text-black">
                 Download App
               </Button>
             </div>
@@ -123,23 +128,23 @@ const Index = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-12 md:py-16 green-gradient">
+      <section className="py-12 md:py-16 bg-primary text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 md:mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3 md:mb-4">Why People Choose KudiTime</h2>
-            <p className="text-sm md:text-base text-gray-600 max-w-2xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-3 md:mb-4">Why People Choose KudiTime</h2>
+            <p className="text-sm md:text-base text-white/90 max-w-2xl mx-auto">
               We're committed to providing the best crypto trading and bill payment experience in Nigeria
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
             {reasons.map((reason, index) => (
-              <Card key={index} className="text-center">
+              <Card key={index} className="text-center bg-white/10 border-white/20">
                 <CardContent className="p-4 md:p-6">
-                  <div className="w-10 h-10 md:w-12 md:h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-3 md:mb-4">
-                    <reason.icon className="w-5 h-5 md:w-6 md:h-6 text-primary" />
+                  <div className="w-10 h-10 md:w-12 md:h-12 bg-white/20 rounded-lg flex items-center justify-center mx-auto mb-3 md:mb-4">
+                    <reason.icon className="w-5 h-5 md:w-6 md:h-6 text-white" />
                   </div>
-                  <h3 className="text-base md:text-lg font-semibold text-gray-900 mb-1 md:mb-2">{reason.title}</h3>
-                  <p className="text-sm text-gray-600">{reason.description}</p>
+                  <h3 className="text-base md:text-lg font-semibold text-white mb-1 md:mb-2">{reason.title}</h3>
+                  <p className="text-sm text-white/80">{reason.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -187,7 +192,7 @@ const Index = () => {
       </section>
 
       {/* Features Preview */}
-      <section className="py-12 md:py-16 dark-gradient text-white">
+      <section className="py-12 md:py-16 bg-primary text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 md:mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-3 md:mb-4">Everything You Need in One Platform</h2>
@@ -196,8 +201,8 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             <Card className="hover:shadow-lg transition-shadow bg-white/10 border-white/20">
               <CardContent className="p-4 md:p-6">
-                <div className="w-10 h-10 md:w-12 md:h-12 bg-primary rounded-lg flex items-center justify-center mb-3 md:mb-4">
-                  <span className="text-white font-bold text-lg md:text-xl">₿</span>
+                <div className="w-10 h-10 md:w-12 md:h-12 bg-white/20 rounded-lg flex items-center justify-center mb-3 md:mb-4">
+                  <img src="/placeholder.svg" alt="Bitcoin" className="w-6 h-6 md:w-8 md:h-8" />
                 </div>
                 <h3 className="text-lg md:text-xl font-semibold text-white mb-1 md:mb-2">Crypto Trading</h3>
                 <p className="text-sm md:text-base text-white/80 mb-3 md:mb-4">Trade Bitcoin, Ethereum, USDT and other major cryptocurrencies with the best rates.</p>
@@ -220,8 +225,8 @@ const Index = () => {
 
             <Card className="hover:shadow-lg transition-shadow bg-white/10 border-white/20">
               <CardContent className="p-4 md:p-6">
-                <div className="w-10 h-10 md:w-12 md:h-12 bg-primary rounded-lg flex items-center justify-center mb-3 md:mb-4">
-                  <span className="text-white font-bold text-lg md:text-xl">💳</span>
+                <div className="w-10 h-10 md:w-12 md:h-12 bg-white/20 rounded-lg flex items-center justify-center mb-3 md:mb-4">
+                  <img src="/placeholder.svg" alt="Bills" className="w-6 h-6 md:w-8 md:h-8" />
                 </div>
                 <h3 className="text-lg md:text-xl font-semibold text-white mb-1 md:mb-2">Bill Payment</h3>
                 <p className="text-sm md:text-base text-white/80 mb-3 md:mb-4">Pay for airtime, data, electricity, TV subscriptions and more with ease.</p>
@@ -244,8 +249,8 @@ const Index = () => {
 
             <Card className="hover:shadow-lg transition-shadow bg-white/10 border-white/20">
               <CardContent className="p-4 md:p-6">
-                <div className="w-10 h-10 md:w-12 md:h-12 bg-primary rounded-lg flex items-center justify-center mb-3 md:mb-4">
-                  <span className="text-white font-bold text-lg md:text-xl">🎁</span>
+                <div className="w-10 h-10 md:w-12 md:h-12 bg-white/20 rounded-lg flex items-center justify-center mb-3 md:mb-4">
+                  <img src="/placeholder.svg" alt="Gift Cards" className="w-6 h-6 md:w-8 md:h-8" />
                 </div>
                 <h3 className="text-lg md:text-xl font-semibold text-white mb-1 md:mb-2">Gift Cards</h3>
                 <p className="text-sm md:text-base text-white/80 mb-3 md:mb-4">Sell your gift cards from Amazon, iTunes, Google Play and more for instant cash.</p>

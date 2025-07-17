@@ -1,3 +1,4 @@
+
 import { Smartphone, Zap, Tv, Home, Gamepad2, CreditCard } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -7,28 +8,48 @@ const billCategories = [
     icon: Smartphone,
     title: 'Airtime & Data',
     description: 'Buy airtime and data bundles for all networks',
-    services: ['MTN', 'Airtel', 'Glo', '9mobile'],
+    services: [
+      { name: 'MTN', logo: '/placeholder.svg' },
+      { name: 'Airtel', logo: '/placeholder.svg' },
+      { name: 'Glo', logo: '/placeholder.svg' },
+      { name: '9mobile', logo: '/placeholder.svg' }
+    ],
     color: 'bg-blue-500'
   },
   {
     icon: Zap,
     title: 'Electricity Bills',
     description: 'Pay electricity bills for all distribution companies',
-    services: ['PHCN', 'IKEDC', 'EKEDC', 'KEDCO'],
+    services: [
+      { name: 'PHCN', logo: '/placeholder.svg' },
+      { name: 'IKEDC', logo: '/placeholder.svg' },
+      { name: 'EKEDC', logo: '/placeholder.svg' },
+      { name: 'KEDCO', logo: '/placeholder.svg' }
+    ],
     color: 'bg-yellow-500'
   },
   {
     icon: Tv,
     title: 'TV Subscriptions',
     description: 'Renew your cable TV and streaming subscriptions',
-    services: ['DSTV', 'GOtv', 'Startimes', 'Netflix'],
+    services: [
+      { name: 'DSTV', logo: '/placeholder.svg' },
+      { name: 'GOtv', logo: '/placeholder.svg' },
+      { name: 'Startimes', logo: '/placeholder.svg' },
+      { name: 'Netflix', logo: '/placeholder.svg' }
+    ],
     color: 'bg-purple-500'
   },
   {
     icon: Home,
     title: 'Internet Bills',
     description: 'Pay for internet and broadband services',
-    services: ['Spectranet', 'Smile', 'Swift', 'Tizeti'],
+    services: [
+      { name: 'Spectranet', logo: '/placeholder.svg' },
+      { name: 'Smile', logo: '/placeholder.svg' },
+      { name: 'Swift', logo: '/placeholder.svg' },
+      { name: 'Tizeti', logo: '/placeholder.svg' }
+    ],
     color: 'bg-green-500'
   },
   {
@@ -70,7 +91,7 @@ const BillsPage = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="hero-gradient text-white py-20">
+      <section className="bg-primary text-white py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <CreditCard className="w-16 h-16 mx-auto mb-6" />
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -103,12 +124,13 @@ const BillsPage = () => {
                   <p className="text-gray-600 mb-4">{category.description}</p>
                   <div className="flex flex-wrap gap-2 mb-4">
                     {category.services.map((service, idx) => (
-                      <span key={idx} className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">
-                        {service}
-                      </span>
+                      <div key={idx} className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm flex items-center space-x-1">
+                        {service.logo && <img src={service.logo} alt={service.name} className="w-4 h-4" />}
+                        <span>{service.name || service}</span>
+                      </div>
                     ))}
                   </div>
-                  <Button className="w-full bg-primary hover:bg-primary/90">
+                  <Button className="w-full bg-primary hover:bg-primary/90 text-white">
                     Pay Now
                   </Button>
                 </CardContent>
@@ -180,17 +202,17 @@ const BillsPage = () => {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
             {[
-              { name: 'MTN Airtime', logo: 'M' },
-              { name: 'DSTV', logo: 'D' },
-              { name: 'PHCN', logo: 'P' },
-              { name: 'Airtel Data', logo: 'A' },
-              { name: 'GOtv', logo: 'G' },
-              { name: 'Spectranet', logo: 'S' }
+              { name: 'MTN Airtime', logo: '/placeholder.svg' },
+              { name: 'DSTV', logo: '/placeholder.svg' },
+              { name: 'PHCN', logo: '/placeholder.svg' },
+              { name: 'Airtel Data', logo: '/placeholder.svg' },
+              { name: 'GOtv', logo: '/placeholder.svg' },
+              { name: 'Spectranet', logo: '/placeholder.svg' }
             ].map((service, index) => (
               <Card key={index} className="text-center hover:shadow-md transition-shadow cursor-pointer">
                 <CardContent className="p-4">
                   <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mx-auto mb-2">
-                    <span className="text-white font-bold">{service.logo}</span>
+                    <img src={service.logo} alt={service.name} className="w-8 h-8" />
                   </div>
                   <p className="text-sm font-medium text-gray-700">{service.name}</p>
                 </CardContent>
@@ -201,17 +223,17 @@ const BillsPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 green-gradient text-white">
+      <section className="py-16 bg-primary text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-4">Start Paying Your Bills Today</h2>
           <p className="text-xl mb-8 text-white/90">
             Join thousands of Nigerians who trust KudiTime for their bill payments
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="secondary" className="text-lg px-8 py-3">
+            <Button size="lg" className="text-lg px-8 py-3 bg-white text-black hover:bg-gray-100">
               Pay Bills Now
             </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 py-3 border-white text-white hover:bg-white hover:text-primary">
+            <Button size="lg" variant="outline" className="text-lg px-8 py-3 border-white text-white hover:bg-white hover:text-black">
               Download Mobile App
             </Button>
           </div>

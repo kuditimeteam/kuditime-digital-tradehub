@@ -1,4 +1,3 @@
-
 import { Smartphone, Download, Star, Shield, Zap, Users } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -44,7 +43,7 @@ const DownloadPage = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="hero-gradient text-white py-12 md:py-20">
+      <section className="bg-primary text-white py-12 md:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
             <div>
@@ -56,11 +55,11 @@ const DownloadPage = () => {
                 Available for both Android and iOS devices.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-6 md:mb-8">
-                <Button size="lg" variant="secondary" className="text-base md:text-lg px-6 md:px-8 py-2 md:py-3 flex items-center space-x-2">
+                <Button size="lg" className="text-base md:text-lg px-6 md:px-8 py-2 md:py-3 flex items-center space-x-2 bg-white text-black hover:bg-gray-100">
                   <Download className="w-4 h-4 md:w-5 md:h-5" />
                   <span>Download for Android</span>
                 </Button>
-                <Button size="lg" variant="outline" className="text-base md:text-lg px-6 md:px-8 py-2 md:py-3 border-white text-white hover:bg-white hover:text-primary flex items-center space-x-2">
+                <Button size="lg" variant="outline" className="text-base md:text-lg px-6 md:px-8 py-2 md:py-3 border-white text-white hover:bg-white hover:text-black flex items-center space-x-2">
                   <Download className="w-4 h-4 md:w-5 md:h-5" />
                   <span>Download for iOS</span>
                 </Button>
@@ -70,7 +69,7 @@ const DownloadPage = () => {
                   <Star className="w-4 h-4 md:w-5 md:h-5 text-yellow-400 fill-current" />
                   <span className="text-sm md:text-base">4.8 Rating</span>
                 </div>
-                <div className="text-sm md:text-base">10,000+ Downloads</div>
+                <div className="text-sm md:text-base">5,000+ Downloads</div>
                 <div className="text-sm md:text-base">Free to Use</div>
               </div>
             </div>
@@ -80,7 +79,7 @@ const DownloadPage = () => {
               <div className="mobile-mockup mx-auto w-48 h-96 md:w-64 md:h-[500px]">
                 <div className="bg-white rounded-xl h-full p-3 md:p-4 overflow-hidden">
                   {/* App Screenshot Mockup */}
-                  <div className="h-full bg-gradient-to-b from-primary to-primary/80 rounded-lg p-3 md:p-4 text-white">
+                  <div className="h-full bg-primary rounded-lg p-3 md:p-4 text-white">
                     <div className="text-center mb-4 md:mb-6">
                       <div className="w-6 h-6 md:w-8 md:h-8 bg-white rounded-lg flex items-center justify-center mx-auto mb-2">
                         <span className="text-primary font-bold text-sm md:text-base">K</span>
@@ -130,7 +129,7 @@ const DownloadPage = () => {
       </section>
 
       {/* App Features */}
-      <section className="py-12 md:py-16 green-gradient-reverse text-white">
+      <section className="py-12 md:py-16 bg-primary text-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 md:mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-3 md:mb-4">Why Choose Our Mobile App?</h2>
@@ -174,7 +173,7 @@ const DownloadPage = () => {
       </section>
 
       {/* Key Features */}
-      <section className="py-12 md:py-16 dark-gradient text-white">
+      <section className="py-12 md:py-16 bg-primary text-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 md:mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-3 md:mb-4">Everything You Need</h2>
@@ -286,18 +285,18 @@ const DownloadPage = () => {
       </section>
 
       {/* Download CTA */}
-      <section className="py-12 md:py-16 hero-gradient text-white">
+      <section className="py-12 md:py-16 bg-primary text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl md:text-3xl font-bold mb-3 md:mb-4">Ready to Get Started?</h2>
           <p className="text-lg md:text-xl mb-6 md:mb-8 text-white/90">
             Download the KudiTime app today and start your crypto journey
           </p>
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
-            <Button size="lg" variant="secondary" className="text-base md:text-lg px-6 md:px-8 py-2 md:py-3 flex items-center space-x-2">
+            <Button size="lg" className="text-base md:text-lg px-6 md:px-8 py-2 md:py-3 flex items-center space-x-2 bg-white text-black hover:bg-gray-100">
               <Download className="w-4 h-4 md:w-5 md:h-5" />
               <span>Download for Android</span>
             </Button>
-            <Button size="lg" variant="outline" className="text-base md:text-lg px-6 md:px-8 py-2 md:py-3 border-white text-white hover:bg-white hover:text-primary flex items-center space-x-2">
+            <Button size="lg" variant="outline" className="text-base md:text-lg px-6 md:px-8 py-2 md:py-3 border-white text-white hover:bg-white hover:text-black flex items-center space-x-2">
               <Download className="w-4 h-4 md:w-5 md:h-5" />
               <span>Download for iOS</span>
             </Button>
