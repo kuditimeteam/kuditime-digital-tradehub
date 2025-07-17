@@ -1,4 +1,4 @@
-import { ArrowRight, Shield, Zap, Users, TrendingUp, Check, Star } from 'lucide-react';
+import { ArrowRight, Shield, Zap, Users, TrendingUp, Check, Star, Gift } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import CryptoCarousel from '@/components/CryptoCarousel';
