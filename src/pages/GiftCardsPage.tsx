@@ -104,10 +104,10 @@ const GiftCardsPage = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="hero-gradient text-white py-20">
+      <section className="bg-primary text-white py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <Gift className="w-16 h-16 mx-auto mb-6" />
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
+          <Gift className="w-16 h-16 mx-auto mb-6 text-white" />
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
             Sell Your Gift Cards for Cash
           </h1>
           <p className="text-xl text-white/90 max-w-3xl mx-auto">
@@ -287,15 +287,15 @@ const GiftCardsPage = () => {
       {/* CTA Section */}
       <section className="py-16 bg-primary text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">Ready to Sell Your Gift Cards?</h2>
+          <h2 className="text-3xl font-bold mb-4 text-white">Ready to Sell Your Gift Cards?</h2>
           <p className="text-xl mb-8 text-white/90">
             Join thousands of satisfied customers who trust KudiTime for gift card trading
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="secondary" className="text-lg px-8 py-3">
+            <Button size="lg" className="text-lg px-8 py-3 bg-white text-black hover:bg-gray-100">
               Start Selling Now
             </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 py-3 border-white text-white hover:bg-white hover:text-primary">
+            <Button size="lg" variant="outline" className="text-lg px-8 py-3 border-white text-white hover:bg-white hover:text-black">
               Check Current Rates
             </Button>
           </div>

@@ -93,8 +93,8 @@ const BillsPage = () => {
       {/* Hero Section */}
       <section className="bg-primary text-white py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <CreditCard className="w-16 h-16 mx-auto mb-6" />
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
+          <CreditCard className="w-16 h-16 mx-auto mb-6 text-white" />
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
             Pay All Your Bills in One Place
           </h1>
           <p className="text-xl text-white/90 max-w-3xl mx-auto">
@@ -225,7 +225,7 @@ const BillsPage = () => {
       {/* CTA Section */}
       <section className="py-16 bg-primary text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">Start Paying Your Bills Today</h2>
+          <h2 className="text-3xl font-bold mb-4 text-white">Start Paying Your Bills Today</h2>
           <p className="text-xl mb-8 text-white/90">
             Join thousands of Nigerians who trust KudiTime for their bill payments
           </p>

@@ -1,4 +1,3 @@
-
 import { ArrowRight, Shield, Zap, Users, TrendingUp, Check, Star } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -88,11 +87,11 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="flex items-center justify-center mb-6 space-x-4">
-              <img src="/placeholder.svg" alt="Bitcoin" className="w-12 h-12 md:w-16 md:h-16" />
-              <img src="/placeholder.svg" alt="Ethereum" className="w-10 h-10 md:w-12 md:h-12" />
-              <img src="/placeholder.svg" alt="USDT" className="w-10 h-10 md:w-12 md:h-12" />
+              <img src="https://images.unsplash.com/photo-1518544866330-4e3cd06d0c52?w=64&h=64&fit=crop&crop=center" alt="Bitcoin" className="w-12 h-12 md:w-16 md:h-16 rounded-full" />
+              <img src="https://images.unsplash.com/photo-1622630998477-20aa696ecb05?w=64&h=64&fit=crop&crop=center" alt="Ethereum" className="w-10 h-10 md:w-12 md:h-12 rounded-full" />
+              <img src="https://images.unsplash.com/photo-1640340434855-6084b1f4901c?w=64&h=64&fit=crop&crop=center" alt="USDT" className="w-10 h-10 md:w-12 md:h-12 rounded-full" />
             </div>
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 text-white">
               Nigeria's Premier Crypto Exchange & Bill Payment Platform
             </h1>
             <p className="text-lg md:text-xl lg:text-2xl mb-6 md:mb-8 text-white/90 max-w-3xl mx-auto">
@@ -202,7 +201,7 @@ const Index = () => {
             <Card className="hover:shadow-lg transition-shadow bg-white/10 border-white/20">
               <CardContent className="p-4 md:p-6">
                 <div className="w-10 h-10 md:w-12 md:h-12 bg-white/20 rounded-lg flex items-center justify-center mb-3 md:mb-4">
-                  <img src="/placeholder.svg" alt="Bitcoin" className="w-6 h-6 md:w-8 md:h-8" />
+                  <img src="https://images.unsplash.com/photo-1518544866330-4e3cd06d0c52?w=32&h=32&fit=crop&crop=center" alt="Bitcoin" className="w-6 h-6 md:w-8 md:h-8 rounded-full" />
                 </div>
                 <h3 className="text-lg md:text-xl font-semibold text-white mb-1 md:mb-2">Crypto Trading</h3>
                 <p className="text-sm md:text-base text-white/80 mb-3 md:mb-4">Trade Bitcoin, Ethereum, USDT and other major cryptocurrencies with the best rates.</p>
@@ -226,7 +225,7 @@ const Index = () => {
             <Card className="hover:shadow-lg transition-shadow bg-white/10 border-white/20">
               <CardContent className="p-4 md:p-6">
                 <div className="w-10 h-10 md:w-12 md:h-12 bg-white/20 rounded-lg flex items-center justify-center mb-3 md:mb-4">
-                  <img src="/placeholder.svg" alt="Bills" className="w-6 h-6 md:w-8 md:h-8" />
+                  <Zap className="w-6 h-6 md:w-8 md:h-8 text-white" />
                 </div>
                 <h3 className="text-lg md:text-xl font-semibold text-white mb-1 md:mb-2">Bill Payment</h3>
                 <p className="text-sm md:text-base text-white/80 mb-3 md:mb-4">Pay for airtime, data, electricity, TV subscriptions and more with ease.</p>
@@ -250,7 +249,7 @@ const Index = () => {
             <Card className="hover:shadow-lg transition-shadow bg-white/10 border-white/20">
               <CardContent className="p-4 md:p-6">
                 <div className="w-10 h-10 md:w-12 md:h-12 bg-white/20 rounded-lg flex items-center justify-center mb-3 md:mb-4">
-                  <img src="/placeholder.svg" alt="Gift Cards" className="w-6 h-6 md:w-8 md:h-8" />
+                  <Gift className="w-6 h-6 md:w-8 md:h-8 text-white" />
                 </div>
                 <h3 className="text-lg md:text-xl font-semibold text-white mb-1 md:mb-2">Gift Cards</h3>
                 <p className="text-sm md:text-base text-white/80 mb-3 md:mb-4">Sell your gift cards from Amazon, iTunes, Google Play and more for instant cash.</p>

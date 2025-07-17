@@ -91,11 +91,11 @@ const CryptoPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="flex items-center justify-center mb-6 space-x-4">
-              <img src="/placeholder.svg" alt="Bitcoin" className="w-12 h-12 md:w-16 md:h-16" />
-              <img src="/placeholder.svg" alt="Ethereum" className="w-10 h-10 md:w-12 md:h-12" />
-              <img src="/placeholder.svg" alt="USDT" className="w-10 h-10 md:w-12 md:h-12" />
+              <img src="https://images.unsplash.com/photo-1518544866330-4e3cd06d0c52?w=64&h=64&fit=crop&crop=center" alt="Bitcoin" className="w-12 h-12 md:w-16 md:h-16 rounded-full" />
+              <img src="https://images.unsplash.com/photo-1622630998477-20aa696ecb05?w=64&h=64&fit=crop&crop=center" alt="Ethereum" className="w-10 h-10 md:w-12 md:h-12 rounded-full" />
+              <img src="https://images.unsplash.com/photo-1640340434855-6084b1f4901c?w=64&h=64&fit=crop&crop=center" alt="USDT" className="w-10 h-10 md:w-12 md:h-12 rounded-full" />
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">
               Trade Crypto with Confidence
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto">
@@ -219,7 +219,7 @@ const CryptoPage = () => {
       {/* CTA Section */}
       <section className="py-16 bg-primary text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">Ready to Start Trading?</h2>
+          <h2 className="text-3xl font-bold mb-4 text-white">Ready to Start Trading?</h2>
           <p className="text-xl mb-8 text-white/90">
             Join thousands of Nigerians who trust KudiTime for their crypto trading needs
           </p>
