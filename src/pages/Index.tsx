@@ -1,4 +1,4 @@
-import { ArrowRight, Shield, Zap, Users, TrendingUp, Check, Star, Gift } from 'lucide-react';
+import { ArrowRight, Shield, Zap, Users, TrendingUp, Check, Star, Gift, Play } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import CryptoCarousel from '@/components/CryptoCarousel';
@@ -83,28 +83,92 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-primary text-white py-12 md:py-20">
+      <section className="bg-gray-50 py-12 md:py-20 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <div className="flex items-center justify-center mb-6 space-x-4">
-              <img src="https://images.unsplash.com/photo-1518544866330-4e3cd06d0c52?w=64&h=64&fit=crop&crop=center" alt="Bitcoin" className="w-12 h-12 md:w-16 md:h-16 rounded-full" />
-              <img src="https://images.unsplash.com/photo-1622630998477-20aa696ecb05?w=64&h=64&fit=crop&crop=center" alt="Ethereum" className="w-10 h-10 md:w-12 md:h-12 rounded-full" />
-              <img src="https://images.unsplash.com/photo-1640340434855-6084b1f4901c?w=64&h=64&fit=crop&crop=center" alt="USDT" className="w-10 h-10 md:w-12 md:h-12 rounded-full" />
+          {/* Live Trading Badge */}
+          <div className="absolute top-8 right-8 hidden lg:flex items-center gap-2 bg-white rounded-full px-4 py-2 shadow-sm">
+            <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+            <span className="text-sm font-medium text-gray-700">Live Trading</span>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left Content */}
+            <div className="space-y-8">
+              <div className="space-y-6">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+                  Trade your <span className="text-green-600">Crypto</span><br />
+                  to Naira and <span className="text-green-600">Pay Bills</span><br />
+                  <span className="text-green-600">Instantly</span>
+                </h1>
+                
+                <p className="text-lg md:text-xl text-gray-600 max-w-lg">
+                  Convert Bitcoin, Ethereum, USDT and other cryptocurrencies to Nigerian Naira at the best rates. Pay your bills seamlessly all in one platform.
+                </p>
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 text-lg">
+                  Start Trading <ArrowRight className="ml-2 w-5 h-5" />
+                </Button>
+                <Button size="lg" variant="ghost" className="text-gray-700 hover:bg-gray-100 px-8 py-3 text-lg">
+                  <Play className="mr-2 w-5 h-5" />
+                  Watch Demo
+                </Button>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <div className="flex">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                  ))}
+                </div>
+                <span className="text-gray-700 font-medium">4.9/5 from 10,000+ reviews</span>
+              </div>
             </div>
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 text-white">
-              Nigeria's Premier Crypto Exchange & Bill Payment Platform
-            </h1>
-            <p className="text-lg md:text-xl lg:text-2xl mb-6 md:mb-8 text-white/90 max-w-3xl mx-auto">
-              Trade cryptocurrency, pay bills, and sell gift cards with the best rates in Nigeria. 
-              Join over 8,000 satisfied customers.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
-              <Button size="lg" className="text-base md:text-lg px-6 md:px-8 py-2 md:py-3 bg-white text-black hover:bg-gray-100">
-                Trade Now <ArrowRight className="ml-2 w-4 h-4 md:w-5 md:h-5" />
-              </Button>
-              <Button size="lg" variant="outline" className="text-base md:text-lg px-6 md:px-8 py-2 md:py-3 border-white text-white hover:bg-white hover:text-black">
-                Download App
-              </Button>
+
+            {/* Right Content - Mobile Mockup */}
+            <div className="relative">
+              <div className="bg-black rounded-[2.5rem] p-4 max-w-sm mx-auto shadow-2xl">
+                <div className="bg-green-600 rounded-t-2xl p-4 text-white text-center">
+                  <h3 className="font-bold text-lg">CryptoNaira</h3>
+                  <p className="text-sm opacity-90">Crypto Trading & Bills</p>
+                </div>
+                
+                <div className="bg-white rounded-b-2xl p-6 space-y-4">
+                  <div className="space-y-2">
+                    <div className="text-sm text-gray-600">Bitcoin (BTC)</div>
+                    <div className="text-2xl font-bold text-gray-900">₦45,500,000</div>
+                  </div>
+                  
+                  <div className="space-y-2">
+                    <div className="text-sm text-gray-600">You'll receive</div>
+                    <div className="text-xl font-semibold text-gray-900">₦910,000</div>
+                  </div>
+                  
+                  <Button className="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-xl">
+                    Trade Now
+                  </Button>
+                </div>
+              </div>
+
+              {/* Daily Volume Badge */}
+              <div className="absolute -bottom-4 -left-4 bg-white rounded-xl p-4 shadow-lg">
+                <div className="text-sm text-gray-600">Daily Volume</div>
+                <div className="text-xl font-bold text-green-600">₦2.5B+</div>
+              </div>
+            </div>
+          </div>
+
+          {/* Trusted Crypto Currencies */}
+          <div className="text-center mt-16">
+            <p className="text-gray-500 mb-6">Trusted crypto currencies</p>
+            <div className="flex items-center justify-center gap-8 opacity-60">
+              <img src="https://images.unsplash.com/photo-1518544866330-4e3cd06d0c52?w=48&h=48&fit=crop&crop=center" alt="Bitcoin" className="w-12 h-12 rounded-full" />
+              <img src="https://images.unsplash.com/photo-1622630998477-20aa696ecb05?w=48&h=48&fit=crop&crop=center" alt="Ethereum" className="w-12 h-12 rounded-full" />
+              <img src="https://images.unsplash.com/photo-1640340434855-6084b1f4901c?w=48&h=48&fit=crop&crop=center" alt="USDT" className="w-12 h-12 rounded-full" />
+              <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center">
+                <span className="text-gray-400 text-xs font-medium">+10</span>
+              </div>
             </div>
           </div>
         </div>
