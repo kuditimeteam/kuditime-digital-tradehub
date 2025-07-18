@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white">
       {/* CTA Section */}
-      <div className="bg-blue-600 py-16 relative overflow-hidden rounded-3xl mx-4 mb-8">
+      <div className="bg-primary py-16 relative overflow-hidden rounded-3xl mx-4 mb-8">
         {/* Rating Badge */}
         <div className="absolute top-8 left-8 flex items-center gap-2 bg-yellow-400 text-black rounded-2xl px-4 py-2 rotate-12 transform">
           <span className="font-bold text-lg">Rated 4.9</span>
@@ -19,11 +19,11 @@ const Footer = () => {
             {/* Left Content */}
             <div className="text-white space-y-8">
               <div className="space-y-6">
-                <h2 className="text-4xl lg:text-5xl font-bold leading-tight">
+                <h2 className="text-4xl lg:text-5xl font-bold leading-tight text-white">
                   Join KudiTime Today - <br />
                   It's Free
                 </h2>
-                <p className="text-xl text-blue-100 max-w-lg">
+                <p className="text-xl text-white/80 max-w-lg">
                   Buy & sell gift cards, convert crypto, activate eSIMs, and pay bills — all from one powerful app.
                 </p>
               </div>
@@ -31,13 +31,13 @@ const Footer = () => {
               <div className="space-y-6">
                 <Button 
                   size="lg" 
-                  className="bg-white text-blue-600 hover:bg-blue-50 px-8 py-3 text-lg"
+                  className="bg-white text-primary hover:bg-gray-100 px-8 py-3 text-lg"
                 >
                   Register on website <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
 
-                <div className="border-t border-blue-400 border-dotted pt-6">
-                  <p className="text-blue-100 mb-4 text-lg">Get the app now:</p>
+                <div className="border-t border-white/30 border-dotted pt-6">
+                  <p className="text-white/80 mb-4 text-lg">Get the app now:</p>
                   <div className="flex flex-col sm:flex-row gap-4">
                     <Button 
                       variant="secondary" 
@@ -74,7 +74,7 @@ const Footer = () => {
                     <div className="space-y-4 mb-6">
                       <div className="bg-gray-100 rounded-xl p-4">
                         <p className="text-2xl font-bold text-gray-900">₦ 100,369.00</p>
-                        <Button size="sm" className="bg-blue-600 text-white mt-2">
+                        <Button size="sm" className="bg-primary text-white mt-2 hover:bg-primary/90">
                           Withdraw
                         </Button>
                       </div>
@@ -82,26 +82,26 @@ const Footer = () => {
 
                     <div className="grid grid-cols-4 gap-3">
                       <div className="text-center">
-                        <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-2">
-                          <div className="w-6 h-6 bg-blue-600 rounded"></div>
+                        <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-2">
+                          <div className="w-6 h-6 bg-primary rounded"></div>
                         </div>
                         <p className="text-xs text-gray-600">Gift Cards</p>
                       </div>
                       <div className="text-center">
-                        <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-2">
-                          <div className="w-6 h-6 bg-blue-600 rounded-full"></div>
+                        <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-2">
+                          <div className="w-6 h-6 bg-primary rounded-full"></div>
                         </div>
                         <p className="text-xs text-gray-600">Crypto</p>
                       </div>
                       <div className="text-center">
-                        <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-2">
-                          <div className="w-6 h-6 bg-blue-600 rounded"></div>
+                        <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-2">
+                          <div className="w-6 h-6 bg-primary rounded"></div>
                         </div>
                         <p className="text-xs text-gray-600">Bills</p>
                       </div>
                       <div className="text-center">
-                        <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-2">
-                          <div className="w-6 h-6 bg-blue-600 rounded"></div>
+                        <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-2">
+                          <div className="w-6 h-6 bg-primary rounded"></div>
                         </div>
                         <p className="text-xs text-gray-600">eSIM</p>
                       </div>
@@ -118,22 +118,22 @@ const Footer = () => {
                     
                     <div className="space-y-4 mb-6">
                       <div className="text-center">
-                        <p className="text-3xl font-bold text-gray-900">$83.57 B</p>
+                        <p className="text-3xl font-bold text-gray-900">₦83.57 B</p>
                         <p className="text-sm text-gray-600">Fear & Greed Index</p>
-                        <div className="w-16 h-16 bg-green-100 rounded-full mx-auto mt-2 flex items-center justify-center">
-                          <span className="text-green-600 font-bold">74</span>
+                        <div className="w-16 h-16 bg-primary/10 rounded-full mx-auto mt-2 flex items-center justify-center">
+                          <span className="text-primary font-bold">74</span>
                         </div>
                       </div>
                     </div>
 
                     <div className="space-y-3">
                       <div className="flex justify-between items-center">
-                        <span className="text-gray-900 font-medium">$9,978.00</span>
-                        <span className="text-green-600 text-sm">+0.58%</span>
+                        <span className="text-gray-900 font-medium">₦9,978.00</span>
+                        <span className="text-primary text-sm">+0.58%</span>
                       </div>
                       <div className="flex justify-between items-center">
-                        <span className="text-gray-900 font-medium">$9,978.00</span>
-                        <span className="text-red-600 text-sm">-0.58%</span>
+                        <span className="text-gray-900 font-medium">₦9,978.00</span>
+                        <span className="text-destructive text-sm">-0.58%</span>
                       </div>
                     </div>
                   </div>
