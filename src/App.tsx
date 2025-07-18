@@ -20,6 +20,8 @@ import TermsPage from "./pages/TermsPage";
 import PrivacyPage from "./pages/PrivacyPage";
 import CookiesPage from "./pages/CookiesPage";
 import DownloadPage from "./pages/DownloadPage";
+import AssetsPage from "./pages/AssetsPage";
+import BitcoinPage from "./pages/BitcoinPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -48,6 +50,8 @@ const App = () => (
               <Route path="/privacy" element={<PrivacyPage />} />
               <Route path="/cookies" element={<CookiesPage />} />
               <Route path="/download" element={<DownloadPage />} />
+              <Route path="/assets" element={<AssetsPage />} />
+              <Route path="/assets/:asset" element={<BitcoinPage />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
