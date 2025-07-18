@@ -1,25 +1,145 @@
 
 import { Link } from 'react-router-dom';
-import { Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Facebook, Twitter, Instagram, Linkedin, Star, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white">
       {/* CTA Section */}
-      <div className="bg-primary py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">Ready to Start Trading?</h2>
-          <p className="text-primary-foreground/80 mb-6 max-w-2xl mx-auto">
-            Sell your crypto and gift cards instantly with the best rates in Nigeria
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="secondary" size="lg">
-              Sell Crypto
-            </Button>
-            <Button variant="secondary" size="lg">
-              Sell Gift Cards
-            </Button>
+      <div className="bg-blue-600 py-16 relative overflow-hidden rounded-3xl mx-4 mb-8">
+        {/* Rating Badge */}
+        <div className="absolute top-8 left-8 flex items-center gap-2 bg-yellow-400 text-black rounded-2xl px-4 py-2 rotate-12 transform">
+          <span className="font-bold text-lg">Rated 4.9</span>
+          <Star className="w-5 h-5 fill-current" />
+        </div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left Content */}
+            <div className="text-white space-y-8">
+              <div className="space-y-6">
+                <h2 className="text-4xl lg:text-5xl font-bold leading-tight">
+                  Join KudiTime Today - <br />
+                  It's Free
+                </h2>
+                <p className="text-xl text-blue-100 max-w-lg">
+                  Buy & sell gift cards, convert crypto, activate eSIMs, and pay bills — all from one powerful app.
+                </p>
+              </div>
+
+              <div className="space-y-6">
+                <Button 
+                  size="lg" 
+                  className="bg-white text-blue-600 hover:bg-blue-50 px-8 py-3 text-lg"
+                >
+                  Register on website <ArrowRight className="ml-2 w-5 h-5" />
+                </Button>
+
+                <div className="border-t border-blue-400 border-dotted pt-6">
+                  <p className="text-blue-100 mb-4 text-lg">Get the app now:</p>
+                  <div className="flex flex-col sm:flex-row gap-4">
+                    <Button 
+                      variant="secondary" 
+                      size="lg" 
+                      className="bg-black text-white hover:bg-gray-800 px-6 py-3"
+                    >
+                      🍎 App Store
+                    </Button>
+                    <Button 
+                      variant="secondary" 
+                      size="lg" 
+                      className="bg-black text-white hover:bg-gray-800 px-6 py-3"
+                    >
+                      📱 Google Play
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Content - Mobile Mockups */}
+            <div className="relative">
+              <div className="flex items-center justify-center gap-4">
+                {/* Left Phone */}
+                <div className="bg-black rounded-[2.5rem] p-3 shadow-2xl transform rotate-6">
+                  <div className="bg-white rounded-2xl p-6 w-64 h-96 overflow-hidden">
+                    <div className="flex items-center gap-3 mb-6">
+                      <div className="w-10 h-10 bg-gray-300 rounded-full"></div>
+                      <div>
+                        <p className="font-semibold text-gray-900">Hello Kingsley 👋</p>
+                      </div>
+                    </div>
+                    
+                    <div className="space-y-4 mb-6">
+                      <div className="bg-gray-100 rounded-xl p-4">
+                        <p className="text-2xl font-bold text-gray-900">₦ 100,369.00</p>
+                        <Button size="sm" className="bg-blue-600 text-white mt-2">
+                          Withdraw
+                        </Button>
+                      </div>
+                    </div>
+
+                    <div className="grid grid-cols-4 gap-3">
+                      <div className="text-center">
+                        <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-2">
+                          <div className="w-6 h-6 bg-blue-600 rounded"></div>
+                        </div>
+                        <p className="text-xs text-gray-600">Gift Cards</p>
+                      </div>
+                      <div className="text-center">
+                        <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-2">
+                          <div className="w-6 h-6 bg-blue-600 rounded-full"></div>
+                        </div>
+                        <p className="text-xs text-gray-600">Crypto</p>
+                      </div>
+                      <div className="text-center">
+                        <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-2">
+                          <div className="w-6 h-6 bg-blue-600 rounded"></div>
+                        </div>
+                        <p className="text-xs text-gray-600">Bills</p>
+                      </div>
+                      <div className="text-center">
+                        <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-2">
+                          <div className="w-6 h-6 bg-blue-600 rounded"></div>
+                        </div>
+                        <p className="text-xs text-gray-600">eSIM</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Right Phone */}
+                <div className="bg-black rounded-[2.5rem] p-3 shadow-2xl transform -rotate-6">
+                  <div className="bg-white rounded-2xl p-6 w-64 h-96 overflow-hidden">
+                    <div className="text-center mb-6">
+                      <h3 className="font-bold text-lg text-gray-900">Markets</h3>
+                    </div>
+                    
+                    <div className="space-y-4 mb-6">
+                      <div className="text-center">
+                        <p className="text-3xl font-bold text-gray-900">$83.57 B</p>
+                        <p className="text-sm text-gray-600">Fear & Greed Index</p>
+                        <div className="w-16 h-16 bg-green-100 rounded-full mx-auto mt-2 flex items-center justify-center">
+                          <span className="text-green-600 font-bold">74</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="space-y-3">
+                      <div className="flex justify-between items-center">
+                        <span className="text-gray-900 font-medium">$9,978.00</span>
+                        <span className="text-green-600 text-sm">+0.58%</span>
+                      </div>
+                      <div className="flex justify-between items-center">
+                        <span className="text-gray-900 font-medium">$9,978.00</span>
+                        <span className="text-red-600 text-sm">-0.58%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
