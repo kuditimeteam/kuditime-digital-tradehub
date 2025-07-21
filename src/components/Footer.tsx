@@ -2,37 +2,12 @@
 import { Link } from 'react-router-dom';
 import { Facebook, Twitter, Instagram, Linkedin, Star, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { useEffect, useRef } from 'react';
 
 const Footer = () => {
-  const ctaRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('animate-fade-in');
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    if (ctaRef.current) {
-      observer.observe(ctaRef.current);
-    }
-
-    return () => observer.disconnect();
-  }, []);
-
   return (
     <footer className="bg-gray-900 text-white">
       {/* CTA Section */}
-      <div 
-        ref={ctaRef}
-        className="bg-primary py-16 relative overflow-hidden rounded-3xl mx-4 mb-8 opacity-0 transform translate-y-10 transition-all duration-700 ease-out"
-      >
+      <div className="bg-primary py-16 relative overflow-hidden rounded-3xl mx-4 mb-8">
         {/* Rating Badge */}
         <div className="absolute top-8 left-8 flex items-center gap-2 bg-yellow-400 text-black rounded-2xl px-4 py-2 rotate-12 transform">
           <span className="font-bold text-lg">Rated 4.9</span>
