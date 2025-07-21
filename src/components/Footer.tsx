@@ -19,7 +19,7 @@ const Footer = () => {
             {/* Left Content */}
             <div className="text-white space-y-8">
               <div className="space-y-6">
-                <h2 className="text-4xl lg:text-5xl font-bold leading-tight text-white mb-6">
+                <h2 className="text-4xl lg:text-5xl font-bold leading-tight text-white mt-6 mb-6">
                   Join KudiTime Today - <br />
                   It's Free
                 </h2>
