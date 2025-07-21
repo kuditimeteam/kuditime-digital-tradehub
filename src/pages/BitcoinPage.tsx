@@ -33,22 +33,34 @@ const BitcoinPage = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Main Content */}
           <div className="lg:col-span-2">
-            {/* Asset Header */}
+            {/* Hero Section */}
             <Card className="mb-6">
-              <CardContent className="p-6">
-                <div className="flex items-center space-x-4 mb-6">
+              <CardContent className="p-8 text-center">
+                <div className="flex items-center justify-center space-x-4 mb-6">
                   <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center">
                     <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
                       <span className="text-white font-bold">₿</span>
                     </div>
                   </div>
                   <div>
-                    <h1 className="text-3xl font-bold text-gray-900">Bitcoin</h1>
-                    <p className="text-gray-600">BTC • The original cryptocurrency</p>
+                    <h1 className="text-3xl font-bold text-gray-900">Best Site To Sell Bitcoin In Nigeria</h1>
                   </div>
                 </div>
+                
+                <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
+                  Prestmit allows you to exchange bitcoin for Naira within a minute automatically. You can sell BTC and receive payment to any bank account in Nigeria.
+                </p>
+                
+                <Button className="bg-primary hover:bg-primary/90 px-8 py-3">
+                  Start Selling Bitcoin
+                </Button>
+              </CardContent>
+            </Card>
 
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+            {/* Current Price Section */}
+            <Card className="mb-6">
+              <CardContent className="p-6">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                   <div>
                     <p className="text-sm text-gray-500">Current Price</p>
                     <p className="text-lg font-semibold">₦45,678,900</p>
@@ -69,31 +81,83 @@ const BitcoinPage = () => {
                     <p className="text-lg font-semibold">₦2.3T</p>
                   </div>
                 </div>
+              </CardContent>
+            </Card>
 
-                <div className="flex space-x-4">
-                  <Button className="flex-1 bg-primary hover:bg-primary/90">
-                    Buy Bitcoin
-                  </Button>
-                  <Button variant="outline" className="flex-1">
-                    Sell Bitcoin
-                  </Button>
+            {/* How To Sell Section */}
+            <Card className="mb-6">
+              <CardContent className="p-6">
+                <h2 className="text-2xl font-semibold mb-4">How To Sell Bitcoin In Nigeria</h2>
+                <div className="space-y-4">
+                  <div className="flex items-start space-x-3">
+                    <div className="w-6 h-6 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold">1</div>
+                    <div>
+                      <h3 className="font-semibold">Create an Account</h3>
+                      <p className="text-gray-600">Sign up on Prestmit with your email address and verify your account.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-6 h-6 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold">2</div>
+                    <div>
+                      <h3 className="font-semibold">Select Bitcoin</h3>
+                      <p className="text-gray-600">Choose Bitcoin from our list of supported cryptocurrencies.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-6 h-6 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold">3</div>
+                    <div>
+                      <h3 className="font-semibold">Enter Amount</h3>
+                      <p className="text-gray-600">Input the amount of Bitcoin you want to sell and see the Naira equivalent.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-6 h-6 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold">4</div>
+                    <div>
+                      <h3 className="font-semibold">Complete Transaction</h3>
+                      <p className="text-gray-600">Send your Bitcoin and receive Naira payment to your bank account within a minute.</p>
+                    </div>
+                  </div>
                 </div>
               </CardContent>
             </Card>
 
-            {/* About Bitcoin */}
+            {/* FAQ Section */}
             <Card>
               <CardContent className="p-6">
-                <h2 className="text-xl font-semibold mb-4">About Bitcoin</h2>
-                <p className="text-gray-600 mb-4">
-                  Bitcoin is a decentralized digital currency that can be transferred on the peer-to-peer bitcoin network. 
-                  Bitcoin transactions are verified by network nodes through cryptography and recorded in a public distributed 
-                  ledger called a blockchain.
+                <h2 className="text-2xl font-semibold mb-4">Frequently Asked Questions Concerning Selling Bitcoin?</h2>
+                <p className="text-gray-600 mb-6">
+                  Our customer support team is always available to provide answers to any of your questions, but to begin with, here are some of our most asked questions.
                 </p>
-                <p className="text-gray-600">
-                  The cryptocurrency was invented in 2008 by an unknown person or group of people using the name Satoshi Nakamoto. 
-                  The currency began use in 2009 when its implementation was released as open-source software.
-                </p>
+                
+                <div className="space-y-4">
+                  <div className="border-b pb-4">
+                    <h3 className="font-semibold mb-2">How Do I Register On Prestmit?</h3>
+                    <p className="text-gray-600">
+                      To register on Prestmit, visit our website and click on the "Sign Up" button. Fill in your email address, create a strong password, and verify your email to complete the registration process.
+                    </p>
+                  </div>
+                  
+                  <div className="border-b pb-4">
+                    <h3 className="font-semibold mb-2">How long does it take to sell Bitcoin?</h3>
+                    <p className="text-gray-600">
+                      Bitcoin transactions on Prestmit are processed automatically within a minute once your Bitcoin is confirmed on the blockchain.
+                    </p>
+                  </div>
+                  
+                  <div className="border-b pb-4">
+                    <h3 className="font-semibold mb-2">What is the minimum amount of Bitcoin I can sell?</h3>
+                    <p className="text-gray-600">
+                      The minimum amount of Bitcoin you can sell on Prestmit is 0.001 BTC, which ensures accessibility for all users.
+                    </p>
+                  </div>
+                  
+                  <div>
+                    <h3 className="font-semibold mb-2">Is it safe to sell Bitcoin on Prestmit?</h3>
+                    <p className="text-gray-600">
+                      Yes, Prestmit uses advanced security measures including SSL encryption and secure wallet systems to protect your transactions and personal information.
+                    </p>
+                  </div>
+                </div>
               </CardContent>
             </Card>
           </div>
