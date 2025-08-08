@@ -25,7 +25,7 @@ const Navigation = () => {
             <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-lg">K</span>
             </div>
-            <span className="text-xl font-bold text-gray-900">KudiTime</span>
+            <span className="text-xl font-bold text-gray-900">Kuditime</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -175,14 +175,6 @@ const Navigation = () => {
               </DropdownMenuContent>
             </DropdownMenu>
 
-            <Link 
-              to="/about" 
-              className={`transition-colors ${
-                isActive('/about') ? 'text-primary' : 'text-gray-700 hover:text-primary'
-              }`}
-            >
-              About
-            </Link>
 
             <Link 
               to="/support" 
@@ -228,7 +220,7 @@ const Navigation = () => {
               <Link to="/giftcards" className="text-gray-700 hover:text-primary">Gift Cards</Link>
               <Link to="/assets" className="text-gray-700 hover:text-primary">All Assets</Link>
               <Link to="/calculator" className="text-gray-700 hover:text-primary">Rate Calculator</Link>
-              <Link to="/about" className="text-gray-700 hover:text-primary">About</Link>
+              
               <Link to="/support" className="text-gray-700 hover:text-primary">Support</Link>
               <Link to="/download" className="text-gray-700 hover:text-primary">Download</Link>
               <Button className="bg-primary hover:bg-primary/90 w-fit">

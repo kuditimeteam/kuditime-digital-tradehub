@@ -1,6 +1,7 @@
 import { Smartphone, Download, Star, Shield, Zap, Users } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import mobileAppImage from '@/assets/mobile-app.png';
 
 const appFeatures = [
   {
@@ -48,9 +49,9 @@ const DownloadPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
             <div>
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6">
-                Download KudiTime Mobile App
+                Download Kuditime Mobile App
               </h1>
-              <p className="text-lg md:text-xl text-white/90 mb-6 md:mb-8">
+              <p className="text-lg md:text-xl text-white mb-6 md:mb-8">
                 Take your crypto trading and bill payments on-the-go with our feature-rich mobile application. 
                 Available for both Android and iOS devices.
               </p>
@@ -59,69 +60,29 @@ const DownloadPage = () => {
                   <Download className="w-4 h-4 md:w-5 md:h-5" />
                   <span>Download for Android</span>
                 </Button>
-                <Button size="lg" variant="outline" className="text-base md:text-lg px-6 md:px-8 py-2 md:py-3 border-white text-white hover:bg-white hover:text-black flex items-center space-x-2">
+                <Button size="lg" variant="outline" className="text-base md:text-lg px-6 md:px-8 py-2 md:py-3 border-white text-white hover:bg-white hover:text-primary flex items-center space-x-2">
                   <Download className="w-4 h-4 md:w-5 md:h-5" />
                   <span>Download for iOS</span>
                 </Button>
               </div>
-              <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-2 sm:space-y-0 sm:space-x-6 text-white/80">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-2 sm:space-y-0 sm:space-x-6 text-white">
                 <div className="flex items-center space-x-2">
                   <Star className="w-4 h-4 md:w-5 md:h-5 text-yellow-400 fill-current" />
                   <span className="text-sm md:text-base">4.8 Rating</span>
                 </div>
-                <div className="text-sm md:text-base">5,000+ Downloads</div>
+                <div className="text-sm md:text-base">10,000+ Downloads</div>
                 <div className="text-sm md:text-base">Free to Use</div>
               </div>
             </div>
             
-            {/* Mobile Mockup */}
-            <div className="relative">
-              <div className="mobile-mockup mx-auto w-48 h-96 md:w-64 md:h-[500px]">
-                <div className="bg-white rounded-xl h-full p-3 md:p-4 overflow-hidden">
-                  {/* App Screenshot Mockup */}
-                  <div className="h-full bg-primary rounded-lg p-3 md:p-4 text-white">
-                    <div className="text-center mb-4 md:mb-6">
-                      <div className="w-6 h-6 md:w-8 md:h-8 bg-white rounded-lg flex items-center justify-center mx-auto mb-2">
-                        <span className="text-primary font-bold text-sm md:text-base">K</span>
-                      </div>
-                      <h3 className="font-bold text-sm md:text-base">KudiTime</h3>
-                    </div>
-                    
-                    <div className="space-y-3 md:space-y-4">
-                      <div className="bg-white/20 rounded-lg p-2 md:p-3">
-                        <div className="flex items-center justify-between">
-                          <span className="text-xs md:text-sm">Total Balance</span>
-                          <span className="text-sm md:text-lg font-bold">₦2,450,000</span>
-                        </div>
-                      </div>
-                      
-                      <div className="grid grid-cols-2 gap-2 md:gap-3">
-                        <div className="bg-white/20 rounded-lg p-2 md:p-3 text-center">
-                          <div className="text-lg md:text-2xl mb-1">₿</div>
-                          <div className="text-xs">Trade Crypto</div>
-                        </div>
-                        <div className="bg-white/20 rounded-lg p-2 md:p-3 text-center">
-                          <div className="text-lg md:text-2xl mb-1">💳</div>
-                          <div className="text-xs">Pay Bills</div>
-                        </div>
-                      </div>
-                      
-                      <div className="bg-white/20 rounded-lg p-2 md:p-3">
-                        <div className="text-xs md:text-sm mb-2">Recent Activity</div>
-                        <div className="space-y-1 md:space-y-2">
-                          <div className="flex justify-between text-xs">
-                            <span>Bitcoin Sale</span>
-                            <span>+₦450,000</span>
-                          </div>
-                          <div className="flex justify-between text-xs">
-                            <span>Airtime Purchase</span>
-                            <span>-₦2,000</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            {/* Mobile App Image */}
+            <div className="relative flex justify-center">
+              <div className="max-w-sm">
+                <img 
+                  src={mobileAppImage} 
+                  alt="Kuditime Mobile App" 
+                  className="w-full h-auto rounded-2xl shadow-2xl"
+                />
               </div>
             </div>
           </div>
@@ -133,7 +94,7 @@ const DownloadPage = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 md:mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-3 md:mb-4">Why Choose Our Mobile App?</h2>
-            <p className="text-sm md:text-base text-white/90">Experience the full power of KudiTime in your pocket</p>
+            <p className="text-sm md:text-base text-white">Experience the full power of Kuditime in your pocket</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             {appFeatures.map((feature, index) => (
@@ -177,7 +138,7 @@ const DownloadPage = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 md:mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-3 md:mb-4">Everything You Need</h2>
-            <p className="text-sm md:text-base text-white/90">All KudiTime features available on mobile</p>
+            <p className="text-sm md:text-base text-white">All Kuditime features available on mobile</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             <div className="flex items-start space-x-3 md:space-x-4">
@@ -288,15 +249,15 @@ const DownloadPage = () => {
       <section className="py-12 md:py-16 bg-primary text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl md:text-3xl font-bold mb-3 md:mb-4">Ready to Get Started?</h2>
-          <p className="text-lg md:text-xl mb-6 md:mb-8 text-white/90">
-            Download the KudiTime app today and start your crypto journey
+          <p className="text-lg md:text-xl mb-6 md:mb-8 text-white">
+            Download the Kuditime app today and start your crypto journey
           </p>
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
             <Button size="lg" className="text-base md:text-lg px-6 md:px-8 py-2 md:py-3 flex items-center space-x-2 bg-white text-black hover:bg-gray-100">
               <Download className="w-4 h-4 md:w-5 md:h-5" />
               <span>Download for Android</span>
             </Button>
-            <Button size="lg" variant="outline" className="text-base md:text-lg px-6 md:px-8 py-2 md:py-3 border-white text-white hover:bg-white hover:text-black flex items-center space-x-2">
+            <Button size="lg" variant="outline" className="text-base md:text-lg px-6 md:px-8 py-2 md:py-3 border-white text-white hover:bg-white hover:text-primary flex items-center space-x-2">
               <Download className="w-4 h-4 md:w-5 md:h-5" />
               <span>Download for iOS</span>
             </Button>

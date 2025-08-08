@@ -2,6 +2,7 @@
 import { Link } from 'react-router-dom';
 import { Facebook, Twitter, Instagram, Linkedin, Star, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import mobileAppImage from '@/assets/mobile-app.png';
 
 const Footer = () => {
   return (
@@ -19,8 +20,8 @@ const Footer = () => {
             {/* Left Content */}
             <div className="text-white space-y-8">
               <div className="space-y-6">
-                <h2 className="text-4xl lg:text-5xl font-bold leading-tight text-white mt-6 mb-6">
-                  Join KudiTime Today - <br />
+                <h2 className="text-4xl lg:text-5xl font-bold leading-tight text-white mb-6" style={{ marginTop: '60px' }}>
+                  Join Kuditime Today - <br />
                   It's Free
                 </h2>
                 <p className="text-xl text-white/80 max-w-lg">
@@ -58,86 +59,14 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Right Content - Mobile Mockups */}
-            <div className="relative">
-              <div className="flex items-center justify-center gap-4">
-                {/* Left Phone */}
-                <div className="bg-black rounded-[2.5rem] p-3 shadow-2xl transform rotate-6">
-                  <div className="bg-white rounded-2xl p-6 w-64 h-96 overflow-hidden">
-                    <div className="flex items-center gap-3 mb-6">
-                      <div className="w-10 h-10 bg-gray-300 rounded-full"></div>
-                      <div>
-                        <p className="font-semibold text-gray-900">Hello Kingsley 👋</p>
-                      </div>
-                    </div>
-                    
-                    <div className="space-y-4 mb-6">
-                      <div className="bg-gray-100 rounded-xl p-4">
-                        <p className="text-2xl font-bold text-gray-900">₦ 100,369.00</p>
-                        <Button size="sm" className="bg-primary text-white mt-2 hover:bg-primary/90">
-                          Withdraw
-                        </Button>
-                      </div>
-                    </div>
-
-                    <div className="grid grid-cols-4 gap-3">
-                      <div className="text-center">
-                        <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-2">
-                          <div className="w-6 h-6 bg-primary rounded"></div>
-                        </div>
-                        <p className="text-xs text-gray-600">Gift Cards</p>
-                      </div>
-                      <div className="text-center">
-                        <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-2">
-                          <div className="w-6 h-6 bg-primary rounded-full"></div>
-                        </div>
-                        <p className="text-xs text-gray-600">Crypto</p>
-                      </div>
-                      <div className="text-center">
-                        <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-2">
-                          <div className="w-6 h-6 bg-primary rounded"></div>
-                        </div>
-                        <p className="text-xs text-gray-600">Bills</p>
-                      </div>
-                      <div className="text-center">
-                        <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-2">
-                          <div className="w-6 h-6 bg-primary rounded"></div>
-                        </div>
-                        <p className="text-xs text-gray-600">eSIM</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Right Phone */}
-                <div className="bg-black rounded-[2.5rem] p-3 shadow-2xl transform -rotate-6">
-                  <div className="bg-white rounded-2xl p-6 w-64 h-96 overflow-hidden">
-                    <div className="text-center mb-6">
-                      <h3 className="font-bold text-lg text-gray-900">Markets</h3>
-                    </div>
-                    
-                    <div className="space-y-4 mb-6">
-                      <div className="text-center">
-                        <p className="text-3xl font-bold text-gray-900">₦83.57 B</p>
-                        <p className="text-sm text-gray-600">Fear & Greed Index</p>
-                        <div className="w-16 h-16 bg-primary/10 rounded-full mx-auto mt-2 flex items-center justify-center">
-                          <span className="text-primary font-bold">74</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="space-y-3">
-                      <div className="flex justify-between items-center">
-                        <span className="text-gray-900 font-medium">₦9,978.00</span>
-                        <span className="text-primary text-sm">+0.58%</span>
-                      </div>
-                      <div className="flex justify-between items-center">
-                        <span className="text-gray-900 font-medium">₦9,978.00</span>
-                        <span className="text-destructive text-sm">-0.58%</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            {/* Right Content - Single Mobile App */}
+            <div className="relative flex justify-center">
+              <div className="max-w-sm">
+                <img 
+                  src={mobileAppImage} 
+                  alt="Kuditime Mobile App" 
+                  className="w-full h-auto rounded-2xl shadow-2xl"
+                />
               </div>
             </div>
           </div>
@@ -153,7 +82,7 @@ const Footer = () => {
               <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-lg">K</span>
               </div>
-              <span className="text-xl font-bold">KudiTime</span>
+              <span className="text-xl font-bold">Kuditime</span>
             </div>
             <p className="text-gray-400 mb-6 max-w-md">
               Nigeria's leading crypto exchange and bill payment platform. Trade cryptocurrency, 
@@ -201,7 +130,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © 2024 KudiTime. All rights reserved.
+            © 2024 Kuditime. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link to="/terms" className="text-gray-400 hover:text-primary text-sm transition-colors">

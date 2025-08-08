@@ -144,7 +144,7 @@ const BillsPage = () => {
       <section className="py-16 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Pay Bills on KudiTime?</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Pay Bills on Kuditime?</h2>
             <p className="text-gray-600">Experience the most convenient bill payment platform in Nigeria</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -200,21 +200,19 @@ const BillsPage = () => {
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Most Popular Services</h2>
             <p className="text-gray-600">Quick access to frequently used bill payment services</p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { name: 'MTN Airtime', logo: '/placeholder.svg' },
-              { name: 'DSTV', logo: '/placeholder.svg' },
-              { name: 'PHCN', logo: '/placeholder.svg' },
-              { name: 'Airtel Data', logo: '/placeholder.svg' },
-              { name: 'GOtv', logo: '/placeholder.svg' },
-              { name: 'Spectranet', logo: '/placeholder.svg' }
+              { name: 'Airtime', icon: '📱', description: 'Buy airtime for all networks' },
+              { name: 'Data', icon: '📊', description: 'Purchase data bundles instantly' },
+              { name: 'Betting', icon: '🎯', description: 'Fund betting platforms securely' }
             ].map((service, index) => (
               <Card key={index} className="text-center hover:shadow-md transition-shadow cursor-pointer">
-                <CardContent className="p-4">
-                  <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mx-auto mb-2">
-                    <img src={service.logo} alt={service.name} className="w-8 h-8" />
+                <CardContent className="p-6">
+                  <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                    <span className="text-3xl">{service.icon}</span>
                   </div>
-                  <p className="text-sm font-medium text-gray-700">{service.name}</p>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">{service.name}</h3>
+                  <p className="text-sm text-gray-600">{service.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -227,7 +225,7 @@ const BillsPage = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-4 text-white">Start Paying Your Bills Today</h2>
           <p className="text-xl mb-8 text-white/90">
-            Join thousands of Nigerians who trust KudiTime for their bill payments
+            Join thousands of Nigerians who trust Kuditime for their bill payments
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="text-lg px-8 py-3 bg-white text-black hover:bg-gray-100">

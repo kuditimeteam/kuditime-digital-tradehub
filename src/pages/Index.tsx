@@ -3,19 +3,25 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import CryptoCarousel from '@/components/CryptoCarousel';
 import MobileApp from '@/components/MobileApp';
+import bitcoinLogo from '@/assets/bitcoin-logo.png';
+import ethereumLogo from '@/assets/ethereum-logo.png';
+import tetherLogo from '@/assets/tether-logo.png';
+import bnbLogo from '@/assets/bnb-logo.png';
+import solanLogo from '@/assets/solana-logo.png';
+import usdcLogo from '@/assets/usdc-logo.png';
 
 const testimonials = [
   {
     name: "Adebayo Ogundimu",
     location: "Lagos",
-    text: "KudiTime has revolutionized how I trade crypto. The rates are always competitive and withdrawals are instant!",
+    text: "Kuditime has revolutionized how I trade crypto. The rates are always competitive and withdrawals are instant!",
     rating: 5,
     product: "Crypto Trading"
   },
   {
     name: "Fatima Mohammed",
     location: "Abuja",
-    text: "I pay all my bills through KudiTime now. From DSTV to electricity bills, everything is so convenient.",
+    text: "I pay all my bills through Kuditime now. From DSTV to electricity bills, everything is so convenient.",
     rating: 5,
     product: "Bill Payment"
   },
@@ -36,14 +42,14 @@ const testimonials = [
   {
     name: "Blessing Eze",
     location: "Enugu",
-    text: "Customer support is top-notch. They resolved my query within minutes. Highly recommend KudiTime!",
+    text: "Customer support is top-notch. They resolved my query within minutes. Highly recommend Kuditime!",
     rating: 5,
     product: "Customer Support"
   },
   {
     name: "Yusuf Aliyu",
     location: "Kaduna",
-    text: "Been using KudiTime for 2 years. Best crypto exchange in Nigeria. Transparent and reliable!",
+    text: "Been using Kuditime for 2 years. Best crypto exchange in Nigeria. Transparent and reliable!",
     rating: 5,
     product: "Crypto Trading"
   }
@@ -73,7 +79,7 @@ const reasons = [
 ];
 
 const milestones = [
-  { number: "5,000+", label: "App Downloads" },
+  { number: "10,000+", label: "App Downloads" },
   { number: "₦500M+", label: "Crypto Processed" },
   { number: "8,000+", label: "Happy Customers" },
   { number: "99.9%", label: "Uptime" }
@@ -154,23 +160,11 @@ const Index = () => {
               {/* Daily Volume Badge */}
               <div className="absolute -bottom-4 -left-4 bg-white rounded-xl p-4 shadow-lg">
                 <div className="text-sm text-gray-600">Daily Volume</div>
-                <div className="text-xl font-bold text-green-600">₦2.5B+</div>
+                <div className="text-xl font-bold text-green-600">₦50M+</div>
               </div>
             </div>
           </div>
 
-          {/* Trusted Crypto Currencies */}
-          <div className="text-center mt-16">
-            <p className="text-gray-500 mb-6">Trusted crypto currencies</p>
-            <div className="flex items-center justify-center gap-8 opacity-60">
-              <img src="https://images.unsplash.com/photo-1518544866330-4e3cd06d0c52?w=48&h=48&fit=crop&crop=center" alt="Bitcoin" className="w-12 h-12 rounded-full" />
-              <img src="https://images.unsplash.com/photo-1622630998477-20aa696ecb05?w=48&h=48&fit=crop&crop=center" alt="Ethereum" className="w-12 h-12 rounded-full" />
-              <img src="https://images.unsplash.com/photo-1640340434855-6084b1f4901c?w=48&h=48&fit=crop&crop=center" alt="USDT" className="w-12 h-12 rounded-full" />
-              <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center">
-                <span className="text-gray-400 text-xs font-medium">+10</span>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -194,7 +188,7 @@ const Index = () => {
       <section className="py-12 md:py-16 bg-primary text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 md:mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-3 md:mb-4">Why People Choose KudiTime</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-3 md:mb-4">Why People Choose Kuditime</h2>
             <p className="text-sm md:text-base text-white/90 max-w-2xl mx-auto">
               We're committed to providing the best crypto trading and bill payment experience in Nigeria
             </p>
@@ -229,8 +223,8 @@ const Index = () => {
             {/* Bitcoin */}
             <Card className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-gradient-to-br from-orange-50 to-orange-100 border-orange-200">
               <CardContent className="p-6 text-center">
-                <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <span className="text-white font-bold text-xl">₿</span>
+                <div className="w-16 h-16 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <img src={bitcoinLogo} alt="Bitcoin" className="w-16 h-16 rounded-full" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Bitcoin</h3>
                 <p className="text-gray-600 mb-3">BTC</p>
@@ -250,8 +244,8 @@ const Index = () => {
             {/* Ethereum */}
             <Card className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-gradient-to-br from-blue-50 to-blue-100 border-blue-200">
               <CardContent className="p-6 text-center">
-                <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <span className="text-white font-bold text-xl">Ξ</span>
+                <div className="w-16 h-16 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <img src={ethereumLogo} alt="Ethereum" className="w-16 h-16" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Ethereum</h3>
                 <p className="text-gray-600 mb-3">ETH</p>
@@ -271,8 +265,8 @@ const Index = () => {
             {/* USDT */}
             <Card className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-gradient-to-br from-green-50 to-green-100 border-green-200">
               <CardContent className="p-6 text-center">
-                <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <span className="text-white font-bold text-xl">₮</span>
+                <div className="w-16 h-16 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <img src={tetherLogo} alt="Tether" className="w-16 h-16" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Tether</h3>
                 <p className="text-gray-600 mb-3">USDT</p>
