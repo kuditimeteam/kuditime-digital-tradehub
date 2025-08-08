@@ -15,7 +15,7 @@ const AssetsPage = () => {
       icon: '₿',
       bgColor: 'bg-orange-100',
       iconColor: 'bg-orange-500',
-      slug: 'bitcoin'
+      slug: 'btc'
     },
     {
       name: 'Ethereum',
@@ -51,15 +51,15 @@ const AssetsPage = () => {
       slug: 'usdt'
     },
     {
-      name: 'Binance Coin',
-      symbol: 'BNB',
+      name: 'USDC',
+      symbol: 'USDC',
       price: '₦456,789',
       change: '+3.21%',
       isPositive: true,
-      icon: 'B',
+      icon: 'U',
       bgColor: 'bg-yellow-100',
       iconColor: 'bg-yellow-600',
-      slug: 'binance-coin'
+      slug: 'usdc'
     },
     {
       name: 'TRON',

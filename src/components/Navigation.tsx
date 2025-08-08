@@ -105,11 +105,11 @@ const Navigation = () => {
                 <DropdownMenuItem>
                   <Link to="/assets/binance-coin" className="w-full flex items-center space-x-3">
                     <div className="w-6 h-6 bg-yellow-100 rounded-full flex items-center justify-center">
-                      <span className="text-yellow-600 text-xs font-bold">B</span>
+                      <span className="text-yellow-600 text-xs font-bold">U</span>
                     </div>
-                    <div>
-                      <div className="font-medium">BNB</div>
-                      <div className="text-xs text-gray-500">Buy & Sell Binance Coin</div>
+                     <div>
+                      <div className="font-medium">USDC</div>
+                      <div className="text-xs text-gray-500">Buy & Sell USDC </div>
                     </div>
                   </Link>
                 </DropdownMenuItem>
@@ -124,17 +124,17 @@ const Navigation = () => {
                     </div>
                   </Link>
                 </DropdownMenuItem>
-                <DropdownMenuItem>
+                {/* <DropdownMenuItem>
                   <Link to="/assets/dogecoin" className="w-full flex items-center space-x-3">
                     <div className="w-6 h-6 bg-amber-100 rounded-full flex items-center justify-center">
                       <span className="text-amber-600 text-xs font-bold">Ð</span>
                     </div>
-                    <div>
+                     <div>
                       <div className="font-medium">Dogecoin</div>
                       <div className="text-xs text-gray-500">Buy & Sell Dogecoin</div>
-                    </div>
+                    </div> 
                   </Link>
-                </DropdownMenuItem>
+                </DropdownMenuItem> */}
               </DropdownMenuContent>
             </DropdownMenu>
 

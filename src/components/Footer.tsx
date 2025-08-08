@@ -2,12 +2,13 @@
 import { Link } from 'react-router-dom';
 import { Facebook, Twitter, Instagram, Linkedin, Star, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import mobileAppImage from '@/assets/mobile-app.png';
+import mobileAppImage from '@/assets/Langing kudi.jpg';
 
-const Footer = () => {
+const  Footer = () => {
   return (
     <footer className="bg-gray-900 text-white">
-      {/* CTA Section */}
+        <br />
+        <br />{/* CTA Section */}
       <div className="bg-primary py-16 relative overflow-hidden rounded-3xl mx-4 mb-8">
         {/* Rating Badge */}
         <div className="absolute top-8 left-8 flex items-center gap-2 bg-yellow-400 text-black rounded-2xl px-4 py-2 rotate-12 transform">
@@ -45,20 +46,19 @@ const Footer = () => {
                       size="lg" 
                       className="bg-black text-white hover:bg-gray-800 px-6 py-3"
                     >
-                      🍎 App Store
+                      App Store
                     </Button>
                     <Button 
                       variant="secondary" 
                       size="lg" 
                       className="bg-black text-white hover:bg-gray-800 px-6 py-3"
                     >
-                      📱 Google Play
+                       Google Play
                     </Button>
                   </div>
                 </div>
               </div>
             </div>
-
             {/* Right Content - Single Mobile App */}
             <div className="relative flex justify-center">
               <div className="max-w-sm">

@@ -9,6 +9,8 @@ import tetherLogo from '@/assets/tether-logo.png';
 import bnbLogo from '@/assets/bnb-logo.png';
 import solanLogo from '@/assets/solana-logo.png';
 import usdcLogo from '@/assets/usdc-logo.png';
+import mobileAppImage from '@/assets/Langing kudi.jpg';
+
 const testimonials = [{
   name: "Adebayo Ogundimu",
   location: "Lagos",
@@ -123,26 +125,31 @@ const Index = () => {
             {/* Right Content - Mobile Mockup */}
             <div className="relative">
               <div className="rounded-[2.5rem] p-4 max-w-sm mx-auto shadow-2xl bg-slate-50">
-                <div className="bg-green-600 rounded-t-2xl p-4 text-white text-center">
+                 <img 
+                                  src={mobileAppImage} 
+                                  alt="Kuditime Mobile App" 
+                                  className="w-full h-auto rounded-2xl shadow-2xl"
+                                />
+                {/* <div className="bg-green-600 rounded-t-2xl p-4 text-white text-center">
                   <h3 className="font-bold text-lg">CryptoNaira</h3>
                   <p className="text-sm opacity-90">Crypto Trading & Bills</p>
-                </div>
+                </div> */}
                 
-                <div className="bg-white rounded-b-2xl p-6 space-y-4">
+                {/* <div className="bg-white rounded-b-2xl p-6 space-y-4">
                   <div className="space-y-2">
                     <div className="text-sm text-gray-600">Bitcoin (BTC)</div>
                     <div className="text-2xl font-bold text-gray-900">₦45,500,000</div>
-                  </div>
+                  </div> */}
                   
-                  <div className="space-y-2">
+                  {/* <div className="space-y-2">
                     <div className="text-sm text-gray-600">You'll receive</div>
                     <div className="text-xl font-semibold text-gray-900">₦910,000</div>
-                  </div>
+                  </div> */}
                   
-                  <Button className="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-xl">
+                  {/* <Button className="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-xl">
                     Trade Now
-                  </Button>
-                </div>
+                  </Button> */}
+                
               </div>
 
               {/* Daily Volume Badge */}
