@@ -9,85 +9,75 @@ import tetherLogo from '@/assets/tether-logo.png';
 import bnbLogo from '@/assets/bnb-logo.png';
 import solanLogo from '@/assets/solana-logo.png';
 import usdcLogo from '@/assets/usdc-logo.png';
-
-const testimonials = [
-  {
-    name: "Adebayo Ogundimu",
-    location: "Lagos",
-    text: "Kuditime has revolutionized how I trade crypto. The rates are always competitive and withdrawals are instant!",
-    rating: 5,
-    product: "Crypto Trading"
-  },
-  {
-    name: "Fatima Mohammed",
-    location: "Abuja",
-    text: "I pay all my bills through Kuditime now. From DSTV to electricity bills, everything is so convenient.",
-    rating: 5,
-    product: "Bill Payment"
-  },
-  {
-    name: "Chisom Okeke",
-    location: "Port Harcourt",
-    text: "Sold my Amazon gift card in less than 5 minutes. The process was smooth and rates were excellent!",
-    rating: 5,
-    product: "Gift Cards"
-  },
-  {
-    name: "Ibrahim Suleiman",
-    location: "Kano",
-    text: "The mobile app is incredible. I can trade Bitcoin while commuting to work. Super fast and secure!",
-    rating: 5,
-    product: "Mobile App"
-  },
-  {
-    name: "Blessing Eze",
-    location: "Enugu",
-    text: "Customer support is top-notch. They resolved my query within minutes. Highly recommend Kuditime!",
-    rating: 5,
-    product: "Customer Support"
-  },
-  {
-    name: "Yusuf Aliyu",
-    location: "Kaduna",
-    text: "Been using Kuditime for 2 years. Best crypto exchange in Nigeria. Transparent and reliable!",
-    rating: 5,
-    product: "Crypto Trading"
-  }
-];
-
-const reasons = [
-  {
-    icon: Shield,
-    title: "Licensed & Regulated",
-    description: "Fully licensed and regulated by Nigerian authorities, ensuring your funds are always secure."
-  },
-  {
-    icon: Zap,
-    title: "Lightning Fast",
-    description: "Execute trades and complete transactions in seconds with our advanced trading infrastructure."
-  },
-  {
-    icon: TrendingUp,
-    title: "Best Rates",
-    description: "We offer the most competitive rates in the market, maximizing your trading profits."
-  },
-  {
-    icon: Users,
-    title: "24/7 Support",
-    description: "Our expert support team is available round the clock to assist you with any queries."
-  }
-];
-
-const milestones = [
-  { number: "10,000+", label: "App Downloads" },
-  { number: "₦500M+", label: "Crypto Processed" },
-  { number: "8,000+", label: "Happy Customers" },
-  { number: "99.9%", label: "Uptime" }
-];
-
+const testimonials = [{
+  name: "Adebayo Ogundimu",
+  location: "Lagos",
+  text: "Kuditime has revolutionized how I trade crypto. The rates are always competitive and withdrawals are instant!",
+  rating: 5,
+  product: "Crypto Trading"
+}, {
+  name: "Fatima Mohammed",
+  location: "Abuja",
+  text: "I pay all my bills through Kuditime now. From DSTV to electricity bills, everything is so convenient.",
+  rating: 5,
+  product: "Bill Payment"
+}, {
+  name: "Chisom Okeke",
+  location: "Port Harcourt",
+  text: "Sold my Amazon gift card in less than 5 minutes. The process was smooth and rates were excellent!",
+  rating: 5,
+  product: "Gift Cards"
+}, {
+  name: "Ibrahim Suleiman",
+  location: "Kano",
+  text: "The mobile app is incredible. I can trade Bitcoin while commuting to work. Super fast and secure!",
+  rating: 5,
+  product: "Mobile App"
+}, {
+  name: "Blessing Eze",
+  location: "Enugu",
+  text: "Customer support is top-notch. They resolved my query within minutes. Highly recommend Kuditime!",
+  rating: 5,
+  product: "Customer Support"
+}, {
+  name: "Yusuf Aliyu",
+  location: "Kaduna",
+  text: "Been using Kuditime for 2 years. Best crypto exchange in Nigeria. Transparent and reliable!",
+  rating: 5,
+  product: "Crypto Trading"
+}];
+const reasons = [{
+  icon: Shield,
+  title: "Licensed & Regulated",
+  description: "Fully licensed and regulated by Nigerian authorities, ensuring your funds are always secure."
+}, {
+  icon: Zap,
+  title: "Lightning Fast",
+  description: "Execute trades and complete transactions in seconds with our advanced trading infrastructure."
+}, {
+  icon: TrendingUp,
+  title: "Best Rates",
+  description: "We offer the most competitive rates in the market, maximizing your trading profits."
+}, {
+  icon: Users,
+  title: "24/7 Support",
+  description: "Our expert support team is available round the clock to assist you with any queries."
+}];
+const milestones = [{
+  number: "10,000+",
+  label: "App Downloads"
+}, {
+  number: "₦500M+",
+  label: "Crypto Processed"
+}, {
+  number: "8,000+",
+  label: "Happy Customers"
+}, {
+  number: "99.9%",
+  label: "Uptime"
+}];
 const Index = () => {
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       {/* Hero Section */}
       <section className="bg-gray-50 py-12 md:py-20 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -124,9 +114,7 @@ const Index = () => {
 
               <div className="flex items-center gap-2">
                 <div className="flex">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
-                  ))}
+                  {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />)}
                 </div>
                 <span className="text-gray-700 font-medium">4.9/5 from 10,000+ reviews</span>
               </div>
@@ -134,7 +122,7 @@ const Index = () => {
 
             {/* Right Content - Mobile Mockup */}
             <div className="relative">
-              <div className="bg-black rounded-[2.5rem] p-4 max-w-sm mx-auto shadow-2xl">
+              <div className="rounded-[2.5rem] p-4 max-w-sm mx-auto shadow-2xl bg-slate-50">
                 <div className="bg-green-600 rounded-t-2xl p-4 text-white text-center">
                   <h3 className="font-bold text-lg">CryptoNaira</h3>
                   <p className="text-sm opacity-90">Crypto Trading & Bills</p>
@@ -172,14 +160,12 @@ const Index = () => {
       <section className="py-12 md:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-            {milestones.map((milestone, index) => (
-              <div key={index} className="text-center">
+            {milestones.map((milestone, index) => <div key={index} className="text-center">
                 <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary mb-1 md:mb-2">
                   {milestone.number}
                 </div>
                 <div className="text-sm md:text-base text-gray-600">{milestone.label}</div>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -194,8 +180,7 @@ const Index = () => {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-            {reasons.map((reason, index) => (
-              <Card key={index} className="text-center bg-white/10 border-white/20">
+            {reasons.map((reason, index) => <Card key={index} className="text-center bg-white/10 border-white/20">
                 <CardContent className="p-4 md:p-6">
                   <div className="w-10 h-10 md:w-12 md:h-12 bg-white/20 rounded-lg flex items-center justify-center mx-auto mb-3 md:mb-4">
                     <reason.icon className="w-5 h-5 md:w-6 md:h-6 text-white" />
@@ -203,8 +188,7 @@ const Index = () => {
                   <h3 className="text-base md:text-lg font-semibold text-white mb-1 md:mb-2">{reason.title}</h3>
                   <p className="text-sm text-white/80">{reason.description}</p>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -327,13 +311,10 @@ const Index = () => {
             <p className="text-sm md:text-base text-gray-600">Hear from satisfied customers across Nigeria</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-            {testimonials.map((testimonial, index) => (
-              <Card key={index}>
+            {testimonials.map((testimonial, index) => <Card key={index}>
                 <CardContent className="p-4 md:p-6">
                   <div className="flex items-center mb-3 md:mb-4">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="w-3 h-3 md:w-4 md:h-4 text-yellow-400 fill-current" />
-                    ))}
+                    {[...Array(testimonial.rating)].map((_, i) => <Star key={i} className="w-3 h-3 md:w-4 md:h-4 text-yellow-400 fill-current" />)}
                   </div>
                   <p className="text-sm md:text-base text-gray-600 mb-3 md:mb-4">"{testimonial.text}"</p>
                   <div className="flex items-center justify-between">
@@ -346,8 +327,7 @@ const Index = () => {
                     </div>
                   </div>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -434,8 +414,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
