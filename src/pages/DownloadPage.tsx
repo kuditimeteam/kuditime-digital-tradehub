@@ -1,7 +1,7 @@
 import { Smartphone, Download, Star, Shield, Zap, Users } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import mobileAppImage from '@/assets/mobile-app.png';
+import mobileAppImage from '@/assets/pho.png';
 
 const appFeatures = [
   {
@@ -60,7 +60,7 @@ const DownloadPage = () => {
                   <Download className="w-4 h-4 md:w-5 md:h-5" />
                   <span>Download for Android</span>
                 </Button>
-                <Button size="lg" variant="outline" className="text-base md:text-lg px-6 md:px-8 py-2 md:py-3 border-white text-white hover:bg-white hover:text-primary flex items-center space-x-2">
+                <Button size="lg" variant="outline" className="text-base md:text-lg px-6 md:px-8 py-2 md:py-3 border-white text-black hover:bg-white hover:text-primary flex items-center space-x-2">
                   <Download className="w-4 h-4 md:w-5 md:h-5" />
                   <span>Download for iOS</span>
                 </Button>
@@ -257,7 +257,7 @@ const DownloadPage = () => {
               <Download className="w-4 h-4 md:w-5 md:h-5" />
               <span>Download for Android</span>
             </Button>
-            <Button size="lg" variant="outline" className="text-base md:text-lg px-6 md:px-8 py-2 md:py-3 border-white text-white hover:bg-white hover:text-primary flex items-center space-x-2">
+            <Button size="lg" variant="outline" className="text-base md:text-lg px-6 md:px-8 py-2 md:py-3 border-white text-black hover:bg-white hover:text-primary flex items-center space-x-2">
               <Download className="w-4 h-4 md:w-5 md:h-5" />
               <span>Download for iOS</span>
             </Button>

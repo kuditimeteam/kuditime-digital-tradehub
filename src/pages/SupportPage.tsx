@@ -243,15 +243,10 @@ const SupportPage = () => {
             Find answers to common questions and learn how to use KudiTime effectively
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="outline">
+            <Button size="lg" variant="outline" onClick={() => window.open("https://kuditime.com")}>
               View FAQ
             </Button>
-            <Button size="lg" variant="outline">
-              User Guide
-            </Button>
-            <Button size="lg" variant="outline">
-              Video Tutorials
-            </Button>
+            
           </div>
         </div>
       </section>

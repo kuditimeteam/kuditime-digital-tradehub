@@ -2,12 +2,14 @@
 import { TrendingUp, Shield, Zap, Globe, Bitcoin, Coins } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import bitcoinLogo from '@/assets/btc-logo.png';
+import ethereumLogo from '@/assets/eeth.png';
 
 const blockchains = [
   {
     name: 'Bitcoin',
     symbol: 'BTC',
-    logo: '/placeholder.svg',
+    logo: {bitcoinLogo},
     price: '₦45,000,000',
     change: '+2.5%',
     description: 'The original cryptocurrency and digital gold standard',
@@ -16,7 +18,7 @@ const blockchains = [
   {
     name: 'Ethereum',
     symbol: 'ETH',
-    logo: '/placeholder.svg',
+    logo: {ethereumLogo},
     price: '₦2,800,000',
     change: '+1.8%',
     description: 'Smart contract platform powering DeFi and NFTs',
@@ -90,11 +92,11 @@ const CryptoPage = () => {
       <section className="bg-primary text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <div className="flex items-center justify-center mb-6 space-x-4">
+            {/* <div className="flex items-center justify-center mb-6 space-x-4">
               <img src="https://images.unsplash.com/photo-1518544866330-4e3cd06d0c52?w=64&h=64&fit=crop&crop=center" alt="Bitcoin" className="w-12 h-12 md:w-16 md:h-16 rounded-full" />
               <img src="https://images.unsplash.com/photo-1622630998477-20aa696ecb05?w=64&h=64&fit=crop&crop=center" alt="Ethereum" className="w-10 h-10 md:w-12 md:h-12 rounded-full" />
               <img src="https://images.unsplash.com/photo-1640340434855-6084b1f4901c?w=64&h=64&fit=crop&crop=center" alt="USDT" className="w-10 h-10 md:w-12 md:h-12 rounded-full" />
-            </div>
+            </div> */}
             <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">
               Trade Crypto with Confidence
             </h1>
@@ -106,7 +108,7 @@ const CryptoPage = () => {
               <Button size="lg" className="text-lg px-8 py-3 bg-white text-black hover:bg-gray-100">
                 Start Trading Now
               </Button>
-              <Button size="lg" variant="outline" className="text-lg px-8 py-3 border-white text-white hover:bg-white hover:text-black">
+              <Button size="lg" variant="outline" className="text-lg px-8 py-3 border-white text-black hover:bg-white hover:text-black">
                 View Live Rates
               </Button>
             </div>
@@ -151,7 +153,7 @@ const CryptoPage = () => {
               <Card key={index} className="hover:shadow-xl transition-all duration-300 hover:scale-105">
                 <CardHeader className="text-center">
                   <div className="w-16 h-16 mx-auto mb-4">
-                    <img src={crypto.logo} alt={crypto.name} className="w-full h-full" />
+                    <img src={bitcoinLogo} alt={crypto.name} className="w-full h-full" />
                   </div>
                   <CardTitle className="text-xl">{crypto.name}</CardTitle>
                   <div className="flex items-center justify-center space-x-2">
@@ -227,7 +229,7 @@ const CryptoPage = () => {
             <Button size="lg" className="text-lg px-8 py-3 bg-white text-black hover:bg-gray-100">
               Create Free Account
             </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 py-3 border-white text-white hover:bg-white hover:text-black">
+            <Button size="lg" variant="outline" className="text-lg px-8 py-3 border-white text-black hover:bg-white hover:text-black">
               Download Mobile App
             </Button>
           </div>

@@ -1,6 +1,7 @@
 
 import { Smartphone, Shield, Zap, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import mobileAppImage from '@/assets/phone 1.png';
 
 const MobileApp = () => {
   return (
@@ -9,10 +10,15 @@ const MobileApp = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Mobile Mockup */}
           <div className="relative">
-            <div className="mobile-mockup mx-auto w-64 h-[500px] relative">
-              <div className="bg-white rounded-xl h-full p-4 overflow-hidden">
+            <div className="mobile-mockup mx-auto w-300 h-[500px] relative">
+              <div className=" rounded-xl h-full p-4 overflow-hidden">
+                 <img 
+                                                  src={mobileAppImage} 
+                                                  alt="Kuditime Mobile App" 
+                                                  className="w-300 h-auto rounded-2xl shadow-2xl"
+                                                />
                 {/* Phone Header */}
-                <div className="flex items-center justify-between mb-6">
+                {/* <div className="flex items-center justify-between mb-6">
                   <div className="flex items-center space-x-2">
                     <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center">
                       <span className="text-white text-xs font-bold">K</span>
@@ -20,17 +26,17 @@ const MobileApp = () => {
                     <span className="font-semibold text-gray-900">KudiTime</span>
                   </div>
                   <div className="text-xs text-gray-500">9:41 AM</div>
-                </div>
+                </div> */}
 
                 {/* Balance Card */}
-                <div className="bg-gradient-to-r from-primary to-green-600 rounded-lg p-4 mb-6">
+                {/* <div className="bg-gradient-to-r from-primary to-green-600 rounded-lg p-4 mb-6">
                   <p className="text-white/80 text-sm">Total Balance</p>
                   <p className="text-white text-2xl font-bold">₦2,450,000</p>
                   <p className="text-white/80 text-sm">+12.5% this month</p>
-                </div>
+                </div> */}
 
                 {/* Quick Actions */}
-                <div className="grid grid-cols-2 gap-3 mb-6">
+                {/* <div className="grid grid-cols-2 gap-3 mb-6">
                   <div className="bg-gray-100 rounded-lg p-3 text-center">
                     <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center mx-auto mb-2">
                       <span className="text-white text-xs">₿</span>
@@ -43,10 +49,10 @@ const MobileApp = () => {
                     </div>
                     <p className="text-xs text-gray-700">Pay Bills</p>
                   </div>
-                </div>
+                </div> */}
 
                 {/* Recent Transactions */}
-                <div>
+                {/* <div>
                   <h3 className="font-semibold text-gray-900 mb-3 text-sm">Recent Transactions</h3>
                   <div className="space-y-3">
                     <div className="flex items-center space-x-3">
@@ -70,10 +76,10 @@ const MobileApp = () => {
                       <p className="text-xs font-semibold text-red-600">-₦2,000</p>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
-          </div>
+          </div> 
 
           {/* Content */}
           <div>

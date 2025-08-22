@@ -9,12 +9,12 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 const cryptoRates = {
-  BTC: { buy: 45000000, sell: 44500000, name: 'Bitcoin' },
-  ETH: { buy: 2800000, sell: 2750000, name: 'Ethereum' },
-  USDT: { buy: 1650, sell: 1645, name: 'Tether' },
-  BNB: { buy: 420000, sell: 415000, name: 'BNB' },
-  SOL: { buy: 180000, sell: 175000, name: 'Solana' },
-  USDC: { buy: 1645, sell: 1640, name: 'USD Coin' }
+  BTC: { sell: 183042000, name: 'Bitcoin' },
+  ETH: { sell: 7518260, name: 'Ethereum' },
+  USDT: { sell: 1545, name: 'Tether' },
+  BNB: {  sell: 415000, name: 'BNB' },
+  SOL: {  sell: 1372000, name: 'Solana' },
+  USDC: {  sell: 1540, name: 'USD Coin' }
 };
 
 const giftCardRates = {
@@ -38,7 +38,7 @@ const CalculatorPage = () => {
     const rate = cryptoRates[selectedCrypto as keyof typeof cryptoRates];
     if (!rate) return 0;
     const amount = parseFloat(cryptoAmount);
-    return cryptoType === 'buy' ? amount * rate.buy : amount * rate.sell;
+    return cryptoType === 'buy' ? amount * rate.sell : amount * rate.sell;
   };
 
   const calculateGiftCard = () => {
@@ -107,7 +107,7 @@ const CalculatorPage = () => {
                             <SelectValue />
                           </SelectTrigger>
                           <SelectContent>
-                            <SelectItem value="buy">Buy (You pay Naira)</SelectItem>
+                            {/* <SelectItem value="buy">Buy (You pay Naira)</SelectItem> */}
                             <SelectItem value="sell">Sell (You receive Naira)</SelectItem>
                           </SelectContent>
                         </Select>
@@ -162,7 +162,7 @@ const CalculatorPage = () => {
                       <thead>
                         <tr className="border-b">
                           <th className="text-left py-2">Cryptocurrency</th>
-                          <th className="text-right py-2">Buy Rate (₦)</th>
+                          {/* <th className="text-right py-2">Buy Rate (₦)</th> */}
                           <th className="text-right py-2">Sell Rate (₦)</th>
                         </tr>
                       </thead>
@@ -175,9 +175,9 @@ const CalculatorPage = () => {
                                 <span className="text-gray-500 ml-2">({symbol})</span>
                               </div>
                             </td>
-                            <td className="text-right py-3 font-medium">
+                            {/* <td className="text-right py-3 font-medium">
                               ₦{data.buy.toLocaleString()}
-                            </td>
+                            </td> */}
                             <td className="text-right py-3 font-medium">
                               ₦{data.sell.toLocaleString()}
                             </td>

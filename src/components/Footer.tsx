@@ -2,7 +2,8 @@
 import { Link } from 'react-router-dom';
 import { Facebook, Twitter, Instagram, Linkedin, Star, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import mobileAppImage from '@/assets/Langing kudi.jpg';
+import mobileAppImage from '@/assets/pho.png';
+import MobileApp from './MobileApp';
 
 const  Footer = () => {
   return (
@@ -26,7 +27,7 @@ const  Footer = () => {
                   It's Free
                 </h2>
                 <p className="text-xl text-white/80 max-w-lg">
-                  Buy & sell gift cards, convert crypto, activate eSIMs, and pay bills — all from one powerful app.
+                  Sell gift cards, convert crypto to naira, and pay bills — all from one powerful app.
                 </p>
               </div>
 
@@ -44,14 +45,14 @@ const  Footer = () => {
                     <Button 
                       variant="secondary" 
                       size="lg" 
-                      className="bg-black text-white hover:bg-gray-800 px-6 py-3"
+                      className="bg-white text-primary hover:bg-gray-800 px-6 py-3"
                     >
                       App Store
                     </Button>
                     <Button 
                       variant="secondary" 
                       size="lg" 
-                      className="bg-black text-white hover:bg-gray-800 px-6 py-3"
+                      className="bg-white text-primary hover:bg-gray-800 px-6 py-3"
                     >
                        Google Play
                     </Button>
@@ -65,7 +66,7 @@ const  Footer = () => {
                 <img 
                   src={mobileAppImage} 
                   alt="Kuditime Mobile App" 
-                  className="w-full h-auto rounded-2xl shadow-2xl"
+                  className="w-full h-auto rounded-2xl shadow-2xl max-w-lg"
                 />
               </div>
             </div>

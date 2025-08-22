@@ -3,13 +3,15 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import CryptoCarousel from '@/components/CryptoCarousel';
 import MobileApp from '@/components/MobileApp';
-import bitcoinLogo from '@/assets/bitcoin-logo.png';
-import ethereumLogo from '@/assets/ethereum-logo.png';
-import tetherLogo from '@/assets/tether-logo.png';
+import bitcoinLogo from '@/assets/btc-logo.png';
+import ethereumLogo from '@/assets/eeth.png';
+import tetherLogo from '@/assets/tether-usdt-logo.png';
+import tronLogo from '@/assets/tron.png';
+import ltcLogo from '@/assets/bnb-logo.png';
 import bnbLogo from '@/assets/bnb-logo.png';
 import solanLogo from '@/assets/solana-logo.png';
 import usdcLogo from '@/assets/usdc-logo.png';
-import mobileAppImage from '@/assets/Langing kudi.jpg';
+import mobileAppImage from '@/assets/pho.png';
 
 const testimonials = [{
   name: "Adebayo Ogundimu",
@@ -124,7 +126,7 @@ const Index = () => {
 
             {/* Right Content - Mobile Mockup */}
             <div className="relative">
-              <div className="rounded-[2.5rem] p-4 max-w-sm mx-auto shadow-2xl bg-slate-50">
+              <div className="rounded-[2.5rem] p-4 max-w-lg mx-auto shadow-2xl bg-slate-50">
                  <img 
                                   src={mobileAppImage} 
                                   alt="Kuditime Mobile App" 
@@ -220,7 +222,7 @@ const Index = () => {
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Bitcoin</h3>
                 <p className="text-gray-600 mb-3">BTC</p>
                 <div className="space-y-2">
-                  <p className="text-2xl font-bold text-orange-600">₦45,678,900</p>
+                  <p className="text-2xl font-bold text-orange-600">₦177,678,900</p>
                   <p className="text-sm text-green-600 flex items-center justify-center">
                     <TrendingUp className="w-4 h-4 mr-1" />
                     +2.34%
@@ -241,7 +243,7 @@ const Index = () => {
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Ethereum</h3>
                 <p className="text-gray-600 mb-3">ETH</p>
                 <div className="space-y-2">
-                  <p className="text-2xl font-bold text-blue-600">₦3,456,789</p>
+                  <p className="text-2xl font-bold text-blue-600">₦6,456,789</p>
                   <p className="text-sm text-green-600 flex items-center justify-center">
                     <TrendingUp className="w-4 h-4 mr-1" />
                     +1.87%
@@ -274,38 +276,41 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            {/* Litecoin */}
+            {/* bnb */}
             <Card className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-gradient-to-br from-gray-50 to-gray-100 border-gray-200">
               <CardContent className="p-6 text-center">
-                <div className="w-16 h-16 bg-gray-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                {/* <div className="w-16 h-16 bg-gray-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                   <span className="text-white font-bold text-xl">Ł</span>
+                </div> */}
+                <div className="w-16 h-16 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <img src={tronLogo} alt="LTC" className="w-16 h-16" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Litecoin</h3>
-                <p className="text-gray-600 mb-3">LTC</p>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Tron</h3>
+                <p className="text-gray-600 mb-3">TRX</p>
                 <div className="space-y-2">
-                  <p className="text-2xl font-bold text-gray-600">₦145,623</p>
+                  <p className="text-2xl font-bold text-gray-600">₦1,000</p>
                   <p className="text-sm text-green-600 flex items-center justify-center">
                     <TrendingUp className="w-4 h-4 mr-1" />
                     +3.45%
                   </p>
                 </div>
                 <Button className="w-full mt-4 bg-gray-500 hover:bg-gray-600 text-white">
-                  Trade LTC
+                  Trade TRON
                 </Button>
               </CardContent>
             </Card>
           </div>
           
-          <div className="text-center mt-8">
+          {/* <div className="text-center mt-8">
             <Button size="lg" variant="outline" className="px-8 py-3">
               View All Cryptocurrencies <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
-          </div>
+          </div> */}
         </div>
       </section>
 
       {/* Crypto Carousel */}
-      <CryptoCarousel />
+      {/* <CryptoCarousel /> */}
 
       {/* Mobile App Section */}
       <MobileApp />
