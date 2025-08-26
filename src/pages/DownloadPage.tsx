@@ -2,6 +2,7 @@ import { Smartphone, Download, Star, Shield, Zap, Users } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import mobileAppImage from '@/assets/pho.png';
+import mainPage from '@/assets/phone 1.png';
 
 const appFeatures = [
   {
@@ -23,18 +24,22 @@ const appFeatures = [
 
 const screenshots = [
   {
+    img:mobileAppImage,
     title: 'Dashboard',
     description: 'Clean and intuitive interface'
   },
   {
+    img:mainPage, 
     title: 'Trading',
     description: 'Easy crypto trading experience'
   },
   {
+    img:mainPage, 
     title: 'Bills',
     description: 'Pay all bills in one place'
   },
   {
+    img:mainPage, 
     title: 'Cards',
     description: 'Sell gift cards instantly'
   }
@@ -122,8 +127,13 @@ const DownloadPage = () => {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
             {screenshots.map((screenshot, index) => (
               <div key={index} className="text-center">
-                <div className="w-full h-48 md:h-96 bg-gray-100 rounded-lg mb-3 md:mb-4 flex items-center justify-center">
-                  <Smartphone className="w-8 h-8 md:w-16 md:h-16 text-gray-400" />
+                <div className="w-full bg-gray-100 rounded-lg mb-3 md:mb-4 flex items-center justify-center">
+                  {/* <Smartphone className="w-8 h-8 md:w-16 md:h-16 text-gray-400" /> */}
+                  <img 
+                  src={screenshot.img} 
+                  alt="Kuditime Mobile App" 
+                  className="w-full h-auto rounded-2xl shadow-2xl"
+                />
                 </div>
                 <h3 className="text-sm md:text-lg font-semibold text-gray-900 mb-1">{screenshot.title}</h3>
                 <p className="text-xs md:text-sm text-gray-600">{screenshot.description}</p>

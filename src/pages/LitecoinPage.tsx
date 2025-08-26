@@ -14,7 +14,7 @@ const BitcoinPage = () => {
             <span>/</span>
             <Link to="/assets" className="hover:text-primary">All Assets</Link>
             <span>/</span>
-            <span className="text-gray-900">Bitcoin</span>
+            <span className="text-gray-900">Litecoin</span>
           </div>
         </div>
       </div>

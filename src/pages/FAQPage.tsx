@@ -185,9 +185,11 @@ const FAQPage = () => {
             Can't find the answer you're looking for? Our support team is here to help you 24/7.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
+           <a href="https://wa.me/message/4OAYTHN4MGONA1">
             <Button size="lg" className="bg-primary hover:bg-primary/90">
               Contact Support
             </Button>
+            </a>
             <Button size="lg" variant="outline">
               Join Our Community
             </Button>

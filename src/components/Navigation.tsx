@@ -3,12 +3,14 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Calculator, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import kudiLogo from '@/assets/kudilogo.png';
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
+
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,10 +24,15 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+            <img 
+                  src={kudiLogo} 
+                  alt="Kuditime Mobile App" 
+                  className="w-[170px] h-auto rounded-2xl"
+                />
+            {/* <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-lg">K</span>
             </div>
-            <span className="text-xl font-bold text-gray-900">Kuditime</span>
+            <span className="text-xl font-bold text-gray-900">Kuditime</span> */}
           </Link>
 
           {/* Desktop Navigation */}
@@ -154,9 +161,9 @@ const Navigation = () => {
                 <ChevronDown className="w-4 h-4" />
               </DropdownMenuTrigger>
               <DropdownMenuContent className="bg-white">
-                <DropdownMenuItem>
+                {/* <DropdownMenuItem>
                   <Link to="/blog" className="w-full">Blog</Link>
-                </DropdownMenuItem>
+                </DropdownMenuItem> */}
                 <DropdownMenuItem>
                   <Link to="/faq" className="w-full">FAQ</Link>
                 </DropdownMenuItem>

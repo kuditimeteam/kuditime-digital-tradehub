@@ -130,7 +130,7 @@ const Index = () => {
                  <img 
                                   src={mobileAppImage} 
                                   alt="Kuditime Mobile App" 
-                                  className="w-full h-auto rounded-2xl shadow-2xl"
+                                  className="w-full h-auto rounded-2xl"
                                 />
                 {/* <div className="bg-green-600 rounded-t-2xl p-4 text-white text-center">
                   <h3 className="font-bold text-lg">CryptoNaira</h3>

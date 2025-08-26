@@ -10,6 +10,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 const supportChannels = [
   {
     icon: MessageCircle,
+    href:'https://wa.me/message/4OAYTHN4MGONA1',
     title: 'Live Chat',
     description: 'Get instant help from our support team',
     availability: '24/7 Available',
@@ -18,6 +19,7 @@ const supportChannels = [
   },
   {
     icon: Mail,
+    href:'mailto:kuditimeteam@gmail.com',
     title: 'Email Support',
     description: 'Send us detailed questions via email',
     availability: 'Always Open',
@@ -26,7 +28,7 @@ const supportChannels = [
   },
   {
     icon: Phone,
-    title: 'Phone Support',
+    title: 'Phone Support',  href:'tel:+2347041066287',
     description: 'Speak directly with our experts',
     availability: 'Mon-Fri 8AM-6PM',
     response: 'Immediate',
@@ -88,6 +90,7 @@ const SupportPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {supportChannels.map((channel, index) => (
               <Card key={index} className="text-center hover:shadow-xl transition-all duration-300 hover:scale-105">
+                <a href={channel.href}>
                 <CardHeader>
                   <div className={`w-16 h-16 ${channel.color} rounded-lg flex items-center justify-center mx-auto mb-4`}>
                     <channel.icon className="w-8 h-8 text-white" />
@@ -110,6 +113,7 @@ const SupportPage = () => {
                     Get Help Now
                   </Button>
                 </CardContent>
+                 </a>
               </Card>
             ))}
           </div>
