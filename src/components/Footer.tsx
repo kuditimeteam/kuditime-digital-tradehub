@@ -32,16 +32,19 @@ const  Footer = () => {
               </div>
 
               <div className="space-y-6">
+                <a href="https://linktr.ee/kuditime_">
                 <Button 
                   size="lg" 
                   className="bg-white text-primary hover:bg-gray-100 px-8 py-3 text-lg"
                 >
                   Register on website <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
+                </a>
 
                 <div className="border-t border-white/30 border-dotted pt-6">
                   <p className="text-white/80 mb-4 text-lg">Get the app now:</p>
                   <div className="flex flex-col sm:flex-row gap-4">
+                    <a href="https://apps.apple.com/app/kuditime/id6446061749">
                     <Button 
                       variant="secondary" 
                       size="lg" 
@@ -49,6 +52,8 @@ const  Footer = () => {
                     >
                       App Store
                     </Button>
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.kuditime">
                     <Button 
                       variant="secondary" 
                       size="lg" 
@@ -56,6 +61,7 @@ const  Footer = () => {
                     >
                        Google Play
                     </Button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -90,7 +96,7 @@ const  Footer = () => {
               pay bills, and sell gift cards with the best rates.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-primary transition-colors">
+              <a href="https://www.facebook.com/story.php/?story_fbid=122144552474097163&id=61552914891730" className="text-gray-400 hover:text-primary transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
               <a href="#" className="text-gray-400 hover:text-primary transition-colors">

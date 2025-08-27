@@ -107,30 +107,32 @@ const Index = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
+                <a href="https://linktr.ee/kuditime_">
                 <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 text-lg">
                   Start Trading <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
-                <Button size="lg" variant="ghost" className="text-gray-700 hover:bg-gray-100 px-8 py-3 text-lg">
+                </a>
+                {/* <Button size="lg" variant="ghost" className="text-gray-700 hover:bg-gray-100 px-8 py-3 text-lg">
                   <Play className="mr-2 w-5 h-5" />
                   Watch Demo
-                </Button>
+                </Button> */}
               </div>
 
               <div className="flex items-center gap-2">
                 <div className="flex">
                   {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />)}
                 </div>
-                <span className="text-gray-700 font-medium">4.9/5 from 10,000+ reviews</span>
+                <span className="text-gray-700 font-medium">4.9/5 from reviews</span>
               </div>
             </div>
-
             {/* Right Content - Mobile Mockup */}
             <div className="relative">
               <div className="rounded-[2.5rem] p-4 max-w-lg mx-auto shadow-2xl bg-slate-50">
                  <img 
                                   src={mobileAppImage} 
                                   alt="Kuditime Mobile App" 
-                                  className="w-full h-auto rounded-2xl"
+                                  className="w-full h-auto rounded-2xl
+                                  "
                                 />
                 {/* <div className="bg-green-600 rounded-t-2xl p-4 text-white text-center">
                   <h3 className="font-bold text-lg">CryptoNaira</h3>
@@ -228,9 +230,11 @@ const Index = () => {
                     +2.34%
                   </p>
                 </div>
+                <a href="https://linktr.ee/kuditime_">
                 <Button className="w-full mt-4 bg-orange-500 hover:bg-orange-600 text-white">
                   Trade BTC
                 </Button>
+                </a>
               </CardContent>
             </Card>
 
@@ -249,9 +253,11 @@ const Index = () => {
                     +1.87%
                   </p>
                 </div>
+                 <a href="https://linktr.ee/kuditime_">
                 <Button className="w-full mt-4 bg-blue-500 hover:bg-blue-600 text-white">
                   Trade ETH
                 </Button>
+                </a>
               </CardContent>
             </Card>
 
@@ -270,9 +276,11 @@ const Index = () => {
                     +0.12%
                   </p>
                 </div>
+                <a href="https://linktr.ee/kuditime_">
                 <Button className="w-full mt-4 bg-green-500 hover:bg-green-600 text-white">
                   Trade USDT
                 </Button>
+                </a>
               </CardContent>
             </Card>
 
@@ -294,9 +302,11 @@ const Index = () => {
                     +3.45%
                   </p>
                 </div>
+                <a href="https://linktr.ee/kuditime_">
                 <Button className="w-full mt-4 bg-gray-500 hover:bg-gray-600 text-white">
                   Trade TRON
                 </Button>
+                </a>
               </CardContent>
             </Card>
           </div>
