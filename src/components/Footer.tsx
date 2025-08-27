@@ -1,6 +1,7 @@
 
 import { Link } from 'react-router-dom';
-import { Facebook, Twitter, Instagram, Linkedin, Star, ArrowRight } from 'lucide-react';
+import { Facebook, Twitter, Instagram, Music2, Star, ArrowRight } from 'lucide-react';
+
 import { Button } from '@/components/ui/button';
 import mobileAppImage from '@/assets/pho.png';
 import MobileApp from './MobileApp';
@@ -99,14 +100,14 @@ const  Footer = () => {
               <a href="https://www.facebook.com/story.php/?story_fbid=122144552474097163&id=61552914891730" className="text-gray-400 hover:text-primary transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-primary transition-colors">
+              <a href="https://x.com/kuditime_hq?s=21" className="text-gray-400 hover:text-primary transition-colors">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-primary transition-colors">
+              <a href="https://www.instagram.com/kuditime_hq/profilecard/?igsh=ZG1wcDU3ZnY4ZDJk" className="text-gray-400 hover:text-primary transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-primary transition-colors">
-                <Linkedin className="w-5 h-5" />
+              <a href="https://www.tiktok.com/@kuditime_hq?_t=ZS-8yyr4RcTAx8&_r=1" className="text-gray-400 hover:text-primary transition-colors">
+                <Music2 className="w-5 h-5" />
               </a>
             </div>
           </div>
@@ -137,7 +138,7 @@ const  Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © 2024 Kuditime. All rights reserved.
+            © 2025 Kuditime. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link to="/terms" className="text-gray-400 hover:text-primary text-sm transition-colors">

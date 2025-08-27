@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import mobileAppImage from '@/assets/pho.png';
 import mainPage from '@/assets/phone 1.png';
+import billPage from '@/assets/phon.png';
 
 const appFeatures = [
   {
@@ -34,7 +35,7 @@ const screenshots = [
     description: 'Easy crypto trading experience'
   },
   {
-    img:mainPage, 
+    img:billPage, 
     title: 'Bills',
     description: 'Pay all bills in one place'
   },
@@ -73,7 +74,7 @@ const DownloadPage = () => {
               <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-2 sm:space-y-0 sm:space-x-6 text-white">
                 <div className="flex items-center space-x-2">
                   <Star className="w-4 h-4 md:w-5 md:h-5 text-yellow-400 fill-current" />
-                  <span className="text-sm md:text-base">4.8 Rating</span>
+                  <span className="text-sm md:text-base">4.9 Rating</span>
                 </div>
                 <div className="text-sm md:text-base">10,000+ Downloads</div>
                 <div className="text-sm md:text-base">Free to Use</div>
@@ -225,13 +226,13 @@ const DownloadPage = () => {
             <Card className="bg-white border border-gray-200">
               <CardContent className="p-4 md:p-6">
                 <h3 className="text-lg md:text-xl font-semibold text-gray-900 mb-3 md:mb-4 flex items-center">
-                  <span className="text-xl md:text-2xl mr-2">🤖</span>
+                  {/* <span className="text-xl md:text-2xl mr-2">🤖</span> */}
                   Android Requirements
                 </h3>
                 <ul className="space-y-1 md:space-y-2 text-sm md:text-base text-gray-600">
                   <li>• Android 6.0 (API level 23) or higher</li>
                   <li>• 2GB RAM minimum (4GB recommended)</li>
-                  <li>• 100MB free storage space</li>
+                  <li>• 20MB free storage space</li>
                   <li>• Internet connection required</li>
                 </ul>
               </CardContent>
@@ -240,7 +241,7 @@ const DownloadPage = () => {
             <Card className="bg-white border border-gray-200">
               <CardContent className="p-4 md:p-6">
                 <h3 className="text-lg md:text-xl font-semibold text-gray-900 mb-3 md:mb-4 flex items-center">
-                  <span className="text-xl md:text-2xl mr-2">🍎</span>
+                  {/* <span className="text-xl md:text-2xl mr-2">🍎</span> */}
                   iOS Requirements
                 </h3>
                 <ul className="space-y-1 md:space-y-2 text-sm md:text-base text-gray-600">
@@ -263,14 +264,21 @@ const DownloadPage = () => {
             Download the Kuditime app today and start your crypto journey
           </p>
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
+             <a href="https://play.google.com/store/apps/details?id=com.kuditime">
             <Button size="lg" className="text-base md:text-lg px-6 md:px-8 py-2 md:py-3 flex items-center space-x-2 bg-white text-black hover:bg-gray-100">
+            
               <Download className="w-4 h-4 md:w-5 md:h-5" />
               <span>Download for Android</span>
             </Button>
+            </a>
+              <a href="https://apps.apple.com/app/kuditime/id6446061749">
             <Button size="lg" variant="outline" className="text-base md:text-lg px-6 md:px-8 py-2 md:py-3 border-white text-black hover:bg-white hover:text-primary flex items-center space-x-2">
+
               <Download className="w-4 h-4 md:w-5 md:h-5" />
               <span>Download for iOS</span>
+  
             </Button>
+              </a>
           </div>
           <p className="text-white/60 text-xs md:text-sm mt-3 md:mt-4">Free download • No subscription required</p>
         </div>

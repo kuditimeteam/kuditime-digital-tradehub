@@ -123,7 +123,7 @@ const CareersPage = () => {
       <section className="py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Work at KudiTime?</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Work at Kuditime?</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Join Nigeria's leading fintech company and be part of a mission that's transforming 
               how millions of people access financial services.
@@ -166,7 +166,7 @@ const CareersPage = () => {
       </section>
 
       {/* Open Positions */}
-      <section className="py-16">
+      {/* <section className="py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Open Positions</h2>
@@ -217,7 +217,7 @@ const CareersPage = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Application Process */}
       <section className="py-16 bg-gray-50">

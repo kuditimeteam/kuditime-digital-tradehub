@@ -2,6 +2,7 @@
 import { Gift, ShoppingBag, CreditCard, Zap, Shield, TrendingUp } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import appleCard from '@/assets/apple.png';
 
 const giftCards = [
   {
@@ -14,7 +15,7 @@ const giftCards = [
   },
   {
     name: 'iTunes',
-    logo: '🍎',
+    img:appleCard,
     rate: '₦780/$',
     description: 'Apple App Store and media content',
     color: 'bg-gray-800',
@@ -128,11 +129,11 @@ const GiftCardsPage = () => {
             {giftCards.map((card, index) => (
               <Card key={index} className="hover:shadow-xl transition-all duration-300 hover:scale-105">
                 <CardHeader className="text-center">
-                  <div className={`w-16 h-16 ${card.color} rounded-lg flex items-center justify-center mx-auto mb-4`}>
+                  {/* <div className={`w-16 h-16 ${card.color} rounded-lg flex items-center justify-center mx-auto mb-4`}>
                     <span className="text-2xl font-bold text-white">{card.logo}</span>
-                  </div>
+                  </div> */}
                   <CardTitle className="text-xl">{card.name}</CardTitle>
-                  <div className="text-2xl font-bold text-primary">{card.rate}</div>
+                  {/* <div className="text-2xl font-bold text-primary">{card.rate}</div> */}
                 </CardHeader>
                 <CardContent className="text-center">
                   <p className="text-gray-600 text-sm mb-4">{card.description}</p>
@@ -143,9 +144,11 @@ const GiftCardsPage = () => {
                       </span>
                     ))}
                   </div>
+                  <a href="https://linktr.ee/kuditime_">
                   <Button className="w-full bg-primary hover:bg-primary/90">
                     Sell {card.name}
                   </Button>
+                  </a>
                 </CardContent>
               </Card>
             ))}

@@ -105,12 +105,14 @@ const CryptoPage = () => {
               Start trading with as little as ₦1,000.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="https://linktr.ee/kuditime_">
               <Button size="lg" className="text-lg px-8 py-3 bg-white text-black hover:bg-gray-100">
                 Start Trading Now
               </Button>
-              <Button size="lg" variant="outline" className="text-lg px-8 py-3 border-white text-black hover:bg-white hover:text-black">
+              </a>
+              {/* <Button size="lg" variant="outline" className="text-lg px-8 py-3 border-white text-black hover:bg-white hover:text-black">
                 View Live Rates
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>
@@ -120,7 +122,7 @@ const CryptoPage = () => {
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Trade Crypto on KudiTime?</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Trade Crypto on Kuditime?</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Experience the most advanced and secure crypto trading platform in Nigeria
             </p>
@@ -152,12 +154,12 @@ const CryptoPage = () => {
             {blockchains.map((crypto, index) => (
               <Card key={index} className="hover:shadow-xl transition-all duration-300 hover:scale-105">
                 <CardHeader className="text-center">
-                  <div className="w-16 h-16 mx-auto mb-4">
+                  {/* <div className="w-16 h-16 mx-auto mb-4">
                     <img src={bitcoinLogo} alt={crypto.name} className="w-full h-full" />
-                  </div>
+                  </div> */}
                   <CardTitle className="text-xl">{crypto.name}</CardTitle>
                   <div className="flex items-center justify-center space-x-2">
-                    <span className="text-2xl font-bold text-gray-900">{crypto.price}</span>
+                    {/* <span className="text-2xl font-bold text-gray-900">{crypto.price}</span> */}
                     <span className={`text-sm font-medium ${
                       crypto.change.startsWith('+') ? 'text-green-600' : 'text-red-600'
                     }`}>
@@ -175,9 +177,11 @@ const CryptoPage = () => {
                       </div>
                     ))}
                   </div>
+                  <a href="https://linktr.ee/kuditime_">
                   <Button className="w-full mt-4 bg-primary hover:bg-primary/90 text-white">
                     Trade {crypto.symbol}
                   </Button>
+                  </a>
                 </CardContent>
               </Card>
             ))}
@@ -226,12 +230,16 @@ const CryptoPage = () => {
             Join thousands of Nigerians who trust KudiTime for their crypto trading needs
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
+           <a href="https://linktr.ee/kuditime_">
             <Button size="lg" className="text-lg px-8 py-3 bg-white text-black hover:bg-gray-100">
               Create Free Account
             </Button>
+               </a>
+                 <a href="https://linktr.ee/kuditime_">
             <Button size="lg" variant="outline" className="text-lg px-8 py-3 border-white text-black hover:bg-white hover:text-black">
               Download Mobile App
             </Button>
+            </a>
           </div>
         </div>
       </section>

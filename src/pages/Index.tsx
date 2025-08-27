@@ -1,4 +1,5 @@
-import { ArrowRight, Shield, Zap, Users, TrendingUp, Check, Star, Gift, Play } from 'lucide-react';
+import { ArrowRight, Shield, Zap, Users, TrendingUp, Check, Star, Gift, Coins} from 'lucide-react';
+
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import CryptoCarousel from '@/components/CryptoCarousel';
@@ -364,8 +365,11 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             <Card className="hover:shadow-lg transition-shadow bg-white/10 border-white/20">
               <CardContent className="p-4 md:p-6">
+                {/* <div className="w-10 h-10 md:w-12 md:h-12 bg-white/20 rounded-lg flex items-center justify-center mb-3 md:mb-4">
+                  <img src="" alt="Bitcoin" className="w-6 h-6 md:w-8 md:h-8 rounded-full" />
+                </div> */}
                 <div className="w-10 h-10 md:w-12 md:h-12 bg-white/20 rounded-lg flex items-center justify-center mb-3 md:mb-4">
-                  <img src="https://images.unsplash.com/photo-1518544866330-4e3cd06d0c52?w=32&h=32&fit=crop&crop=center" alt="Bitcoin" className="w-6 h-6 md:w-8 md:h-8 rounded-full" />
+                  <Coins className="w-6 h-6 md:w-8 md:h-8 text-white" />
                 </div>
                 <h3 className="text-lg md:text-xl font-semibold text-white mb-1 md:mb-2">Crypto Trading</h3>
                 <p className="text-sm md:text-base text-white/80 mb-3 md:mb-4">Trade Bitcoin, Ethereum, USDT and other major cryptocurrencies with the best rates.</p>

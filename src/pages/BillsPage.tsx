@@ -6,66 +6,80 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 const billCategories = [
   {
     icon: Smartphone,
-    title: 'Airtime & Data',
-    description: 'Buy airtime and data bundles for all networks',
+    title: 'Airtime',
+    description: 'Buy airtime bundles for all networks',
     services: [
       { name: 'MTN', logo: '/placeholder.svg' },
       { name: 'Airtel', logo: '/placeholder.svg' },
       { name: 'Glo', logo: '/placeholder.svg' },
-      { name: '9mobile', logo: '/placeholder.svg' }
+      { name: '9mobile', logo: '/placeholder.svg' },
+      { name: 'More', logo: '/placeholder.svg'}
     ],
     color: 'bg-blue-500'
   },
-  {
+   {
     icon: Zap,
-    title: 'Electricity Bills',
-    description: 'Pay electricity bills for all distribution companies',
+    title: 'Data',
+    description: 'Buy data bundles for all networks',
     services: [
-      { name: 'PHCN', logo: '/placeholder.svg' },
-      { name: 'IKEDC', logo: '/placeholder.svg' },
-      { name: 'EKEDC', logo: '/placeholder.svg' },
-      { name: 'KEDCO', logo: '/placeholder.svg' }
+      { name: 'MTN', logo: '/placeholder.svg' },
+      { name: 'Airtel', logo: '/placeholder.svg' },
+      { name: 'Glo', logo: '/placeholder.svg' },
+      { name: '9mobile', logo: '/placeholder.svg' },
+       { name: 'More', logo: '/placeholder.svg'}
     ],
     color: 'bg-yellow-500'
   },
-  {
-    icon: Tv,
-    title: 'TV Subscriptions',
-    description: 'Renew your cable TV and streaming subscriptions',
-    services: [
-      { name: 'DSTV', logo: '/placeholder.svg' },
-      { name: 'GOtv', logo: '/placeholder.svg' },
-      { name: 'Startimes', logo: '/placeholder.svg' },
-      { name: 'Netflix', logo: '/placeholder.svg' }
-    ],
-    color: 'bg-purple-500'
-  },
-  {
-    icon: Home,
-    title: 'Internet Bills',
-    description: 'Pay for internet and broadband services',
-    services: [
-      { name: 'Spectranet', logo: '/placeholder.svg' },
-      { name: 'Smile', logo: '/placeholder.svg' },
-      { name: 'Swift', logo: '/placeholder.svg' },
-      { name: 'Tizeti', logo: '/placeholder.svg' }
-    ],
-    color: 'bg-green-500'
-  },
+  // {
+  //   icon: Zap,
+  //   title: 'Electricity Bills',
+  //   description: 'Pay electricity bills for all distribution companies',
+  //   services: [
+  //     { name: 'PHCN', logo: '/placeholder.svg' },
+  //     { name: 'IKEDC', logo: '/placeholder.svg' },
+  //     { name: 'EKEDC', logo: '/placeholder.svg' },
+  //     { name: 'KEDCO', logo: '/placeholder.svg' }
+  //   ],
+  //   color: 'bg-yellow-500'
+  // },
+  // {
+  //   icon: Tv,
+  //   title: 'TV Subscriptions',
+  //   description: 'Renew your cable TV and streaming subscriptions',
+  //   services: [
+  //     { name: 'DSTV', logo: '/placeholder.svg' },
+  //     { name: 'GOtv', logo: '/placeholder.svg' },
+  //     { name: 'Startimes', logo: '/placeholder.svg' },
+  //     { name: 'Netflix', logo: '/placeholder.svg' }
+  //   ],
+  //   color: 'bg-purple-500'
+  // },
+  // {
+  //   icon: Home,
+  //   title: 'Internet Bills',
+  //   description: 'Pay for internet and broadband services',
+  //   services: [
+  //     { name: 'Spectranet', logo: '/placeholder.svg' },
+  //     { name: 'Smile', logo: '/placeholder.svg' },
+  //     { name: 'Swift', logo: '/placeholder.svg' },
+  //     { name: 'Tizeti', logo: '/placeholder.svg' }
+  //   ],
+  //   color: 'bg-green-500'
+  // },
   {
     icon: Gamepad2,
     title: 'Gaming & Betting',
     description: 'Fund gaming and betting platforms',
-    services: ['Bet9ja', 'SportyBet', 'NairaBet', 'PlayStation'],
+    services: ['Bet9ja', 'SportyBet', 'NairaBet', 'PlayStation', 'More',],
     color: 'bg-red-500'
   },
-  {
-    icon: CreditCard,
-    title: 'Other Bills',
-    description: 'Pay for various other services',
-    services: ['Insurance', 'Loan Payments', 'School Fees', 'More'],
-    color: 'bg-indigo-500'
-  }
+  // {
+  //   icon: CreditCard,
+  //   title: 'Other Bills',
+  //   description: 'Pay for various other services',
+  //   services: ['Insurance', 'Loan Payments', 'School Fees', 'More'],
+  //   color: 'bg-indigo-500'
+  // }
 ];
 
 const features = [
@@ -228,12 +242,16 @@ const BillsPage = () => {
             Join thousands of Nigerians who trust Kuditime for their bill payments
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
+           <a href="https://linktr.ee/kuditime_">
             <Button size="lg" className="text-lg px-8 py-3 bg-white text-black hover:bg-gray-100">
               Pay Bills Now
             </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 py-3 border-white text-white hover:bg-white hover:text-black">
+            </a>
+            <a href="https://linktr.ee/kuditime_">
+            <Button size="lg" variant="outline" className="text-lg px-8 py-3 border-white text-black hover:bg-white hover:text-black">
               Download Mobile App
             </Button>
+            </a>
           </div>
         </div>
       </section>

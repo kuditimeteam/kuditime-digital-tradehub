@@ -10,7 +10,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 const supportChannels = [
   {
     icon: MessageCircle,
-    href:'https://wa.me/message/4OAYTHN4MGONA1',
+    href:'https://api.whatsapp.com/send/?phone=2349056604775&text&type=phone_number&app_absent=0',
     title: 'Live Chat',
     description: 'Get instant help from our support team',
     availability: '24/7 Available',
@@ -28,7 +28,7 @@ const supportChannels = [
   },
   {
     icon: Phone,
-    title: 'Phone Support',  href:'tel:+2347041066287',
+    title: 'Phone Support',  href:'https://api.whatsapp.com/send/?phone=2349056604775&text&type=phone_number&app_absent=0',
     description: 'Speak directly with our experts',
     availability: 'Mon-Fri 8AM-6PM',
     response: 'Immediate',
@@ -121,7 +121,7 @@ const SupportPage = () => {
       </section>
 
       {/* Contact Form */}
-      <section className="py-16 bg-gray-50">
+      {/* <section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Send Us a Message</h2>
@@ -186,7 +186,7 @@ const SupportPage = () => {
             </CardContent>
           </Card>
         </div>
-      </section>
+      </section> */}
 
       {/* Common Issues */}
       <section className="py-16 bg-white">
@@ -201,9 +201,11 @@ const SupportPage = () => {
                 <CardContent className="p-6">
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">{issue.title}</h3>
                   <p className="text-gray-600 text-sm mb-4">{issue.description}</p>
+                 <a href="https://api.whatsapp.com/send/?phone=2349056604775&text&type=phone_number&app_absent=0">
                   <Button variant="outline" size="sm" className="w-full">
                     Get Help
                   </Button>
+                  </a>
                 </CardContent>
               </Card>
             ))}
@@ -232,7 +234,7 @@ const SupportPage = () => {
               <div className="text-white/80">Satisfaction Rate</div>
             </div>
             <div>
-              <div className="text-4xl font-bold mb-2">50k+</div>
+              <div className="text-4xl font-bold mb-2">10k+</div>
               <div className="text-white/80">Issues Resolved</div>
             </div>
           </div>

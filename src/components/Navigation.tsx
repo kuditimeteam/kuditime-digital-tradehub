@@ -56,10 +56,10 @@ const Navigation = () => {
             </DropdownMenu>
 
             <DropdownMenu>
-              <DropdownMenuTrigger className="flex items-center space-x-1 text-gray-700 hover:text-primary transition-colors">
+              {/* <DropdownMenuTrigger className="flex items-center space-x-1 text-gray-700 hover:text-primary transition-colors">
                 <span>Assets</span>
                 <ChevronDown className="w-4 h-4" />
-              </DropdownMenuTrigger>
+              </DropdownMenuTrigger> */}
               <DropdownMenuContent className="bg-white min-w-[200px]">
                 <DropdownMenuItem>
                   <Link to="/assets" className="w-full font-medium">All Assets</Link>
@@ -202,7 +202,7 @@ const Navigation = () => {
             </Link>
 
             <Button className="bg-primary hover:bg-primary/90">
-              Trade Now
+            <a href="https://linktr.ee/kuditime_">  Trade Now </a>
             </Button>
           </div>
 
