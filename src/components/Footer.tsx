@@ -5,6 +5,7 @@ import { Facebook, Twitter, Instagram, Music2, Star, ArrowRight } from 'lucide-r
 import { Button } from '@/components/ui/button';
 import mobileAppImage from '@/assets/pho.png';
 import MobileApp from './MobileApp';
+import kudiLogo from '@/assets/kudilogo.png';
 
 const  Footer = () => {
   return (
@@ -85,12 +86,21 @@ const  Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
-          <div className="col-span-1 md:col-span-2">
+          <div className="col-span-2 md:col-span-2">
+           
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                {/* <span className="text-white font-bold text-lg">K</span> */}
-              </div>
-              <span className="text-xl font-bold"></span>
+                <a href="https://kuditime.com">
+                 <img 
+                  src={kudiLogo} 
+                  alt="Kuditime Mobile App" 
+                  className="w-[90px]"
+                />
+                </a>
+               {/* <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-lg">K</span>
+              </div> */}
+            
+              {/* <span className="text-xl font-bold"></span> */}
             </div>
             <p className="text-gray-400 mb-6 max-w-md">
               Nigeria's leading crypto exchange and bill payment platform. Trade cryptocurrency, 
