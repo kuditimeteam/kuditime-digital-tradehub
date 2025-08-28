@@ -88,9 +88,9 @@ const  Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">K</span>
+                {/* <span className="text-white font-bold text-lg">K</span> */}
               </div>
-              <span className="text-xl font-bold">Kuditime</span>
+              <span className="text-xl font-bold"></span>
             </div>
             <p className="text-gray-400 mb-6 max-w-md">
               Nigeria's leading crypto exchange and bill payment platform. Trade cryptocurrency, 

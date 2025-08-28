@@ -39,7 +39,7 @@ const TronPage = () => {
                 <div className="flex items-center justify-center space-x-4 mb-6">
                   <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center">
                     <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
-                      <span className="text-white font-bold">₿</span>
+                      <span className="text-white font-bold">T</span>
                     </div>
                   </div>
                   <div>
@@ -48,12 +48,13 @@ const TronPage = () => {
                 </div>
                 
                 <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-                  Kuditime allows you to exchange Tron for Naira within a minute automatically. You can sell BTC and receive payment to any bank account in Nigeria.
+                  Kuditime allows you to exchange Tron for Naira within a minute automatically. You can sell TRON and receive payment to any bank account in Nigeria.
                 </p>
-                
+                <a href="https://linktr.ee/kuditime_">
                 <Button className="bg-primary hover:bg-primary/90 px-8 py-3">
                   Start Selling Tron
                 </Button>
+                </a>
               </CardContent>
             </Card>
 
@@ -63,22 +64,22 @@ const TronPage = () => {
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                   <div>
                     <p className="text-sm text-gray-500">Current Price</p>
-                    <p className="text-lg font-semibold">₦45,678,900</p>
+                    <p className="text-lg font-semibold">₦556.8</p>
                   </div>
                   <div>
                     <p className="text-sm text-gray-500">24h Change</p>
                     <p className="text-lg font-semibold text-green-600 flex items-center">
                       <TrendingUp className="w-4 h-4 mr-1" />
-                      +2.34%
+                      +9.78%
                     </p>
                   </div>
                   <div>
                     <p className="text-sm text-gray-500">Market Cap</p>
-                    <p className="text-lg font-semibold">₦98.5T</p>
+                    <p className="text-lg font-semibold">$34.5B</p>
                   </div>
                   <div>
                     <p className="text-sm text-gray-500">Volume (24h)</p>
-                    <p className="text-lg font-semibold">₦2.3T</p>
+                    <p className="text-lg font-semibold">₦2.3B</p>
                   </div>
                 </div>
               </CardContent>
@@ -99,7 +100,7 @@ const TronPage = () => {
                   <div className="flex items-start space-x-3">
                     <div className="w-6 h-6 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold">2</div>
                     <div>
-                      <h3 className="font-semibold">Select Tron</h3>
+                      <h3 className="font-semibold">Select Crypto</h3>
                       <p className="text-gray-600">Choose Tron from our list of supported cryptocurrencies.</p>
                     </div>
                   </div>
@@ -133,7 +134,7 @@ const TronPage = () => {
                   <div className="border-b pb-4">
                     <h3 className="font-semibold mb-2">How Do I Register On Kuditime?</h3>
                     <p className="text-gray-600">
-                      To register on Kuditime, visit our website and click on the "Sign Up" button. Fill in your email address, create a strong password, and verify your email to complete the registration process.
+                      To register on Kuditime, visit our website and click on the "Trade Now" button. Download the Kuditime App, Fill in your email address, create a strong password, and verify your email to complete the registration process.
                     </p>
                   </div>
                   
@@ -147,7 +148,7 @@ const TronPage = () => {
                   <div className="border-b pb-4">
                     <h3 className="font-semibold mb-2">What is the minimum amount of Tron I can sell?</h3>
                     <p className="text-gray-600">
-                      The minimum amount of Tron you can sell on Kuditime is 0.001 BTC, which ensures accessibility for all users.
+                      The minimum amount of Tron you can sell on Kuditime is 0.001 TRON, which ensures accessibility for all users.
                     </p>
                   </div>
                   
@@ -165,7 +166,7 @@ const TronPage = () => {
           {/* Sidebar */}
           <div className="space-y-6">
             {/* Quick Actions */}
-            <Card>
+            {/* <Card>
               <CardContent className="p-6">
                 <h3 className="font-semibold mb-4">Quick Actions</h3>
                 <div className="space-y-3">
@@ -180,7 +181,7 @@ const TronPage = () => {
                   </Button>
                 </div>
               </CardContent>
-            </Card>
+            </Card> */}
 
             {/* Rating */}
             <Card>
@@ -192,9 +193,9 @@ const TronPage = () => {
                       <Star key={star} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
                     ))}
                   </div>
-                  <span className="font-semibold">4.8</span>
+                  <span className="font-semibold">4.9</span>
                 </div>
-                <p className="text-sm text-gray-600">Based on 12,000+ reviews</p>
+                <p className="text-sm text-gray-600">Based on 100+ reviews</p>
               </CardContent>
             </Card>
 
@@ -205,19 +206,19 @@ const TronPage = () => {
                 <div className="space-y-3">
                   <div className="flex justify-between">
                     <span className="text-gray-600">Circulating Supply</span>
-                    <span className="font-medium">19.7M BTC</span>
+                    <span className="font-medium">95.7B TRX</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-600">Max Supply</span>
-                    <span className="font-medium">21M BTC</span>
+                    <span className="font-medium">94.9B TRX</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-600">All Time High</span>
-                    <span className="font-medium">₦69,000,000</span>
+                    <span className="font-medium">₦670</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-600">All Time Low</span>
-                    <span className="font-medium">₦65</span>
+                    <span className="font-medium">₦2.9</span>
                   </div>
                 </div>
               </CardContent>

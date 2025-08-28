@@ -295,12 +295,12 @@ const GiftCardsPage = () => {
             Join thousands of satisfied customers who trust KudiTime for gift card trading
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="https://linktr.ee/kuditime_">
             <Button size="lg" className="text-lg px-8 py-3 bg-white text-black hover:bg-gray-100">
               Start Selling Now
             </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 py-3 border-white text-white hover:bg-white hover:text-black">
-              Check Current Rates
-            </Button>
+            </a>
+            {/*  */}
           </div>
         </div>
       </section>

@@ -246,10 +246,10 @@ const SupportPage = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Self-Help Resources</h2>
           <p className="text-gray-600 mb-8">
-            Find answers to common questions and learn how to use KudiTime effectively
+            Find answers to common questions and learn how to use Kuditime effectively
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="outline" onClick={() => window.open("https://kuditime.com")}>
+            <Button size="lg" variant="outline" onClick={() => window.open("")}>
               View FAQ
             </Button>
             

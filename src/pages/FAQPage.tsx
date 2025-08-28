@@ -9,16 +9,16 @@ const faqData = [
     category: 'General',
     questions: [
       {
-        question: 'What is KudiTime?',
-        answer: 'KudiTime is Nigeria\'s leading cryptocurrency exchange and bill payment platform. We allow users to buy/sell cryptocurrencies, pay bills, and trade gift cards with competitive rates and instant processing.'
+        question: 'What is Kuditime?',
+        answer: 'Kuditime is Nigeria\'s leading cryptocurrency exchange and bill payment platform. We allow users to buy/sell cryptocurrencies, pay bills, and trade gift cards with competitive rates and instant processing.'
       },
       {
-        question: 'Is KudiTime licensed and regulated?',
-        answer: 'Yes, KudiTime is fully licensed by the Central Bank of Nigeria and complies with all relevant financial regulations. We maintain the highest standards of compliance and security.'
+        question: 'Is Kuditime licensed and regulated?',
+        answer: 'Yes, Kuditime is fully licensed by the Central Bank of Nigeria and complies with all relevant financial regulations. We maintain the highest standards of compliance and security.'
       },
       {
-        question: 'How secure is KudiTime?',
-        answer: 'KudiTime uses bank-grade security measures including SSL encryption, two-factor authentication, cold storage for cryptocurrencies, and regular security audits to protect your funds and data.'
+        question: 'How secure is Kuditime?',
+        answer: 'Kuditime uses bank-grade security measures including SSL encryption, two-factor authentication, cold storage for cryptocurrencies, and regular security audits to protect your funds and data.'
       }
     ]
   },
@@ -47,7 +47,7 @@ const faqData = [
     category: 'Bill Payments',
     questions: [
       {
-        question: 'Which bills can I pay on KudiTime?',
+        question: 'Which bills can I pay on Kuditime?',
         answer: 'You can pay for airtime, data bundles, electricity bills, TV subscriptions (DSTV, GOtv), internet bills, betting/gaming platforms, and many other services.'
       },
       {
@@ -97,7 +97,7 @@ const faqData = [
         answer: 'Account verification typically takes 10-30 minutes for standard accounts. Business accounts may take 1-3 business days depending on the complexity of the verification.'
       },
       {
-        question: 'Can I use KudiTime without verification?',
+        question: 'Can I use Kuditime without verification?',
         answer: 'Limited features are available for unverified accounts, but full verification is required for crypto trading, higher transaction limits, and all premium features.'
       }
     ]
@@ -124,7 +124,7 @@ const FAQPage = () => {
             Frequently Asked Questions
           </h1>
           <p className="text-xl text-white/90 max-w-3xl mx-auto">
-            Find answers to common questions about KudiTime's services, 
+            Find answers to common questions about Kuditime's services, 
             security, and how to get started with crypto trading and bill payments.
           </p>
         </div>
@@ -203,7 +203,7 @@ const FAQPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div>
               <h3 className="font-semibold text-gray-900 mb-2">Email Support</h3>
-              <p className="text-gray-600">support@kuditime.com</p>
+              <p className="text-gray-600">support@Kuditime.com</p>
               <p className="text-sm text-gray-500">Response within 2 hours</p>
             </div>
             <div>
@@ -213,7 +213,7 @@ const FAQPage = () => {
             </div>
             <div>
               <h3 className="font-semibold text-gray-900 mb-2">Phone Support</h3>
-              <p className="text-gray-600">+234 800 KUDITIME</p>
+              <p className="text-gray-600">+234 800 Kuditime</p>
               <p className="text-sm text-gray-500">Mon-Fri 8AM-6PM</p>
             </div>
           </div>

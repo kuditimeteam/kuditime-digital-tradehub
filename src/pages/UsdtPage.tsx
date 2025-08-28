@@ -51,9 +51,11 @@ const USDTPage = () => {
                   Kuditime allows you to exchange USDT for Naira within a minute automatically. You can sell USDT and receive payment to any bank account in Nigeria.
                 </p>
                 
+                <a href="https://linktr.ee/kuditime_">
                 <Button className="bg-primary hover:bg-primary/90 px-8 py-3">
                   Start Selling USDT
                 </Button>
+                </a>
               </CardContent>
             </Card>
 
@@ -74,11 +76,11 @@ const USDTPage = () => {
                   </div>
                   <div>
                     <p className="text-sm text-gray-500">Market Cap</p>
-                    <p className="text-lg font-semibold">₦98.5T</p>
+                    <p className="text-lg font-semibold">$167.5B</p>
                   </div>
                   <div>
                     <p className="text-sm text-gray-500">Volume (24h)</p>
-                    <p className="text-lg font-semibold">₦2.3T</p>
+                    <p className="text-lg font-semibold">$103.4B</p>
                   </div>
                 </div>
               </CardContent>
@@ -133,7 +135,7 @@ const USDTPage = () => {
                   <div className="border-b pb-4">
                     <h3 className="font-semibold mb-2">How Do I Register On Kuditime?</h3>
                     <p className="text-gray-600">
-                      To register on Kuditime, visit our website and click on the "Sign Up" button. Fill in your email address, create a strong password, and verify your email to complete the registration process.
+                      To register on Kuditime, visit our website and click on the "Trade Now" button. Download the App, Fill in your email address, create a strong password, and verify your email to complete the registration process.
                     </p>
                   </div>
                   
@@ -147,7 +149,7 @@ const USDTPage = () => {
                   <div className="border-b pb-4">
                     <h3 className="font-semibold mb-2">What is the minimum amount of USDT I can sell?</h3>
                     <p className="text-gray-600">
-                      The minimum amount of USDT you can sell on Kuditime is 0.001 BTC, which ensures accessibility for all users.
+                      The minimum amount of USDT you can sell on Kuditime is 1 USDT, which ensures accessibility for all users.
                     </p>
                   </div>
                   
@@ -165,7 +167,7 @@ const USDTPage = () => {
           {/* Sidebar */}
           <div className="space-y-6">
             {/* Quick Actions */}
-            <Card>
+            {/* <Card>
               <CardContent className="p-6">
                 <h3 className="font-semibold mb-4">Quick Actions</h3>
                 <div className="space-y-3">
@@ -180,7 +182,7 @@ const USDTPage = () => {
                   </Button>
                 </div>
               </CardContent>
-            </Card>
+            </Card> */}
 
             {/* Rating */}
             <Card>
@@ -192,9 +194,9 @@ const USDTPage = () => {
                       <Star key={star} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
                     ))}
                   </div>
-                  <span className="font-semibold">4.8</span>
+                  <span className="font-semibold">4.9</span>
                 </div>
-                <p className="text-sm text-gray-600">Based on 12,000+ reviews</p>
+                <p className="text-sm text-gray-600">Based on 100+ reviews</p>
               </CardContent>
             </Card>
 
@@ -205,19 +207,19 @@ const USDTPage = () => {
                 <div className="space-y-3">
                   <div className="flex justify-between">
                     <span className="text-gray-600">Circulating Supply</span>
-                    <span className="font-medium">19.7M BTC</span>
+                    <span className="font-medium">167.7M USDT</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-600">Max Supply</span>
-                    <span className="font-medium">21M BTC</span>
+                    <span className="font-medium">Not Fixed</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-600">All Time High</span>
-                    <span className="font-medium">₦69,000,000</span>
+                    <span className="font-medium">₦2110</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-600">All Time Low</span>
-                    <span className="font-medium">₦65</span>
+                    <span className="font-medium">₦912</span>
                   </div>
                 </div>
               </CardContent>

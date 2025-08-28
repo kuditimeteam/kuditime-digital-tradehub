@@ -56,10 +56,10 @@ const Navigation = () => {
             </DropdownMenu>
 
             <DropdownMenu>
-              {/* <DropdownMenuTrigger className="flex items-center space-x-1 text-gray-700 hover:text-primary transition-colors">
+              <DropdownMenuTrigger className="flex items-center space-x-1 text-gray-700 hover:text-primary transition-colors">
                 <span>Assets</span>
                 <ChevronDown className="w-4 h-4" />
-              </DropdownMenuTrigger> */}
+              </DropdownMenuTrigger>
               <DropdownMenuContent className="bg-white min-w-[200px]">
                 <DropdownMenuItem>
                   <Link to="/assets" className="w-full font-medium">All Assets</Link>
@@ -72,7 +72,7 @@ const Navigation = () => {
                     </div>
                     <div>
                       <div className="font-medium">Bitcoin</div>
-                      <div className="text-xs text-gray-500">Buy & Sell Bitcoin</div>
+                     <a href="https://linktr.ee/kuditime_"> <div className="text-xs text-gray-500">Buy & Sell Bitcoin</div></a>
                     </div>
                   </Link>
                 </DropdownMenuItem>
@@ -110,7 +110,7 @@ const Navigation = () => {
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
-                  <Link to="/assets/binance-coin" className="w-full flex items-center space-x-3">
+                  <Link to="/assets/usdc" className="w-full flex items-center space-x-3">
                     <div className="w-6 h-6 bg-yellow-100 rounded-full flex items-center justify-center">
                       <span className="text-yellow-600 text-xs font-bold">U</span>
                     </div>
