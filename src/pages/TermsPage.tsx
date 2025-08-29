@@ -265,10 +265,10 @@ const TermsPage = () => {
                 <p>
                   If you have any questions about these Terms and Conditions, please contact us:
                 </p>
-                <ul>
-                  <li>Email: legal@kuditime.com</li>
-                  <li>Phone: +234 800 KUDITIME</li>
-                  <li>Address: KudiTime Limited, Lagos, Nigeria</li>
+                 <ul>
+                  <li><strong>Email:</strong> hi@kuditime.com</li>
+                  <li><strong>Phone:</strong> +234 70 4106 6287</li>
+                  <li><strong>Address:</strong> 20 Issac John Way, Ikeja Lagos, Nigeria</li>
                 </ul>
               </CardContent>
             </Card>

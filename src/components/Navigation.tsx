@@ -61,9 +61,9 @@ const Navigation = () => {
                 <ChevronDown className="w-4 h-4" />
               </DropdownMenuTrigger>
               <DropdownMenuContent className="bg-white min-w-[200px]">
-                <DropdownMenuItem>
+                {/* <DropdownMenuItem>
                   <Link to="/assets" className="w-full font-medium">All Assets</Link>
-                </DropdownMenuItem>
+                </DropdownMenuItem> */}
                 <div className="border-t border-gray-100 my-1"></div>
                 <DropdownMenuItem>
                   <Link to="/assets/bitcoin" className="w-full flex items-center space-x-3">

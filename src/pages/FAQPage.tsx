@@ -203,7 +203,7 @@ const FAQPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div>
               <h3 className="font-semibold text-gray-900 mb-2">Email Support</h3>
-              <p className="text-gray-600">support@Kuditime.com</p>
+              <p className="text-gray-600">hi@Kuditime.com</p>
               <p className="text-sm text-gray-500">Response within 2 hours</p>
             </div>
             <div>
@@ -213,7 +213,7 @@ const FAQPage = () => {
             </div>
             <div>
               <h3 className="font-semibold text-gray-900 mb-2">Phone Support</h3>
-              <p className="text-gray-600">+234 800 Kuditime</p>
+              <p className="text-gray-600">+234 704 106 6287</p>
               <p className="text-sm text-gray-500">Mon-Fri 8AM-6PM</p>
             </div>
           </div>

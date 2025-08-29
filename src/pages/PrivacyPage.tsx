@@ -203,7 +203,7 @@ const PrivacyPage = () => {
                   <li>Update your communication preferences</li>
                 </ul>
                 <p>
-                  To exercise these rights, contact us at privacy@kuditime.com or through 
+                  To exercise these rights, contact us at hi@kuditime.com or through 
                   your account settings.
                 </p>
               </CardContent>
@@ -295,10 +295,10 @@ const PrivacyPage = () => {
                   If you have questions about this Privacy Policy or our data practices, 
                   please contact us:
                 </p>
-                <ul>
-                  <li><strong>Email:</strong> privacy@kuditime.com</li>
-                  <li><strong>Phone:</strong> +234 800 KUDITIME</li>
-                  <li><strong>Address:</strong> Data Protection Officer, KudiTime Limited, Lagos, Nigeria</li>
+                 <ul>
+                  <li><strong>Email:</strong> hi@kuditime.com</li>
+                  <li><strong>Phone:</strong> +234 70 4106 6287</li>
+                  <li><strong>Address:</strong> 20 Issac John Way, Ikeja Lagos, Nigeria</li>
                 </ul>
                 <p>
                   We will respond to your inquiries within 30 days of receipt.

@@ -206,10 +206,10 @@ const DownloadPage = () => {
               <div className="w-6 h-6 md:w-8 md:h-8 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0">
                 <span className="text-white font-bold text-sm md:text-base">📱</span>
               </div>
-              <div>
+              {/* <div>
                 <h3 className="text-sm md:text-base font-semibold text-white mb-1">Biometric Security</h3>
                 <p className="text-xs md:text-sm text-white/80">Secure login with fingerprint and face recognition</p>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

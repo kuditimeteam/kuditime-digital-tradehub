@@ -20,7 +20,7 @@ import TermsPage from "./pages/TermsPage";
 import PrivacyPage from "./pages/PrivacyPage";
 import CookiesPage from "./pages/CookiesPage";
 import DownloadPage from "./pages/DownloadPage";
-import AssetsPage from "./pages/AssetsPage";
+// import AssetsPage from "./pages/AssetsPage";
 import BitcoinPage from "./pages/BitcoinPage";
 import EthereumPage from "./pages/EthereumPage";
 import UsdtPage from "./pages/UsdtPage";
@@ -55,7 +55,7 @@ const App = () => (
               <Route path="/privacy" element={<PrivacyPage />} />
               <Route path="/cookies" element={<CookiesPage />} />
               <Route path="/download" element={<DownloadPage />} />
-              <Route path="/assets" element={<AssetsPage />} />
+              {/* <Route path="/assets" element={<AssetsPage />} /> */}
               <Route path="/assets/bitcoin" element={<BitcoinPage />} />
                <Route path="/assets/ethereum" element={<EthereumPage />} />
               <Route path="/assets/usdt" element={<UsdtPage />} />
