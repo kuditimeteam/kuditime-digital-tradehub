@@ -31,7 +31,7 @@ const AssetsPage = () => {
     {
       name: 'Litecoin',
       symbol: 'LTC',
-      price: '₦145,678',
+      price: '₦145,698',
       change: '-0.56%',
       isPositive: false,
       icon: 'Ł',
