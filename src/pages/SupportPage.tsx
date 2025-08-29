@@ -10,7 +10,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 const supportChannels = [
   {
     icon: MessageCircle,
-    href:'https://wa.me/message/4OAYTHN4MGONA1',
+    href:'https://api.whatsapp.com/send/?phone=2349056604775&text&type=phone_number&app_absent=0',
     title: 'Live Chat',
     description: 'Get instant help from our support team',
     availability: '24/7 Available',
@@ -28,8 +28,7 @@ const supportChannels = [
   },
   {
     icon: Phone,
-    title: 'Phone Support',
-    href:'https://wa.me/message/4OAYTHN4MGONA1',
+    title: 'Phone Support',  href:'https://api.whatsapp.com/send/?phone=2349056604775&text&type=phone_number&app_absent=0',
     description: 'Speak directly with our experts',
     availability: 'Mon-Fri 8AM-6PM',
     response: 'Immediate',
@@ -202,7 +201,7 @@ const SupportPage = () => {
                 <CardContent className="p-6">
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">{issue.title}</h3>
                   <p className="text-gray-600 text-sm mb-4">{issue.description}</p>
-                 <a href="https://wa.me/message/4OAYTHN4MGONA1">
+                 <a href="https://api.whatsapp.com/send/?phone=2349056604775&text&type=phone_number&app_absent=0">
                   <Button variant="outline" size="sm" className="w-full">
                     Get Help
                   </Button>
@@ -250,7 +249,7 @@ const SupportPage = () => {
             Find answers to common questions and learn how to use Kuditime effectively
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="outline" onClick={() => window.location.href = "/faq"}>
+            <Button size="lg" variant="outline" onClick={() => window.open("")}>
               View FAQ
             </Button>
             

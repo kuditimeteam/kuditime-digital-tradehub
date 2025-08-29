@@ -56,12 +56,12 @@ const App = () => (
               <Route path="/cookies" element={<CookiesPage />} />
               <Route path="/download" element={<DownloadPage />} />
               <Route path="/assets" element={<AssetsPage />} />
-              {/* <Route path="/assets/bitcoin" element={<BitcoinPage />} />
+              <Route path="/assets/bitcoin" element={<BitcoinPage />} />
                <Route path="/assets/ethereum" element={<EthereumPage />} />
               <Route path="/assets/usdt" element={<UsdtPage />} />
               <Route path="/assets/tron" element={<TronPage />} />
               <Route path="/assets/usdc" element={<UsdcPage />} />
-               <Route path="/assets/litecoin" element={<LitecoinPage />} /> */}
+               <Route path="/assets/litecoin" element={<LitecoinPage />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
