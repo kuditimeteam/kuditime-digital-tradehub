@@ -59,7 +59,7 @@ const LitecoinPage = () => {
             </Card>
 
             {/* Current Price Section */}
-            <Card className="mb-6">
+            {/* <Card className="mb-6">
               <CardContent className="p-6">
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                   <div>
@@ -83,7 +83,7 @@ const LitecoinPage = () => {
                   </div>
                 </div>
               </CardContent>
-            </Card>
+            </Card> */}
 
             {/* How To Sell Section */}
             <Card className="mb-6">
@@ -184,8 +184,8 @@ const LitecoinPage = () => {
             </Card> */}
 
             {/* Rating */}
-            <Card>
-              <CardContent className="p-6">
+            {/* <Card> */}
+              {/* <CardContent className="p-6">
                 <h3 className="font-semibold mb-4">Community Rating</h3>
                 <div className="flex items-center space-x-2 mb-2">
                   <div className="flex">
@@ -196,11 +196,11 @@ const LitecoinPage = () => {
                   <span className="font-semibold">4.9</span>
                 </div>
                 <p className="text-sm text-gray-600">Based on 100+ reviews</p>
-              </CardContent>
-            </Card>
+              </CardContent> */}
+            {/* </Card> */}
 
             {/* Market Info */}
-            <Card>
+            {/* <Card>
               <CardContent className="p-6">
                 <h3 className="font-semibold mb-4">Market Information</h3>
                 <div className="space-y-3">
@@ -222,7 +222,7 @@ const LitecoinPage = () => {
                   </div>
                 </div>
               </CardContent>
-            </Card>
+            </Card> */}
           </div>
         </div>
       </div>

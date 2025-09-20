@@ -129,7 +129,7 @@ const  Footer = () => {
               <li><Link to="/crypto" className="text-gray-400 hover:text-primary transition-colors">Crypto Trading</Link></li>
               <li><Link to="/bills" className="text-gray-400 hover:text-primary transition-colors">Bill Payment</Link></li>
               <li><Link to="/giftcards" className="text-gray-400 hover:text-primary transition-colors">Gift Cards</Link></li>
-              <li><Link to="/calculator" className="text-gray-400 hover:text-primary transition-colors">Rate Calculator</Link></li>
+              {/* <li><Link to="/calculator" className="text-gray-400 hover:text-primary transition-colors">Rate Calculator</Link></li> */}
             </ul>
           </div>
 

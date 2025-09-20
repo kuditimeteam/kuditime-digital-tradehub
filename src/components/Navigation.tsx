@@ -145,7 +145,7 @@ const Navigation = () => {
               </DropdownMenuContent>
             </DropdownMenu>
 
-            <Link 
+            {/* <Link 
               to="/calculator" 
               className={`flex items-center space-x-1 transition-colors ${
                 isActive('/calculator') ? 'text-primary' : 'text-gray-700 hover:text-primary'
@@ -153,7 +153,7 @@ const Navigation = () => {
             >
               <Calculator className="w-4 h-4" />
               <span>Rate Calculator</span>
-            </Link>
+            </Link> */}
 
             <DropdownMenu>
               <DropdownMenuTrigger className="flex items-center space-x-1 text-gray-700 hover:text-primary transition-colors">

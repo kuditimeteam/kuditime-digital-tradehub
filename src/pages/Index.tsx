@@ -1,4 +1,4 @@
-import { ArrowRight, Shield, Zap, Users, TrendingUp, Check, Star, Gift, Coins} from 'lucide-react';
+import { ArrowRight, Shield, Zap, Users, TrendingUp, Check, Star, Gift, Coins, TrendingDown} from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -13,6 +13,7 @@ import bnbLogo from '@/assets/bnb-logo.png';
 import solanLogo from '@/assets/solana-logo.png';
 import usdcLogo from '@/assets/usdc-logo.png';
 import mobileAppImage from '@/assets/pho.png';
+import { useEffect, useState } from 'react';
 
 const testimonials = [{
   name: "Adebayo Ogundimu",
@@ -81,7 +82,42 @@ const milestones = [{
   number: "99.9%",
   label: "Uptime"
 }];
+
+
+
+const formatCurrency = (value: number) =>
+  "$" + value.toLocaleString("en-US", { maximumFractionDigits: 0 });
+
 const Index = () => {
+
+    const [prices, setPrices] = useState<any>(null);
+  
+    useEffect(() => {
+      const fetchData = async () => {
+        const cached = localStorage.getItem("cryptoData");
+        const cacheTime = localStorage.getItem("cryptoDataTime");
+  
+        if (cached && cacheTime && Date.now() - Number(cacheTime) < 60 * 1000) {
+          setPrices(JSON.parse(cached));
+          return;
+        }
+  
+        try {
+          const res = await fetch(
+            "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,tether,tron,binancecoin,solana,usd-coin&vs_currencies=usd&include_24hr_change=true"
+          );
+          const data = await res.json();
+          setPrices(data);
+          localStorage.setItem("cryptoData", JSON.stringify(data));
+          localStorage.setItem("cryptoDataTime", Date.now().toString());
+        } catch (err) {
+          console.error("Error fetching crypto prices:", err);
+        }
+      };
+  
+      fetchData();
+    }, []);
+
   return <div className="min-h-screen">
       {/* Hero Section */}
       <section className="bg-gray-50 py-12 md:py-20 relative overflow-hidden">
@@ -205,121 +241,66 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Most Traded Cryptocurrencies */}
+       {/* Crypto Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Most Traded Cryptocurrencies</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Most Traded Cryptocurrencies
+            </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Trade the most popular cryptocurrencies with the best rates in Nigeria
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Bitcoin */}
-            <Card className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-gradient-to-br from-orange-50 to-orange-100 border-orange-200">
-              <CardContent className="p-6 text-center">
-                <div className="w-16 h-16 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <img src={bitcoinLogo} alt="Bitcoin" className="w-16 h-16 rounded-full" />
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Bitcoin</h3>
-                <p className="text-gray-600 mb-3">BTC</p>
-                <div className="space-y-2">
-                  <p className="text-2xl font-bold text-orange-600">₦177,678,900</p>
-                  <p className="text-sm text-green-600 flex items-center justify-center">
-                    <TrendingUp className="w-4 h-4 mr-1" />
-                    +2.34%
-                  </p>
-                </div>
-                <a href="https://linktr.ee/kuditime_">
-                <Button className="w-full mt-4 bg-orange-500 hover:bg-orange-600 text-white">
-                  Trade BTC
-                </Button>
-                </a>
-              </CardContent>
-            </Card>
-
-            {/* Ethereum */}
-            <Card className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-gradient-to-br from-blue-50 to-blue-100 border-blue-200">
-              <CardContent className="p-6 text-center">
-                <div className="w-16 h-16 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <img src={ethereumLogo} alt="Ethereum" className="w-16 h-16" />
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Ethereum</h3>
-                <p className="text-gray-600 mb-3">ETH</p>
-                <div className="space-y-2">
-                  <p className="text-2xl font-bold text-blue-600">₦6,456,789</p>
-                  <p className="text-sm text-green-600 flex items-center justify-center">
-                    <TrendingUp className="w-4 h-4 mr-1" />
-                    +1.87%
-                  </p>
-                </div>
-                 <a href="https://linktr.ee/kuditime_">
-                <Button className="w-full mt-4 bg-blue-500 hover:bg-blue-600 text-white">
-                  Trade ETH
-                </Button>
-                </a>
-              </CardContent>
-            </Card>
-
-            {/* USDT */}
-            <Card className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-gradient-to-br from-green-50 to-green-100 border-green-200">
-              <CardContent className="p-6 text-center">
-                <div className="w-16 h-16 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <img src={tetherLogo} alt="Tether" className="w-16 h-16" />
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Tether</h3>
-                <p className="text-gray-600 mb-3">USDT</p>
-                <div className="space-y-2">
-                  <p className="text-2xl font-bold text-green-600">₦1,658</p>
-                  <p className="text-sm text-green-600 flex items-center justify-center">
-                    <TrendingUp className="w-4 h-4 mr-1" />
-                    +0.12%
-                  </p>
-                </div>
-                <a href="https://linktr.ee/kuditime_">
-                <Button className="w-full mt-4 bg-green-500 hover:bg-green-600 text-white">
-                  Trade USDT
-                </Button>
-                </a>
-              </CardContent>
-            </Card>
-
-            {/* bnb */}
-            <Card className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-gradient-to-br from-gray-50 to-gray-100 border-gray-200">
-              <CardContent className="p-6 text-center">
-                {/* <div className="w-16 h-16 bg-gray-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <span className="text-white font-bold text-xl">Ł</span>
-                </div> */}
-                <div className="w-16 h-16 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <img src={tronLogo} alt="LTC" className="w-16 h-16" />
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Tron</h3>
-                <p className="text-gray-600 mb-3">TRX</p>
-                <div className="space-y-2">
-                  <p className="text-2xl font-bold text-gray-600">₦1,000</p>
-                  <p className="text-sm text-green-600 flex items-center justify-center">
-                    <TrendingUp className="w-4 h-4 mr-1" />
-                    +3.45%
-                  </p>
-                </div>
-                <a href="https://linktr.ee/kuditime_">
-                <Button className="w-full mt-4 bg-gray-500 hover:bg-gray-600 text-white">
-                  Trade TRON
-                </Button>
-                </a>
-              </CardContent>
-            </Card>
+            {[
+              { id: "bitcoin", name: "Bitcoin", symbol: "BTC", logo: bitcoinLogo, color: "orange" },
+              { id: "ethereum", name: "Ethereum", symbol: "ETH", logo: ethereumLogo, color: "blue" },
+              { id: "tether", name: "Tether", symbol: "USDT", logo: tetherLogo, color: "green" },
+              { id: "tron", name: "Tron", symbol: "TRX", logo: tronLogo, color: "gray" },
+              { id: "binancecoin", name: "BNB", symbol: "BNB", logo: bnbLogo, color: "yellow" },
+              { id: "solana", name: "Solana", symbol: "SOL", logo: solanLogo, color: "purple" },
+              { id: "usd-coin", name: "USDC", symbol: "USDC", logo: usdcLogo, color: "indigo" },
+            ].map((coin) => (
+              <Card
+                key={coin.id}
+                className={`group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-gradient-to-br from-${coin.color}-50 to-${coin.color}-100 border-${coin.color}-200`}
+              >
+                <CardContent className="p-6 text-center">
+                  <img src={coin.logo} alt={coin.name} className="w-16 h-16 mx-auto mb-4" />
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">{coin.name}</h3>
+                  <p className="text-gray-600 mb-3">{coin.symbol}</p>
+                  <div className="space-y-2">
+                    <p className={`text-2xl font-bold text-${coin.color}-600`}>
+                      {prices ? formatCurrency(prices[coin.id].usd) : "₦..."}
+                    </p>
+                    <p
+                      className={`text-sm flex items-center justify-center ${
+                        prices?.[coin.id]?.usd_24h_change > 0
+                          ? "text-green-600"
+                          : "text-red-600"
+                      }`}
+                    >
+                      {prices?.[coin.id]?.usd_24h_change > 0 ? (
+                        <TrendingUp className="w-4 h-4 mr-1" />
+                      ) : (
+                        <TrendingDown className="w-4 h-4 mr-1" />
+                      )}
+                      {prices ? prices[coin.id].usd_24h_change.toFixed(2) + "%" : "..."}
+                    </p>
+                  </div>
+                  <a href="https://linktr.ee/kuditime_">
+                    <Button className={`w-full mt-4 bg-${coin.color}-500 hover:bg-${coin.color}-600 text-white`}>
+                      Trade {coin.symbol}
+                    </Button>
+                  </a>
+                </CardContent>
+              </Card>
+            ))}
           </div>
-          
-          {/* <div className="text-center mt-8">
-            <Button size="lg" variant="outline" className="px-8 py-3">
-              View All Cryptocurrencies <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
-          </div> */}
         </div>
       </section>
-
       {/* Crypto Carousel */}
       {/* <CryptoCarousel /> */}
 

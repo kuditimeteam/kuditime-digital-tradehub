@@ -160,11 +160,11 @@ const CryptoPage = () => {
                   <CardTitle className="text-xl">{crypto.name}</CardTitle>
                   <div className="flex items-center justify-center space-x-2">
                     {/* <span className="text-2xl font-bold text-gray-900">{crypto.price}</span> */}
-                    <span className={`text-sm font-medium ${
+                    {/* <span className={`text-sm font-medium ${
                       crypto.change.startsWith('+') ? 'text-green-600' : 'text-red-600'
                     }`}>
                       {crypto.change}
-                    </span>
+                    </span> */}
                   </div>
                 </CardHeader>
                 <CardContent>

@@ -124,14 +124,20 @@ const MobileApp = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-primary hover:bg-primary/90 flex items-center space-x-2">
+              <a href='https://play.google.com/store/apps/details?id=com.kuditime&hl=en&pli=1' target='_blank' rel='noopener noreferrer'>
+                 <Button className="bg-primary hover:bg-primary/90 flex items-center space-x-2">
                 <Smartphone className="w-4 h-4" />
                 <span>Download for Android</span>
               </Button>
-              <Button variant="outline" className="flex items-center space-x-2">
+              </a>
+             
+             <a href='https://apps.apple.com/in/app/kuditime-bills-cards/id6446061749' target='_blank' rel='noopener noreferrer'>
+                <Button variant="outline" className="flex items-center space-x-2">
                 <Smartphone className="w-4 h-4" />
                 <span>Download for iOS</span>
               </Button>
+             </a>
+            
             </div>
           </div>
         </div>
