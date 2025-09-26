@@ -25,6 +25,7 @@ import BitcoinPage from "./pages/BitcoinPage";
 import EthereumPage from "./pages/EthereumPage";
 import UsdtPage from "./pages/UsdtPage";
 import LitecoinPage from "./pages/LitecoinPage";
+import SetPassword from "./pages/SetPassword";
 import TronPage from "./pages/TronPage";
 import UsdcPage from "./pages/UsdcPage";
 import NotFound from "./pages/NotFound";
@@ -55,6 +56,7 @@ const App = () => (
               <Route path="/privacy" element={<PrivacyPage />} />
               <Route path="/cookies" element={<CookiesPage />} />
               <Route path="/download" element={<DownloadPage />} />
+              <Route path="/set-password" element={<SetPassword />} />
               {/* <Route path="/assets" element={<AssetsPage />} /> */}
               <Route path="/assets/bitcoin" element={<BitcoinPage />} />
                <Route path="/assets/ethereum" element={<EthereumPage />} />
