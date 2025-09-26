@@ -33,12 +33,12 @@ export default function SetPassword() {
 
   const endpointsFunctions = {
     verifyToken: async (userId: string, token: string) =>
-      axios.post(`${import.meta.env.VITE_API_URL}/auth/verify-otp`, {
+      axios.post(`https://api.kuditime.com/api/auth/verify-otp`, {
         userId: userId,
         otp: token,
       }),
     setNewPassword: async (userId: string, token: string, password: string) =>
-      axios.post(`${import.meta.env.VITE_API_URL}/auth/set-password`, {
+      axios.post(`https://api.kuditime.com/api/auth/set-password`, {
         userId: userId,
         token: token,
         password,
