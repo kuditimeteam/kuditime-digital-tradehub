@@ -29,6 +29,7 @@ import SetPassword from "./pages/SetPassword";
 import TronPage from "./pages/TronPage";
 import UsdcPage from "./pages/UsdcPage";
 import NotFound from "./pages/NotFound";
+import SetPassword2 from "./pages/SetPassword2";
 
 const queryClient = new QueryClient();
 
@@ -56,6 +57,7 @@ const App = () => (
               <Route path="/privacy" element={<PrivacyPage />} />
               <Route path="/cookies" element={<CookiesPage />} />
               <Route path="/download" element={<DownloadPage />} />
+              <Route path="/set-password-2" element={<SetPassword2 />} />
               <Route path="/set-password" element={<SetPassword />} />
               {/* <Route path="/assets" element={<AssetsPage />} /> */}
               <Route path="/assets/bitcoin" element={<BitcoinPage />} />
