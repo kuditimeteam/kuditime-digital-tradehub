@@ -86,7 +86,6 @@ export default function SetPassword() {
   const onSubmit = (data: z.infer<typeof validationSchema>) => {
     const token = searchParams.get("token");
     const userId = searchParams.get("userId");
-    
     if (userId && token) {
       handleSetNewPassword(userId, token, data.password);
     }
@@ -128,9 +127,10 @@ export default function SetPassword() {
       <div className="inline-block bg-card p-6 rounded-lg shadow-lg max-w-sm w-full mx-4">
         <div className="text-center">
           <img
-            src="/kudilogo.png"
+            src="/src/assets/kudilogo.png"
+            style={{marginTop: -40 , marginBottom: -30}}
             alt="Kuditime Logo"
-            className="inline max-w-full h-auto w-[120px] mb-4"
+            className="inline max-w-full h-auto w-[120px] "
           />
         </div>
 
