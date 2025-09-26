@@ -139,7 +139,7 @@ const Index = () => {
                 </h1>
                 
                 <p className="text-lg md:text-xl text-gray-600 max-w-lg">
-                  Convert Bitcoin, Ethereum, USDT and other cryptocurrencies to Nigerian Naira at the best rates. Pay your bills seamlessly all in one platform.
+                  {/* Convert Bitcoin, Ethereum, USDT and other cryptocurrencies to Nigerian Naira at the best rates. Pay your bills seamlessly all in one platform. */}
                 </p>
               </div>
 
