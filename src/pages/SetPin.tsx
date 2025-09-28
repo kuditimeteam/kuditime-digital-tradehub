@@ -31,6 +31,7 @@ export default function SetPin() {
       axios.post(`https://api.kuditime.com/api/auth/verify-otp`, {
         userId: userId,
         otp: token,
+        purpose: "RESET_PIN"
       }),
     setNewPin: async (userId: string, token: string, pin: string) =>
       axios.post(`https://api.kuditime.com/api/auth/set-pin`, {
@@ -130,8 +131,8 @@ export default function SetPin() {
         </div>
 
         <div className="text-center mb-8">
-          <h1 className="text-xl font-semibold text-foreground mb-2">Set Your PIN</h1>
-          <p className="text-sm text-muted-foreground">Enter a 4-digit PIN to secure your account</p>
+          <h1 className="text-xl font-semibold text-foreground mb-2">Set Your New PIN</h1>
+          <p className="text-sm text-muted-foreground">Create a secure 4-digit PIN that you’ll use to log in and confirm your transactions. Make sure it’s easy for you to remember but hard for others to guess.</p>
         </div>
 
         {success ? (
