@@ -26,6 +26,7 @@ import EthereumPage from "./pages/EthereumPage";
 import UsdtPage from "./pages/UsdtPage";
 import LitecoinPage from "./pages/LitecoinPage";
 import SetPassword from "./pages/SetPassword";
+import SetPin from "./pages/SetPin";
 import TronPage from "./pages/TronPage";
 import UsdcPage from "./pages/UsdcPage";
 import NotFound from "./pages/NotFound";
@@ -59,6 +60,7 @@ const App = () => (
               <Route path="/download" element={<DownloadPage />} />
               <Route path="/set-password-2" element={<SetPassword2 />} />
               <Route path="/set-password" element={<SetPassword />} />
+              <Route path="/set-pin" element={<SetPin />} />
               {/* <Route path="/assets" element={<AssetsPage />} /> */}
               <Route path="/assets/bitcoin" element={<BitcoinPage />} />
                <Route path="/assets/ethereum" element={<EthereumPage />} />
