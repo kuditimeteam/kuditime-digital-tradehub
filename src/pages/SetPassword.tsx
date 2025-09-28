@@ -134,6 +134,13 @@ export default function SetPassword() {
           />
         </div>
 
+        <div className="text-center mb-6">
+          <h1 className="text-2xl font-bold text-foreground mb-2">Reset Your Password</h1>
+          <p className="text-muted-foreground text-sm">
+            Enter a new password for your account
+          </p>
+        </div>
+
         {success ? (
           <div className="bg-green-100 border-l-4 border-green-500 rounded text-green-900 px-4 py-3 shadow-md">
             <div className="flex">
