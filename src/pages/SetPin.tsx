@@ -28,13 +28,13 @@ export default function SetPin() {
 
   const endpointsFunctions = {
     verifyToken: async (userId: string, token: string) =>
-      axios.post(`http://192.168.1.4:8030/api/auth/verify-otp`, {
+      axios.post(`https://api.kuditime.com/api/auth/verify-otp`, {
         userId: userId,
         otp: token,
         purpose: "RESET_PIN"
       }),
     setNewPin: async (userId: string, token: string, pin: string) =>
-      axios.post(`http://192.168.1.4:8030/api/auth/set-pin`, {
+      axios.post(`https://api.kuditime.com/api/auth/set-pin`, {
         userId: userId,
         token: token,
         pin,
