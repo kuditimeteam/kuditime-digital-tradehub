@@ -28,13 +28,13 @@ export default function SetPin() {
 
   const endpointsFunctions = {
     verifyToken: async (userId: string, token: string) =>
-      axios.post(`https://api.kuditime.com/api/auth/verify-otp`, {
+      axios.post(`http://192.168.1.4:8030/api/auth/verify-otp`, {
         userId: userId,
         otp: token,
         purpose: "RESET_PIN"
       }),
     setNewPin: async (userId: string, token: string, pin: string) =>
-      axios.post(`https://api.kuditime.com/api/auth/set-pin`, {
+      axios.post(`http://192.168.1.4:8030/api/auth/set-pin`, {
         userId: userId,
         token: token,
         pin,
@@ -130,10 +130,7 @@ export default function SetPin() {
           />
         </div>
 
-        <div className="text-center mb-8">
-          <h1 className="text-xl font-semibold text-foreground mb-2">Set Your New PIN</h1>
-          <p className="text-sm text-muted-foreground">Create a secure 4-digit PIN that you’ll use to log in and confirm your transactions. Make sure it’s easy for you to remember but hard for others to guess.</p>
-        </div>
+    
 
         {success ? (
           <div className="bg-green-100 border-l-4 border-green-500 rounded text-green-900 px-4 py-3 shadow-md">
@@ -156,6 +153,11 @@ export default function SetPin() {
             </div>
           </div>
         ) : (
+          <> 
+              <div className="text-center mb-8">
+          <h1 className="text-xl font-semibold text-foreground mb-2">Set Your New PIN</h1>
+          <p className="text-sm text-muted-foreground">Create a secure 4-digit PIN that you’ll use to log in and confirm your transactions. Make sure it’s easy for you to remember but hard for others to guess.</p>
+        </div>
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
               <FormField
@@ -188,6 +190,8 @@ export default function SetPin() {
               </Button>
             </form>
           </Form>
+          </>
+         
         )}
       </div>
     </div>
