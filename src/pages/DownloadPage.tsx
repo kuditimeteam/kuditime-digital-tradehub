@@ -4,6 +4,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import mobileAppImage from '@/assets/pho.png';
 import mainPage from '@/assets/phone 1.png';
 import billPage from '@/assets/phon.png';
+import { useEffect } from 'react';
 
 const appFeatures = [
   {
@@ -47,6 +48,24 @@ const screenshots = [
 ];
 
 const DownloadPage = () => {
+
+useEffect(() => {
+
+
+  const userAgent: string = navigator.userAgent || navigator.vendor || (window as any).opera;
+
+  // iOS detection
+if (/iPad|iPhone|iPod/.test(userAgent) && !(window as any).MSStream) {
+  window.location.href = "https://apps.apple.com/in/app/kuditime-bills-cards/id6446061749";
+}
+  // Android detection
+  else if (/android/i.test(userAgent)) {
+    window.location.href = "https://play.google.com/store/apps/details?id=com.kuditime&hl=en&pli=1";
+  }
+  // Desktop / other → stay on the page
+}, []);
+
+  
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
@@ -62,15 +81,23 @@ const DownloadPage = () => {
                 Available for both Android and iOS devices.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-6 md:mb-8">
+              <a href='https://play.google.com/store/apps/details?id=com.kuditime&hl=en&pli=1' target='_blank' rel='noopener noreferrer'>
+
+
                 <Button size="lg" className="text-base md:text-lg px-6 md:px-8 py-2 md:py-3 flex items-center space-x-2 bg-white text-black hover:bg-gray-100">
                   <Download className="w-4 h-4 md:w-5 md:h-5" />
                   <span>Download for Android</span>
                 </Button>
+                </a>
+             <a href='https://apps.apple.com/in/app/kuditime-bills-cards/id6446061749' target='_blank' rel='noopener noreferrer'>
+
                 <Button size="lg" variant="outline" className="text-base md:text-lg px-6 md:px-8 py-2 md:py-3 border-white text-black hover:bg-white hover:text-primary flex items-center space-x-2">
                   <Download className="w-4 h-4 md:w-5 md:h-5" />
                   <span>Download for iOS</span>
                 </Button>
+                </a>
               </div>
+
               <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-2 sm:space-y-0 sm:space-x-6 text-white">
                 <div className="flex items-center space-x-2">
                   <Star className="w-4 h-4 md:w-5 md:h-5 text-yellow-400 fill-current" />
