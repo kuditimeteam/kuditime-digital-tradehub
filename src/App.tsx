@@ -18,6 +18,7 @@ import BlogPage from "./pages/BlogPage";
 import CareersPage from "./pages/CareersPage";
 import TermsPage from "./pages/TermsPage";
 import PrivacyPage from "./pages/PrivacyPage";
+import DeletePage from "./pages/DeletePage";
 import CookiesPage from "./pages/CookiesPage";
 import DownloadPage from "./pages/DownloadPage";
 // import AssetsPage from "./pages/AssetsPage";
@@ -56,6 +57,7 @@ const App = () => (
               <Route path="/careers" element={<CareersPage />} />
               <Route path="/terms" element={<TermsPage />} />
               <Route path="/privacy" element={<PrivacyPage />} />
+              <Route path="/delete-data" element={<DeletePage />} />
               <Route path="/cookies" element={<CookiesPage />} />
               <Route path="/download" element={<DownloadPage />} />
               <Route path="/set-password-2" element={<SetPassword2 />} />
