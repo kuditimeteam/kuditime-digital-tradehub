@@ -89,7 +89,7 @@ const CryptoPage = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="bg-primary text-white py-20">
+      <section className="page-hero">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             {/* <div className="flex items-center justify-center mb-6 space-x-4">

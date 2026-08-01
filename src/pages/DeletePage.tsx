@@ -5,7 +5,7 @@ const DeleteAccountPage = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="bg-primary text-white py-20">
+      <section className="page-hero">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Shield className="w-16 h-16 mx-auto mb-6" />
 

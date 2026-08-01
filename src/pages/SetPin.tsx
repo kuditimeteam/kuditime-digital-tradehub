@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { InputOTP, InputOTPGroup, InputOTPSlot } from "@/components/ui/input-otp";
 import InvalidToken from "@/components/set-password/InvalidToken";
+import kudiLogo from "@/assets/kudilogo.png";
 
 const validationSchema = z.object({
   pin: z.string().length(4, "PIN must be exactly 4 digits").regex(/^\d+$/, "PIN must contain only numbers"),
@@ -123,7 +124,7 @@ export default function SetPin() {
       <div className="inline-block bg-card p-6 rounded-lg shadow-lg max-w-sm w-full mx-4">
         <div className="text-center mb-6">
           <img
-            src="/src/assets/kudilogo.png"
+            src={kudiLogo}
             style={{marginTop: -40 , marginBottom: -30}}
             alt="Kuditime Logo"
             className="inline max-w-full h-auto w-[120px] "

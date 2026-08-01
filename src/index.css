@@ -1,82 +1,106 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* ---------------------------------------------------------------------------
+   Kuditime design system
+   Brand marks sampled from the logo: black #000, deep green #388838,
+   lime #C8D058. Everything below is derived from those three.
+   All colors MUST be HSL (shadcn tokens are consumed as `hsl(var(--x))`).
+--------------------------------------------------------------------------- */
 
 @layer base {
   :root {
+    /* Surfaces */
     --background: 0 0% 100%;
-    --foreground: 0 0% 3.9%;
+    --foreground: 158 24% 9%;
 
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 3.9%;
+    --card-foreground: 158 24% 9%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 3.9%;
+    --popover-foreground: 158 24% 9%;
 
-    --primary: 142 76% 36%;
+    /* Brand green — deepened from the old 76% neon so it reads premium */
+    --primary: 142 58% 31%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 96.1%;
-    --secondary-foreground: 0 0% 9%;
+    /* Lime accent straight off the wordmark */
+    --lime: 64 56% 58%;
+    --lime-foreground: 158 30% 10%;
 
-    --muted: 0 0% 96.1%;
-    --muted-foreground: 0 0% 45.1%;
+    /* Ink — the near-black of the logo mark, warmed with a touch of green */
+    --ink: 158 28% 7%;
+    --ink-foreground: 90 12% 96%;
 
-    --accent: 0 0% 96.1%;
-    --accent-foreground: 0 0% 9%;
+    --secondary: 150 14% 96%;
+    --secondary-foreground: 158 24% 12%;
 
-    --destructive: 0 84.2% 60.2%;
+    --muted: 150 14% 96%;
+    --muted-foreground: 158 8% 42%;
+
+    --accent: 142 40% 95%;
+    --accent-foreground: 142 58% 24%;
+
+    --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 89.8%;
-    --input: 0 0% 89.8%;
-    --ring: 142 76% 36%;
+    --success: 142 58% 36%;
+    --warning: 38 92% 50%;
 
-    --radius: 0.75rem;
+    --border: 150 12% 90%;
+    --input: 150 12% 90%;
+    --ring: 142 58% 31%;
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 0 0% 3.9%;
-    --sidebar-primary: 142 76% 36%;
+    --radius: 0.875rem;
+
+    --sidebar-background: 150 14% 98%;
+    --sidebar-foreground: 158 24% 9%;
+    --sidebar-primary: 142 58% 31%;
     --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 0 0% 96.1%;
-    --sidebar-accent-foreground: 0 0% 15.1%;
-    --sidebar-border: 0 0% 89.8%;
-    --sidebar-ring: 142 76% 36%;
+    --sidebar-accent: 150 14% 96%;
+    --sidebar-accent-foreground: 158 24% 15%;
+    --sidebar-border: 150 12% 90%;
+    --sidebar-ring: 142 58% 31%;
   }
 
+  /* Dark mode is not wired up to a toggle anywhere in the app. These values
+     intentionally mirror :root so the `dark` class stays a no-op rather than
+     shipping a half-finished second theme. */
   .dark {
     --background: 0 0% 100%;
-    --foreground: 0 0% 3.9%;
+    --foreground: 158 24% 9%;
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 3.9%;
+    --card-foreground: 158 24% 9%;
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 3.9%;
-    --primary: 142 76% 36%;
+    --popover-foreground: 158 24% 9%;
+    --primary: 142 58% 31%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 0 0% 96.1%;
-    --secondary-foreground: 0 0% 9%;
-    --muted: 0 0% 96.1%;
-    --muted-foreground: 0 0% 45.1%;
-    --accent: 0 0% 96.1%;
-    --accent-foreground: 0 0% 9%;
-    --destructive: 0 62.8% 30.6%;
+    --lime: 64 56% 58%;
+    --lime-foreground: 158 30% 10%;
+    --ink: 158 28% 7%;
+    --ink-foreground: 90 12% 96%;
+    --secondary: 150 14% 96%;
+    --secondary-foreground: 158 24% 12%;
+    --muted: 150 14% 96%;
+    --muted-foreground: 158 8% 42%;
+    --accent: 142 40% 95%;
+    --accent-foreground: 142 58% 24%;
+    --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 89.8%;
-    --input: 0 0% 89.8%;
-    --ring: 142 76% 36%;
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 0 0% 3.9%;
-    --sidebar-primary: 142 76% 36%;
+    --success: 142 58% 36%;
+    --warning: 38 92% 50%;
+    --border: 150 12% 90%;
+    --input: 150 12% 90%;
+    --ring: 142 58% 31%;
+    --sidebar-background: 150 14% 98%;
+    --sidebar-foreground: 158 24% 9%;
+    --sidebar-primary: 142 58% 31%;
     --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 0 0% 96.1%;
-    --sidebar-accent-foreground: 0 0% 15.1%;
-    --sidebar-border: 0 0% 89.8%;
-    --sidebar-ring: 142 76% 36%;
+    --sidebar-accent: 150 14% 96%;
+    --sidebar-accent-foreground: 158 24% 15%;
+    --sidebar-border: 150 12% 90%;
+    --sidebar-ring: 142 58% 31%;
   }
 }
 
@@ -85,20 +109,196 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "cv11", "ss01";
+    font-variant-ligatures: contextual;
+  }
+
+  /* Display type: tight tracking + tight leading is what separates a fintech
+     landing page from a default Tailwind page. */
+  /* Colour is deliberately inherited rather than set. An `h1 { color: ... }`
+     rule matches the element directly and so beats a `text-white` inherited
+     from a dark ancestor — which silently rendered dark headings on every
+     dark band. Inheriting keeps headings at `--foreground` by default (from
+     body) while letting any coloured section override them. */
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display font-bold;
+    color: inherit;
+    letter-spacing: -0.028em;
+    text-wrap: balance;
+  }
+
+  h1 {
+    line-height: 1.02;
+  }
+
+  h2 {
+    line-height: 1.08;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  /* Tabular figures everywhere we render money or percentages. */
+  .tnum {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum";
+  }
+
+  ::selection {
+    background: hsl(var(--lime) / 0.35);
+    color: hsl(var(--ink));
+  }
+
+  :focus-visible {
+    outline: 2px solid hsl(var(--ring));
+    outline-offset: 2px;
   }
 }
 
 @layer components {
-  .crypto-card {
-    @apply bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-all duration-300 hover:scale-105;
+  /* One canonical page gutter — replaces the max-w-7xl/px-4/sm:px-6/lg:px-8
+     string that was copy-pasted into every section. */
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8;
   }
-  
-  .mobile-mockup {
-    background: linear-gradient(145deg, #f8f9fa 0%, #e9ecef 100%);
-    border-radius: 2rem;
-    padding: 1rem;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+  .container-prose {
+    @apply mx-auto w-full max-w-4xl px-5 sm:px-6 lg:px-8;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 rounded-full border border-border bg-secondary/70 px-3.5 py-1.5 text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground;
+  }
+
+  .eyebrow-on-ink {
+    @apply inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3.5 py-1.5 text-xs font-semibold uppercase tracking-[0.14em] text-white/70;
+  }
+
+  .surface-card {
+    @apply rounded-2xl border border-border bg-card shadow-card transition-all duration-300;
+  }
+
+  .surface-card-hover {
+    @apply hover:-translate-y-1 hover:border-primary/25 hover:shadow-lifted;
+  }
+
+  .text-gradient-brand {
+    background-image: linear-gradient(100deg, hsl(142 58% 31%), hsl(96 45% 44%), hsl(64 56% 52%));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .bg-brand-gradient {
+    background-image: linear-gradient(120deg, hsl(158 40% 12%) 0%, hsl(142 58% 22%) 55%, hsl(96 40% 32%) 100%);
+  }
+
+  /* Faint dotted field used behind the hero — reads as texture, not noise. */
+  .bg-dotgrid {
+    background-image: radial-gradient(hsl(var(--foreground) / 0.07) 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
+
+  .bg-dotgrid-ink {
+    background-image: radial-gradient(hsl(0 0% 100% / 0.08) 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
+
+  /* Soft brand glow blob. Pair with `absolute` + `blur-3xl`. */
+  .glow-brand {
+    background: radial-gradient(closest-side, hsl(var(--primary) / 0.28), transparent);
+  }
+
+  .glow-lime {
+    background: radial-gradient(closest-side, hsl(var(--lime) / 0.3), transparent);
+  }
+
+  .divider-dotted {
+    @apply border-t border-dotted border-border;
+  }
+
+  /* Shared hero band for every inner page. Replaces the flat `bg-primary`
+     slab so sub-pages share the homepage's depth without each one needing
+     its own markup. Children are lifted above the texture layers. */
+  .page-hero {
+    @apply bg-brand-gradient relative overflow-hidden py-16 text-white sm:py-20 lg:py-24;
+  }
+
+  .page-hero::before {
+    content: '';
+    @apply pointer-events-none absolute inset-0 bg-dotgrid-ink opacity-70;
+  }
+
+  .page-hero::after {
+    content: '';
+    @apply pointer-events-none absolute -right-32 -top-40 h-[34rem] w-[34rem] rounded-full blur-3xl;
+    background: radial-gradient(closest-side, hsl(var(--lime) / 0.22), transparent);
+  }
+
+  .page-hero > * {
+    @apply relative z-10;
+  }
+
+  /* Inner-page heroes set their own display sizes; keep them on the same
+     scale as the homepage. */
+  .page-hero h1 {
+    @apply text-4xl sm:text-5xl lg:text-[3.25rem];
+  }
+}
+
+@layer utilities {
+  /* Scroll-reveal. Elements start shifted + transparent and the Reveal
+     component flips `data-visible` when they enter the viewport. */
+  .reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition:
+      opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+      transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+  }
+
+  .reveal[data-visible="true"] {
+    opacity: 1;
+    transform: none;
+  }
+
+  .mask-fade-x {
+    -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+  }
+
+  .pause-on-hover:hover [data-marquee] {
+    animation-play-state: paused;
+  }
+}
+
+/* Users who ask for less motion get none of it. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  [data-marquee],
+  .animate-float,
+  .animate-pulse-ring {
+    animation: none !important;
   }
 }

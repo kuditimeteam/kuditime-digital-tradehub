@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import InvalidToken from "@/components/set-password/InvalidToken";
+import kudiLogo from "@/assets/kudilogo.png";
 
 const validationSchema = z.object({
   password: z.string().min(6, "Password must be at least 6 characters").nonempty("Password is required"),
@@ -127,7 +128,7 @@ export default function SetPassword() {
       <div className="inline-block bg-card p-6 rounded-lg shadow-lg max-w-sm w-full mx-4">
         <div className="text-center">
           <img
-            src="/src/assets/kudilogo.png"
+            src={kudiLogo}
             style={{marginTop: -40 , marginBottom: -30}}
             alt="Kuditime Logo"
             className="inline max-w-full h-auto w-[120px] "

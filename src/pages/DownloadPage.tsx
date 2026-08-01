@@ -69,7 +69,7 @@ if (/iPad|iPhone|iPod/.test(userAgent) && !(window as any).MSStream) {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="bg-primary text-white py-12 md:py-20">
+      <section className="page-hero">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
             <div>
