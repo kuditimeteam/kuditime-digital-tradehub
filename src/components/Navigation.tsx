@@ -182,7 +182,7 @@ const Navigation = () => {
       </nav>
 
       {isMenuOpen && (
-        <div className="fixed inset-x-0 bottom-0 top-[72px] z-40 overflow-y-auto overscroll-contain border-t border-border bg-background lg:hidden">
+        <div className="absolute inset-x-0 top-full z-40 h-[calc(100vh-72px)] h-[calc(100dvh-72px)] overflow-y-auto overscroll-contain border-t border-border bg-background lg:hidden">
           <div className="container-page space-y-8 py-8">
             <MobileGroup title="Products">
               {productLinks.map((item) => (
