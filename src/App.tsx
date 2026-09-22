@@ -43,9 +43,9 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <ScrollToTop />
-        <div className="min-h-screen flex flex-col">
+        <div className="flex min-h-screen min-w-0 max-w-full flex-col overflow-x-clip">
           <Navigation />
-          <main className="flex-1">
+          <main className="min-w-0 max-w-full flex-1">
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/crypto" element={<CryptoPage />} />

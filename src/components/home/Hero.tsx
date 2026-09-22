@@ -95,7 +95,7 @@ const Hero = () => {
           </div>
 
           {/* ----------------------------- Visual ----------------------------- */}
-          <div className="relative mx-auto w-full max-w-md lg:max-w-none">
+          <div className="relative mx-auto min-w-0 w-full max-w-md lg:max-w-none">
             <div className="relative">
               <img
                 src={heroPhone}
@@ -108,7 +108,7 @@ const Hero = () => {
 
               {/* Payout confirmation — the moment the product is actually
                   selling, rather than a market figure a customer can't act on. */}
-              <div className="absolute -right-2 top-16 z-20 w-52 rounded-2xl border border-border bg-background/95 p-4 shadow-float backdrop-blur animate-float sm:-right-6 sm:w-56">
+              <div className="absolute right-0 top-10 z-20 w-48 max-w-[75%] rounded-2xl border border-border bg-background/95 p-3 shadow-float backdrop-blur animate-float sm:-right-6 sm:top-16 sm:w-56 sm:max-w-none sm:p-4">
                 <div className="flex items-start gap-3">
                   <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-success/12 text-success">
                     <CheckCircle2 className="h-5 w-5" />
@@ -120,7 +120,7 @@ const Hero = () => {
                     <p className="mt-1 text-lg font-bold leading-none tnum text-foreground">
                       ₦450,000
                     </p>
-                    <p className="mt-1.5 whitespace-nowrap text-xs text-muted-foreground">
+                    <p className="mt-1.5 text-[11px] text-muted-foreground sm:whitespace-nowrap sm:text-xs">
                       Sent to bank · Just now
                     </p>
                   </div>
@@ -129,7 +129,7 @@ const Hero = () => {
 
               {/* Payout card */}
               <div
-                className="absolute -left-2 bottom-16 z-20 rounded-2xl border border-border bg-background/95 p-4 shadow-float backdrop-blur animate-float sm:-left-6"
+                className="absolute left-0 bottom-10 z-20 rounded-2xl border border-border bg-background/95 p-3 shadow-float backdrop-blur animate-float sm:-left-6 sm:bottom-16 sm:p-4"
                 style={{ animationDelay: '1.2s' }}
               >
                 <p className="text-xs font-medium text-muted-foreground">Paid out today</p>

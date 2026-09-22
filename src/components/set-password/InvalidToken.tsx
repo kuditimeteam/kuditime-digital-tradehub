@@ -9,11 +9,8 @@ export default function InvalidToken() {
           className="inline max-w-full h-auto w-[120px] mb-4"
         />
       </div>
-      <div
-        className="min-h-screen w-screen flex items-center md:w-[50%] align-middle m-auto"
-        style={{ textAlign: "center" }}
-      >
-        <div>
+      <div className="mx-auto flex min-h-screen w-full max-w-3xl items-center px-4 text-center sm:px-6">
+        <div className="w-full">
           <svg
             style={{ width: "30%", height: "auto", margin: "auto" }}
             xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +31,7 @@ export default function InvalidToken() {
               fill="#fff"
             />
           </svg>
-          <div style={{ width: "50%", margin: "auto" }}>
+          <div className="mx-auto w-full max-w-lg">
             <div className="font-semibold text-lg">
               This password reset link is invalid or has expired, try resending the reset link on the mobile app.
             </div>

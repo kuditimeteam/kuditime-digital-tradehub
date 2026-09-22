@@ -241,32 +241,34 @@ const CookiesPage = () => {
                   <li>Used for preferences, analytics, and marketing</li>
                 </ul>
 
-                <table className="w-full border-collapse border border-gray-300 mt-4">
-                  <thead>
-                    <tr className="bg-gray-100">
-                      <th className="border border-gray-300 p-2 text-left">Cookie Type</th>
-                      <th className="border border-gray-300 p-2 text-left">Retention Period</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td className="border border-gray-300 p-2">Authentication</td>
-                      <td className="border border-gray-300 p-2">Session or 30 days</td>
-                    </tr>
-                    <tr>
-                      <td className="border border-gray-300 p-2">Preferences</td>
-                      <td className="border border-gray-300 p-2">1 year</td>
-                    </tr>
-                    <tr>
-                      <td className="border border-gray-300 p-2">Analytics</td>
-                      <td className="border border-gray-300 p-2">2 years</td>
-                    </tr>
-                    <tr>
-                      <td className="border border-gray-300 p-2">Marketing</td>
-                      <td className="border border-gray-300 p-2">30 days to 1 year</td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div className="mt-4 max-w-full overflow-x-auto overscroll-x-contain">
+                  <table className="w-full min-w-[32rem] border-collapse border border-gray-300">
+                    <thead>
+                      <tr className="bg-gray-100">
+                        <th className="border border-gray-300 p-2 text-left">Cookie Type</th>
+                        <th className="border border-gray-300 p-2 text-left">Retention Period</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td className="border border-gray-300 p-2">Authentication</td>
+                        <td className="border border-gray-300 p-2">Session or 30 days</td>
+                      </tr>
+                      <tr>
+                        <td className="border border-gray-300 p-2">Preferences</td>
+                        <td className="border border-gray-300 p-2">1 year</td>
+                      </tr>
+                      <tr>
+                        <td className="border border-gray-300 p-2">Analytics</td>
+                        <td className="border border-gray-300 p-2">2 years</td>
+                      </tr>
+                      <tr>
+                        <td className="border border-gray-300 p-2">Marketing</td>
+                        <td className="border border-gray-300 p-2">30 days to 1 year</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </CardContent>
             </Card>
 

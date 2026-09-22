@@ -120,8 +120,8 @@ export default function SetPin() {
   }
 
   return (
-    <div className="bg-background min-h-screen flex items-center justify-center">
-      <div className="inline-block bg-card p-6 rounded-lg shadow-lg max-w-sm w-full mx-4">
+    <div className="bg-background min-h-screen flex items-center justify-center px-4">
+      <div className="inline-block bg-card p-6 rounded-lg shadow-lg max-w-sm w-full">
         <div className="text-center mb-6">
           <img
             src={kudiLogo}
